@@ -1,0 +1,124 @@
+{
+  "dados": [
+    {
+      "create_data": "2025-03-14T09:29:09.830Z",
+      "tipo": "cch",
+      "tipoNome": "Condições de Chuva",
+      "sitregioes": [
+        {
+          "regiao": {
+            "bairros": [
+              "Bom Retiro",
+              "Victor Konder",
+              "Jardim Blumenau",
+              "Boa Vista",
+              "Vorstadt",
+              "Centro",
+              "Ponta Aguda",
+              "Ribeirão Fresco"
+            ],
+            "id": 4,
+            "nome": "Central"
+          },
+          "condicao": {
+            "cor_fundo": "#64EE64",
+            "nivel": 1,
+            "cor_fonte": "#000000",
+            "id": 61,
+            "condicao": "Normalidade"
+          }
+        },
+        {
+          "regiao": {
+            "bairros": [
+              "Fortaleza Alta",
+              "Fidélis",
+              "Fortaleza",
+              "Itoupava Norte",
+              "Tribess",
+              "Nova Esperança"
+            ],
+            "id": 83,
+            "nome": "Leste"
+          },
+          "condicao": {
+            "cor_fundo": "#64EE64",
+            "nivel": 1,
+            "cor_fonte": "#000000",
+            "id": 61,
+            "condicao": "Normalidade"
+          }
+        },
+        {
+          "regiao": {
+            "bairros": [
+              "Itoupavazinha",
+              "Testo Salto",
+              "Vila Itoupava",
+              "Badenfurt",
+              "Itoupava Central",
+              "Itoupava Seca",
+              "Salto do Norte"
+            ],
+            "id": 82,
+            "nome": "Norte"
+          },
+          "condicao": {
+            "cor_fundo": "#64EE64",
+            "nivel": 1,
+            "cor_fonte": "#000000",
+            "id": 61,
+            "condicao": "Normalidade"
+          }
+        },
+        {
+          "regiao": {
+            "bairros": [
+              "Salto Weissbach",
+              "Velha",
+              "Água Verde",
+              "Do Salto",
+              "Escola Agrícola",
+              "Passo Manso",
+              "Velha Central",
+              "Velha Grande",
+              "Vila Nova"
+            ],
+            "id": 85,
+            "nome": "Oeste"
+          },
+          "condicao": {
+            "cor_fundo": "#64EE64",
+            "nivel": 1,
+            "cor_fonte": "#000000",
+            "id": 61,
+            "condicao": "Normalidade"
+          }
+        },
+        {
+          "regiao": {
+            "bairros": [
+              "Valparaíso",
+              "Da Glória",
+              "Progresso",
+              "Garcia",
+              "Vila Formosa"
+            ],
+            "id": 84,
+            "nome": "Sul"
+          },
+          "condicao": {
+            "cor_fundo": "#64EE64",
+            "nivel": 1,
+            "cor_fonte": "#000000",
+            "id": 61,
+            "condicao": "Normalidade"
+          }
+        }
+      ],
+      "id": 38351,
+      "descricao": "retorno normalidade"
+    }
+  ],
+  "datahoraAtualizacao": "2025-03-14T21:11:41.274Z"
+}
