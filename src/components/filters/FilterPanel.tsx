@@ -1,23 +1,19 @@
 'use client';
 import { useState, useRef, useEffect } from 'react';
-import { Filters, AlertType } from '@/types/filters';
-import { Filter, X, MapPin, Search, ArrowDown, LocateFixed } from 'lucide-react';
+import { Filters } from '@/types/filters';
+import { Filter, X, MapPin, Search, ArrowDown, LocateFixed, AlertCircle } from 'lucide-react';
 import Chip from './Chip';
 
 interface FilterPanelProps {
     onFilterChange: (filters: Filters) => void;
-    allRegions: string[];
     allNeighborhoods: string[];
-    alertTypes: AlertType[];
     userLocation?: string | null;
     onSetUserLocation?: (neighborhood: string | null) => void;
 }
 
 export default function FilterPanel({
     onFilterChange,
-    allRegions,
     allNeighborhoods,
-    alertTypes,
     userLocation,
     onSetUserLocation
 }: FilterPanelProps) {
@@ -29,17 +25,17 @@ export default function FilterPanel({
         neighborhoods: [],
         conditionLevels: [],
     });
-    const [activeTab, setActiveTab] = useState<'neighborhoods' | 'regions' | 'types'>('neighborhoods');
+    const [activeTab, setActiveTab] = useState<'neighborhoods' | 'levels'>('neighborhoods');
     const searchInputRef = useRef<HTMLInputElement>(null);
 
     // Opções para nível de condição
     const conditionOptions = [
-        { id: 1, label: 'Normalidade', color: '#64EE64', textColor: '#000000' },
-        { id: 2, label: 'Observação', color: '#FFFF00', textColor: '#000000' },
+        { id: 1, label: 'Normalidade', color: '#64EE64', textColor: '#0B5E0B' }, // Verde escuro para melhor contraste
+        { id: 2, label: 'Observação', color: '#FFFF00', textColor: '#806600' }, // Amarelo escuro para melhor contraste
         { id: 3, label: 'Atenção', color: '#FF9900', textColor: '#000000' },
-        { id: 4, label: 'Alerta', color: '#FF0000', textColor: '#FFFFFF' },
+        { id: 4, label: 'Alerta', color: '#FF0000', textColor: '#000000' },
     ];
-
+    
     // Filtrar bairros baseado na busca
     const filteredNeighborhoods = allNeighborhoods
         .filter(n => n.toLowerCase().includes(searchTerm.toLowerCase()))
@@ -95,17 +91,15 @@ export default function FilterPanel({
     };
 
     const hasActiveFilters =
-        filters.alertTypes.length > 0 ||
-        filters.regions.length > 0 ||
         filters.neighborhoods.length > 0 ||
         filters.conditionLevels.length > 0;
 
     // Quando o painel expande, focar no campo de busca
     useEffect(() => {
-        if (isExpanded && searchInputRef.current) {
+        if (isExpanded && searchInputRef.current && activeTab === 'neighborhoods') {
             searchInputRef.current.focus();
         }
-    }, [isExpanded]);
+    }, [isExpanded, activeTab]);
 
     return (
         <div className="bg-white rounded-lg shadow-md border border-gray-200 mb-6 overflow-hidden">
@@ -115,11 +109,10 @@ export default function FilterPanel({
             >
                 <div className="flex items-center">
                     <Filter className="mr-2 h-5 w-5 text-blue-600" />
-                    <h2 className="font-semibold text-lg md:text-xl">Filtrar alertas</h2>
+                    <h2 className="font-semibold text-lg md:text-xl">Filtrar por bairro ou nível</h2>
                     {hasActiveFilters && (
                         <span className="ml-2 bg-blue-600 text-white text-sm px-2 py-1 rounded-full">
-                            {filters.alertTypes.length + filters.regions.length +
-                                filters.neighborhoods.length + filters.conditionLevels.length}
+                            {filters.neighborhoods.length + filters.conditionLevels.length}
                         </span>
                     )}
                 </div>
@@ -163,7 +156,7 @@ export default function FilterPanel({
                 isExpanded ? 'max-h-[80vh]' : 'max-h-0'
             }`}>
                 <div className="p-4 border-t border-gray-100">
-                    {/* Tabs para navegação */}
+                    {/* Tabs para navegação simplificada */}
                     <div className="flex border-b border-gray-200 mb-4">
                         <button
                             onClick={() => setActiveTab('neighborhoods')}
@@ -176,24 +169,14 @@ export default function FilterPanel({
                             Bairros
                         </button>
                         <button
-                            onClick={() => setActiveTab('regions')}
+                            onClick={() => setActiveTab('levels')}
                             className={`px-4 py-2 text-sm font-medium -mb-px ${
-                                activeTab === 'regions'
+                                activeTab === 'levels'
                                     ? 'text-blue-600 border-b-2 border-blue-600'
                                     : 'text-gray-500 hover:text-gray-700'
                             }`}
                         >
-                            Regiões
-                        </button>
-                        <button
-                            onClick={() => setActiveTab('types')}
-                            className={`px-4 py-2 text-sm font-medium -mb-px ${
-                                activeTab === 'types'
-                                    ? 'text-blue-600 border-b-2 border-blue-600'
-                                    : 'text-gray-500 hover:text-gray-700'
-                            }`}
-                        >
-                            Tipos & Níveis
+                            Níveis de Alerta
                         </button>
                     </div>
 
@@ -240,54 +223,49 @@ export default function FilterPanel({
                         </>
                     )}
 
-                    {activeTab === 'regions' && (
+                    {activeTab === 'levels' && (
                         <div className="mb-4">
-                            <div className="flex flex-wrap gap-2">
-                                {allRegions.map(region => (
-                                    <Chip
-                                        key={region}
-                                        label={region}
-                                        selected={filters.regions.includes(region)}
-                                        onClick={() => handleFilterChange('regions', region)}
-                                        icon={<MapPin className="h-3.5 w-3.5" />}
-                                    />
+                            <h3 className="text-base font-medium text-gray-700 mb-3">Escolha um ou mais níveis para filtrar</h3>
+                            <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
+                                {conditionOptions.map(option => (
+                                    <div 
+                                        key={option.id}
+                                        onClick={() => handleFilterChange('conditionLevels', option.id)}
+                                        className={`p-3 rounded-lg border cursor-pointer transition-all flex justify-between items-center ${
+                                            filters.conditionLevels.includes(option.id)
+                                                ? 'border-2 shadow-sm transform -translate-y-0.5'
+                                                : 'border-gray-200 hover:border-gray-300'
+                                        }`}
+                                        style={{
+                                            borderColor: filters.conditionLevels.includes(option.id) ? option.color : undefined,
+                                            backgroundColor: `${option.color}20` // Aumentei um pouco a opacidade para 20%
+                                        }}
+                                    >
+                                        <div className="flex items-center">
+                                            <div 
+                                                className="w-4 h-4 rounded-full mr-3"
+                                                style={{ backgroundColor: option.color }}
+                                            ></div>
+                                            <span 
+                                                className="font-medium"
+                                                style={{ 
+                                                    color: option.textColor, // Usar a cor de texto definida acima
+                                                    textShadow: option.id <= 2 ? '0 0 1px rgba(255,255,255,0.5)' : 'none' // Adicionar sombra sutil para realçar
+                                                }}
+                                            >
+                                                {option.label}
+                                            </span>
+                                        </div>
+                                        {filters.conditionLevels.includes(option.id) && (
+                                            <AlertCircle className="h-5 w-5" style={{ color: option.textColor }} /> // Usar a mesma cor contrastante para o ícone
+                                        )}
+                                    </div>
                                 ))}
                             </div>
+                            <p className="text-sm text-gray-500 mt-3">
+                                Selecione um ou mais níveis para ver apenas alertas com essas classificações.
+                            </p>
                         </div>
-                    )}
-
-                    {activeTab === 'types' && (
-                        <>
-                            <div className="mb-4">
-                                <h3 className="text-sm font-medium text-gray-700 mb-2">Tipo de alerta</h3>
-                                <div className="flex flex-wrap gap-2">
-                                    {alertTypes.map(type => (
-                                        <Chip
-                                            key={type.id}
-                                            label={type.name}
-                                            selected={filters.alertTypes.includes(type.id)}
-                                            onClick={() => handleFilterChange('alertTypes', type.id)}
-                                        />
-                                    ))}
-                                </div>
-                            </div>
-
-                            <div className="mb-4">
-                                <h3 className="text-sm font-medium text-gray-700 mb-2">Nível de alerta</h3>
-                                <div className="flex flex-wrap gap-2">
-                                    {conditionOptions.map(option => (
-                                        <Chip
-                                            key={option.id}
-                                            label={option.label}
-                                            color={option.color}
-                                            textColor={option.textColor}
-                                            selected={filters.conditionLevels.includes(option.id)}
-                                            onClick={() => handleFilterChange('conditionLevels', option.id)}
-                                        />
-                                    ))}
-                                </div>
-                            </div>
-                        </>
                     )}
                 </div>
             </div>
