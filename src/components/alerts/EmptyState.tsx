@@ -1,18 +1,24 @@
-import { Search } from 'lucide-react';
+import { AlertCircle } from 'lucide-react';
 
-export default function EmptyState() {
-    return (
-        <div className="bg-white border border-gray-200 rounded-lg p-6 text-center my-8">
-            <div className="mx-auto w-12 h-12 rounded-full bg-gray-100 flex items-center justify-center mb-4">
-                <Search className="h-6 w-6 text-gray-400" />
-            </div>
-            <h3 className="text-lg font-medium text-gray-900 mb-1">Nenhum alerta encontrado</h3>
-            <p className="text-gray-500 mb-4">
-                Não encontramos nenhum alerta correspondente aos filtros selecionados.
-            </p>
-            <p className="text-sm text-gray-500">
-                Tente ajustar seus filtros ou remover algumas seleções.
-            </p>
-        </div>
-    );
+interface EmptyStateProps {
+  message: string;
+  description?: string;
+}
+
+export default function EmptyState({ message, description }: EmptyStateProps) {
+  return (
+    <div className="flex flex-col items-center justify-center py-12 text-center">
+      <div className="bg-gray-100 p-4 rounded-full mb-4">
+        <AlertCircle className="h-8 w-8 text-gray-500" />
+      </div>
+      <h3 className="text-lg font-medium text-gray-900 mb-1">
+        {message}
+      </h3>
+      {description && (
+        <p className="text-gray-500 max-w-md">
+          {description}
+        </p>
+      )}
+    </div>
+  );
 }

@@ -1,14 +1,20 @@
 'use client';
-import { useState, useEffect } from 'react';
-import { getSituacaoAtual } from '@/services/api';
+import { useEffect, useState } from 'react';
 import { AlertaBluResponse } from '@/types/alertaBlu';
-import { AlertType, Filters } from '@/types/filters';
+import { getSituacaoAtual } from '@/services/api';
+import { Filters, AlertType } from '@/types/filters';
 import Header from '@/components/Header';
-import UpdateButton from '@/components/UpdateButton';
 import FilterPanel from '@/components/filters/FilterPanel';
 import AlertList from '@/components/alerts/AlertList';
 import ApiErrorMessage from '@/components/ApiErrorMessage';
 import { AlertCircle } from 'lucide-react';
+
+// Tipos de alerta disponíveis
+const alertTypes: AlertType[] = [
+  { id: 'cch', name: 'Condições de Chuva' },
+  { id: 'pes', name: 'Pontos de Escorregamento' },
+  { id: 'ven', name: 'Vendaval' }
+];
 
 interface AlertaBluError {
   erro: boolean;
@@ -22,14 +28,16 @@ export default function Home() {
   const [data, setData] = useState<AlertaBluResponse | null>(null);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState<string | null>(null);
+  const [apiError, setApiError] = useState<AlertaBluError | null>(null);
   const [filters, setFilters] = useState<Filters>({
     alertTypes: [],
     regions: [],
     neighborhoods: [],
     conditionLevels: [],
   });
-  const [apiError, setApiError] = useState<AlertaBluError | null>(null);
+  const [userNeighborhood, setUserNeighborhood] = useState<string | null>(null);
 
+  // Efeito para carregar os dados iniciais
   useEffect(() => {
     async function loadData() {
       try {
@@ -40,7 +48,7 @@ export default function Home() {
         if (response.status >= 400) {
           const errorData = await response.json();
           setApiError(errorData);
-          setError(errorData.mensagem || 'Falha ao carregar os dados');
+          setError(errorData.mensagem || 'Falha ao carregar dados');
           setData(null);
         } else {
           const alertData = await response.json();
@@ -66,46 +74,74 @@ export default function Home() {
       }
     }
 
+    // Carregar dados quando o componente montar
     loadData();
+    
+    // Verificar se há uma localização salva do usuário
+    const savedNeighborhood = localStorage.getItem('userNeighborhood');
+    if (savedNeighborhood) {
+      setUserNeighborhood(savedNeighborhood);
+    }
   }, []);
 
-  // Extrair tipos de alerta, regiões e bairros dos dados
-  const alertTypes: AlertType[] = data?.dados.map(dado => ({
-    id: dado.tipo,
-    name: dado.tipoNome
-  })) || [];
+  // Extrair todas as regiões e bairros disponíveis nos dados
+  const { allRegions, allNeighborhoods } = data?.dados.reduce(
+    (acc, dado) => {
+      dado.sitregioes.forEach(sr => {
+        // Adicionar região, se ainda não existir
+        if (!acc.allRegions.includes(sr.regiao.nome)) {
+          acc.allRegions.push(sr.regiao.nome);
+        }
+        
+        // Adicionar bairros, se ainda não existirem
+        sr.regiao.bairros.forEach(bairro => {
+          if (!acc.allNeighborhoods.includes(bairro)) {
+            acc.allNeighborhoods.push(bairro);
+          }
+        });
+      });
+      
+      return acc;
+    },
+    { allRegions: [] as string[], allNeighborhoods: [] as string[] }
+  ) || { allRegions: [], allNeighborhoods: [] };
   
-  const allRegions: string[] = data?.dados
-    .flatMap(dado => dado.sitregioes.map(sr => sr.regiao.nome))
-    .filter((value, index, self) => self.indexOf(value) === index) || [];
-  
-  const allNeighborhoods: string[] = data?.dados
-    .flatMap(dado => dado.sitregioes.flatMap(sr => sr.regiao.bairros))
-    .filter((value, index, self) => self.indexOf(value) === index)
-    .sort() || [];
+  // Manipulador para salvar a localização do usuário
+  const handleSetUserLocation = (neighborhood: string | null) => {
+    setUserNeighborhood(neighborhood);
+    
+    if (neighborhood) {
+      localStorage.setItem('userNeighborhood', neighborhood);
+    } else {
+      localStorage.removeItem('userNeighborhood');
+    }
+  };
 
+  // Tela de carregamento
   if (loading) {
     return (
-      <main className="min-h-screen bg-slate-100">
+      <main className="min-h-screen bg-gray-50">
         <Header />
-        <div className="container mx-auto p-4">
-          <div className="flex justify-center items-center h-64">
-            <div className="animate-spin rounded-full h-12 w-12 border-t-2 border-b-2 border-blue-500"></div>
+        <div className="container mx-auto px-4 pt-6 pb-12">
+          <div className="flex flex-col items-center justify-center h-64">
+            <div className="animate-spin rounded-full h-12 w-12 border-t-2 border-b-2 border-blue-500 mb-4"></div>
+            <p className="text-gray-600 font-medium">Carregando informações...</p>
           </div>
         </div>
       </main>
     );
   }
 
+  // Tela de erro
   if (error || !data) {
     return (
-      <main className="min-h-screen bg-slate-100">
+      <main className="min-h-screen bg-gray-50">
         <Header />
-        <div className="container mx-auto p-4">
+        <div className="container mx-auto px-4 pt-6 pb-12">
           {apiError ? (
             <ApiErrorMessage errorData={apiError} />
           ) : (
-            <div className="bg-red-50 border-l-4 border-red-400 p-4 mb-4">
+            <div className="bg-red-50 border-l-4 border-red-400 p-4 mb-4 rounded-md shadow-sm">
               <div className="flex">
                 <div className="flex-shrink-0">
                   <AlertCircle className="h-5 w-5 text-red-400" />
@@ -116,45 +152,32 @@ export default function Home() {
               </div>
             </div>
           )}
-          <div className="flex justify-center my-4">
-            <UpdateButton />
-          </div>
         </div>
       </main>
     );
   }
 
-  const handleFilterChange = (newFilters: Filters) => {
-    setFilters(newFilters);
-  };
-
-  const lastUpdateDate = new Date(data.datahoraAtualizacao || '');
-  const formattedUpdate = lastUpdateDate.toLocaleString('pt-BR');
-
+  // Tela principal
   return (
-    <main className="min-h-screen bg-slate-50">
-      <Header />
-      <div className="container mx-auto p-4">
-        <div className="mb-4 flex flex-col md:flex-row justify-between items-start md:items-center">
-          <div>
-            <h1 className="text-2xl font-bold mb-1">Monitoramento em Blumenau</h1>
-            <p className="text-sm text-gray-600">
-              Última atualização: {formattedUpdate}
-            </p>
-          </div>
-          <div className="mt-4 md:mt-0">
-            <UpdateButton />
-          </div>
-        </div>
-        
-        <FilterPanel 
-          onFilterChange={handleFilterChange} 
-          allRegions={allRegions} 
-          allNeighborhoods={allNeighborhoods} 
-          alertTypes={alertTypes} 
+    <main className="min-h-screen bg-gray-50">
+      <Header lastUpdate={data.datahoraAtualizacao} />
+      
+      <div className="container mx-auto px-4 pt-6 pb-12">
+        <FilterPanel
+          onFilterChange={setFilters}
+          allRegions={allRegions.sort()}
+          allNeighborhoods={allNeighborhoods.sort()}
+          alertTypes={alertTypes}
+          userLocation={userNeighborhood}
+          onSetUserLocation={handleSetUserLocation}
         />
         
-        <AlertList data={data} filters={filters} />
+        <AlertList
+          data={data}
+          filters={filters} 
+          onFilterChange={setFilters}
+          userNeighborhood={userNeighborhood}
+        />
       </div>
     </main>
   );
