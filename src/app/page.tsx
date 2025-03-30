@@ -7,6 +7,16 @@ import Header from '@/components/Header';
 import UpdateButton from '@/components/UpdateButton';
 import FilterPanel from '@/components/filters/FilterPanel';
 import AlertList from '@/components/alerts/AlertList';
+import ApiErrorMessage from '@/components/ApiErrorMessage';
+import { AlertCircle } from 'lucide-react';
+
+interface AlertaBluError {
+  erro: boolean;
+  mensagem: string;
+  dataHora: string;
+  codigoErro: string;
+  contatoDefesaCivil?: string;
+}
 
 export default function Home() {
   const [data, setData] = useState<AlertaBluResponse | null>(null);
@@ -18,17 +28,39 @@ export default function Home() {
     neighborhoods: [],
     conditionLevels: [],
   });
+  const [apiError, setApiError] = useState<AlertaBluError | null>(null);
 
   useEffect(() => {
     async function loadData() {
       try {
         setLoading(true);
-        const alertData = await getSituacaoAtual();
-        setData(alertData);
-        setError(null);
+        const response = await fetch('/api/proxy');
+        
+        // Se a API retornou erro
+        if (response.status >= 400) {
+          const errorData = await response.json();
+          setApiError(errorData);
+          setError(errorData.mensagem || 'Falha ao carregar os dados');
+          setData(null);
+        } else {
+          const alertData = await response.json();
+          
+          if (alertData.erro) {
+            // Se veio um objeto de erro estruturado
+            setApiError(alertData);
+            setError(alertData.mensagem);
+            setData(null);
+          } else {
+            // Dados carregados com sucesso
+            setData(alertData);
+            setError(null);
+            setApiError(null);
+          }
+        }
       } catch (err) {
         console.error('Erro ao carregar dados:', err);
         setError('Falha ao carregar os dados. Tente novamente mais tarde.');
+        setApiError(null);
       } finally {
         setLoading(false);
       }
@@ -70,18 +102,20 @@ export default function Home() {
       <main className="min-h-screen bg-slate-100">
         <Header />
         <div className="container mx-auto p-4">
-          <div className="bg-red-50 border-l-4 border-red-400 p-4 mb-4">
-            <div className="flex">
-              <div className="flex-shrink-0">
-                <svg className="h-5 w-5 text-red-400" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
-                  <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zM8.707 7.293a1 1 0 00-1.414 1.414L8.586 10l-1.293 1.293a1 1 0 101.414 1.414L10 11.414l1.293 1.293a1 1 0 001.414-1.414L11.414 10l1.293-1.293a1 1 0 00-1.414-1.414L10 8.586 8.707 7.293z" clipRule="evenodd" />
-                </svg>
-              </div>
-              <div className="ml-3">
-                <p className="text-sm text-red-700">{error || 'Ocorreu um erro ao carregar os dados.'}</p>
+          {apiError ? (
+            <ApiErrorMessage errorData={apiError} />
+          ) : (
+            <div className="bg-red-50 border-l-4 border-red-400 p-4 mb-4">
+              <div className="flex">
+                <div className="flex-shrink-0">
+                  <AlertCircle className="h-5 w-5 text-red-400" />
+                </div>
+                <div className="ml-3">
+                  <p className="text-sm text-red-700">{error || 'Ocorreu um erro ao carregar os dados.'}</p>
+                </div>
               </div>
             </div>
-          </div>
+          )}
           <div className="flex justify-center my-4">
             <UpdateButton />
           </div>

@@ -1,6 +1,15 @@
 import { AlertaBluResponse } from '@/types/alertaBlu';
 import axios from 'axios';
 
+// Interface para resposta de erro
+interface AlertaBluError {
+  erro: boolean;
+  mensagem: string;
+  codigoErro: string;
+  dataHora: string;
+  contatoDefesaCivil?: string;
+}
+
 // Dados estáticos embutidos diretamente no código
 const staticData: AlertaBluResponse = {
   "dados": [
@@ -67,37 +76,64 @@ let latestData: AlertaBluResponse = { ...staticData };
 let lastUpdate: Date = new Date();
 
 export async function getSituacaoAtual(): Promise<AlertaBluResponse> {
-  return latestData;
+  const response = await axios.get<AlertaBluResponse>('/api/proxy');
+  return response.data;
 }
 
-export async function atualizarDados(): Promise<{ success: boolean; message: string }> {
+export async function atualizarDados(): Promise<{ 
+  success: boolean; 
+  message: string; 
+  isError?: boolean;
+  errorData?: AlertaBluError;
+}> {
   try {
     console.log('Tentando atualizar dados via proxy interno');
     
     // Usamos o proxy interno em vez de chamar diretamente a API externa
-    const response = await axios.get<AlertaBluResponse>(
-      '/api/proxy',
-      { timeout: 8000 }
-    );
+    const response = await axios.get('/api/proxy', { timeout: 20000 });
+    
+    if (response.data.erro) {
+      // Se o servidor retornou uma resposta de erro estruturada
+      return { 
+        success: false, 
+        message: response.data.mensagem || 'Erro ao obter dados atualizados',
+        isError: true,
+        errorData: response.data
+      };
+    }
     
     if (response.data && response.data.dados && response.data.dados.length > 0) {
-      latestData = response.data;
-      lastUpdate = new Date();
       return { 
         success: true, 
-        message: `Dados atualizados com sucesso às ${lastUpdate.toLocaleTimeString()}` 
+        message: `Dados atualizados com sucesso!`,
       };
     } else {
       return { 
         success: false, 
-        message: 'Recebeu resposta da API, mas os dados estão incompletos' 
+        message: 'A API retornou dados incompletos ou em formato inesperado.'
       };
     }
   } catch (error) {
     console.error('Erro ao atualizar dados:', error);
+    let message = 'Não foi possível conectar à API. Tente novamente mais tarde.';
+    
+    if (axios.isAxiosError(error)) {
+      if (error.code === 'ECONNABORTED') {
+        message = 'A conexão com o servidor demorou muito para responder. Tente novamente mais tarde.';
+      } else if (error.response?.status === 503) {
+        // Tentar extrair mensagem de erro estruturada da API 
+        if (error.response.data?.mensagem) {
+          message = error.response.data.mensagem;
+        } else {
+          message = 'Serviço AlertaBlu temporariamente indisponível.';
+        }
+      }
+    }
+    
     return { 
       success: false, 
-      message: 'Não foi possível conectar à API. Usando dados armazenados localmente.' 
+      message,
+      isError: true
     };
   }
 }
