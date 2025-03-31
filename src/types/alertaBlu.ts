@@ -7,12 +7,12 @@ export interface Dado {
   create_data: string;
   tipo: string;
   tipoNome: string;
-  sitregioes: Sitregiao[];
+  sitregioes: SitRegiao[];
   id: number;
   descricao: string;
 }
 
-export interface Sitregiao {
+export interface SitRegiao {
   regiao: Regiao;
   condicao: Condicao;
 }

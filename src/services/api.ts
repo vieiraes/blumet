@@ -75,9 +75,25 @@ const staticData: AlertaBluResponse = {
 let latestData: AlertaBluResponse = { ...staticData };
 let lastUpdate: Date = new Date();
 
-export async function getSituacaoAtual(): Promise<AlertaBluResponse> {
-  const response = await axios.get<AlertaBluResponse>('/api/proxy');
-  return response.data;
+// Cliente de API para front-end - não muda entre dev e prod
+export async function getSituacaoAtual() {
+  try {
+    console.log('Chamando API situacao-atual...');
+    const apiUrl = '/api/situacao-atual';
+    
+    const response = await fetch(apiUrl);
+    if (!response.ok) {
+      console.error(`Erro HTTP: ${response.status}`, await response.text());
+      throw new Error(`Erro HTTP: ${response.status}`);
+    }
+    
+    const data = await response.json();
+    console.log('Dados recebidos:', data);
+    return data;
+  } catch (error) {
+    console.error('Falha ao obter dados:', error);
+    throw error;
+  }
 }
 
 export async function atualizarDados(): Promise<{ 
@@ -88,51 +104,30 @@ export async function atualizarDados(): Promise<{
 }> {
   try {
     console.log('Tentando atualizar dados via proxy interno');
+    const response = await fetch('/api/proxy', { 
+      method: 'GET',
+      headers: {
+        'Content-Type': 'application/json',
+        'Accept': 'application/json'
+      }
+    });
     
-    // Usamos o proxy interno em vez de chamar diretamente a API externa
-    const response = await axios.get('/api/proxy', { timeout: 20000 });
-    
-    if (response.data.erro) {
-      // Se o servidor retornou uma resposta de erro estruturada
-      return { 
-        success: false, 
-        message: response.data.mensagem || 'Erro ao obter dados atualizados',
-        isError: true,
-        errorData: response.data
-      };
+    if (!response.ok) {
+      console.error(`Erro HTTP: ${response.status}`, await response.text());
+      throw new Error(`Erro HTTP: ${response.status}`);
     }
     
-    if (response.data && response.data.dados && response.data.dados.length > 0) {
-      return { 
-        success: true, 
-        message: `Dados atualizados com sucesso!`,
-      };
-    } else {
-      return { 
-        success: false, 
-        message: 'A API retornou dados incompletos ou em formato inesperado.'
-      };
-    }
+    const data = await response.json();
+    console.log('Dados atualizados:', data);
+    return {
+      success: true,
+      message: 'Dados atualizados com sucesso'
+    };
   } catch (error) {
     console.error('Erro ao atualizar dados:', error);
-    let message = 'Não foi possível conectar à API. Tente novamente mais tarde.';
-    
-    if (axios.isAxiosError(error)) {
-      if (error.code === 'ECONNABORTED') {
-        message = 'A conexão com o servidor demorou muito para responder. Tente novamente mais tarde.';
-      } else if (error.response?.status === 503) {
-        // Tentar extrair mensagem de erro estruturada da API 
-        if (error.response.data?.mensagem) {
-          message = error.response.data.mensagem;
-        } else {
-          message = 'Serviço AlertaBlu temporariamente indisponível.';
-        }
-      }
-    }
-    
-    return { 
-      success: false, 
-      message,
+    return {
+      success: false,
+      message: 'Falha ao atualizar dados',
       isError: true
     };
   }

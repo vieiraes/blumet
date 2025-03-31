@@ -5,7 +5,8 @@ import {
   Wind,
   Clock,
   ArrowRight,
-  HelpCircle
+  HelpCircle,
+  X  // Adicionar esta importação
 } from 'lucide-react';
 import { Dado } from '@/types/alertaBlu';
 import { useState, useRef } from 'react';

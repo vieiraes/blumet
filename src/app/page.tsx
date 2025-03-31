@@ -95,7 +95,7 @@ export default function Home() {
         }
         
         // Adicionar bairros, se ainda não existirem
-        sr.regiao.bairros.forEach(bairro => {
+        sr.regiao.bairros.forEach((bairro: string) => {
           if (!acc.allNeighborhoods.includes(bairro)) {
             acc.allNeighborhoods.push(bairro);
           }

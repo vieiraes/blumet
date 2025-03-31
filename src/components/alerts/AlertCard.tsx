@@ -58,7 +58,7 @@ export default function AlertCard({ alert, expanded = false, isHighlighted = fal
     // Verificar se o bairro do usuário está entre os bairros afetados
     const userNeighborhoodRegion = userNeighborhood ? 
         alert.sitregioes.find(sr => 
-            sr.regiao.bairros.some(bairro => 
+            sr.regiao.bairros.some((bairro: string) => 
                 bairro.toLowerCase() === userNeighborhood.toLowerCase()
             )
         ) : null;

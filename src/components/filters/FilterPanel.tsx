@@ -1,7 +1,7 @@
 'use client';
 import { useState, useRef, useEffect } from 'react';
 import { Filters } from '@/types/filters';
-import { MapPin, Search, LocateFixed, AlertCircle, X } from 'lucide-react';
+import { Search, LocateFixed, AlertCircle, X } from 'lucide-react';
 import Chip from './Chip';
 
 interface FilterPanelProps {
@@ -29,8 +29,8 @@ export default function FilterPanel({
 
     // Opções para nível de condição
     const conditionOptions = [
-        { id: 1, label: 'Normalidade', color: '#64EE64', textColor: '#0B5E0B' }, // Verde escuro para melhor contraste
-        { id: 2, label: 'Observação', color: '#FFFF00', textColor: '#806600' }, // Amarelo escuro para melhor contraste
+        { id: 1, label: 'Normalidade', color: '#64EE64', textColor: '#0B5E0B' },
+        { id: 2, label: 'Observação', color: '#FFFF00', textColor: '#806600' },
         { id: 3, label: 'Atenção', color: '#FF9900', textColor: '#000000' },
         { id: 4, label: 'Alerta', color: '#FF0000', textColor: '#000000' },
     ];
@@ -41,12 +41,12 @@ export default function FilterPanel({
         .sort();
 
     const handleFilterChange = (filterType: keyof Filters, value: string | number) => {
-        let newValues;
+        let newValues: Array<string | number>;
         
-        if (filters[filterType].includes(value)) {
-            newValues = filters[filterType].filter(v => v !== value);
+        if ((filters[filterType] as Array<string | number>).includes(value)) {
+            newValues = (filters[filterType] as Array<string | number>).filter(v => v !== value);
         } else {
-            newValues = [...filters[filterType], value];
+            newValues = [...(filters[filterType] as Array<string | number>), value];
         }
 
         const newFilters = { ...filters, [filterType]: newValues };
@@ -201,7 +201,7 @@ export default function FilterPanel({
                                     />
                                 ))
                             ) : (
-                                <p className="text-gray-500 py-2">Nenhum bairro encontrado com "{searchTerm}"</p>
+                                <p className="text-gray-500 py-2">Nenhum bairro encontrado com &quot;{searchTerm}&quot;</p>
                             )}
                         </div>
                     </>
@@ -223,7 +223,7 @@ export default function FilterPanel({
                                     }`}
                                     style={{
                                         borderColor: filters.conditionLevels.includes(option.id) ? option.color : undefined,
-                                        backgroundColor: `${option.color}20` // Aumentei um pouco a opacidade para 20%
+                                        backgroundColor: `${option.color}20`
                                     }}
                                 >
                                     <div className="flex items-center">
@@ -234,15 +234,15 @@ export default function FilterPanel({
                                         <span 
                                             className="font-medium"
                                             style={{ 
-                                                color: option.textColor, // Usar a cor de texto definida acima
-                                                textShadow: option.id <= 2 ? '0 0 1px rgba(255,255,255,0.5)' : 'none' // Adicionar sombra sutil para realçar
+                                                color: option.textColor,
+                                                textShadow: option.id <= 2 ? '0 0 1px rgba(255,255,255,0.5)' : 'none'
                                             }}
                                         >
                                             {option.label}
                                         </span>
                                     </div>
                                     {filters.conditionLevels.includes(option.id) && (
-                                        <AlertCircle className="h-5 w-5" style={{ color: option.textColor }} /> // Usar a mesma cor contrastante para o ícone
+                                        <AlertCircle className="h-5 w-5" style={{ color: option.textColor }} />
                                     )}
                                 </div>
                             ))}

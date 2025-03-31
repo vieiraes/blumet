@@ -5,6 +5,46 @@
       "firebase.json",
       "**/.*",
       "**/node_modules/**"
+    ],
+    "rewrites": [
+      {
+        "source": "/api/situacao-atual",
+        "function": "situacaoAtual",
+        "region": "southamerica-east1"
+      },
+      {
+        "source": "/api/proxy",
+        "function": "situacaoAtual",
+        "region": "southamerica-east1"
+      },
+      {
+        "source": "/api/**",
+        "function": "apiProxy",
+        "region": "southamerica-east1"
+      }
+    ],
+    "headers": [
+      {
+        "source": "/_next/**",
+        "headers": [
+          {
+            "key": "Cache-Control",
+            "value": "public, max-age=31536000, immutable"
+          }
+        ]
+      },
+      {
+        "source": "**/*.@(jpg|jpeg|gif|png|svg|webp|js|css|eot|otf|ttf|ttc|woff|woff2|font.css)",
+        "headers": [
+          {
+            "key": "Cache-Control",
+            "value": "public, max-age=31536000, immutable"
+          }
+        ]
+      }
     ]
+  },
+  "functions": {
+    "source": "functions"
   }
 }
