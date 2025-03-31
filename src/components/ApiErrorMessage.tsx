@@ -14,6 +14,7 @@ interface ApiErrorMessageProps {
 }
 
 export default function ApiErrorMessage({ errorData }: ApiErrorMessageProps) {
+  // Verificar a formatação da data
   const formattedDate = errorData?.dataHora ? 
     format(new Date(errorData.dataHora), "dd 'de' MMMM 'às' HH:mm", { locale: ptBR }) :
     format(new Date(), "dd 'de' MMMM 'às' HH:mm", { locale: ptBR });

@@ -48,7 +48,7 @@ export default function AlertCard({ alert, expanded = false, isHighlighted = fal
         return criticalRegion?.condicao.condicao || '';
     };
 
-    // Formatar a data de criação
+    // Verificar a formatação da data
     const formattedDate = format(
         new Date(alert.create_data), 
         "dd 'de' MMMM 'às' HH:mm", 
@@ -75,7 +75,11 @@ export default function AlertCard({ alert, expanded = false, isHighlighted = fal
             } ${isUserNeighborhoodAffected ? 'ring-2 ring-blue-500 ring-offset-2' : ''}`}
         >
             <div 
-                className="p-4 cursor-pointer"
+                className={`
+                    px-4 py-3 rounded-lg border overflow-hidden transition-all
+                    ${isHighlighted ? 'bg-blue-50 border-blue-300' : 'bg-white border-gray-200'} 
+                    ${alert.tipo === 'pes' ? 'border-l-4 border-l-amber-500' : ''}
+                `}
                 onClick={() => setIsExpanded(!isExpanded)}
                 style={{ 
                     borderLeft: `8px solid ${getBgColor()}`,
@@ -84,6 +88,12 @@ export default function AlertCard({ alert, expanded = false, isHighlighted = fal
                         : `${getBgColor()}20`,
                 }}
             >
+                {alert.tipo === 'pes' && (
+                    <div className="mb-2 bg-amber-100 text-amber-800 text-xs px-2 py-1 rounded inline-flex items-center">
+                        <AlertTriangle className="h-3.5 w-3.5 mr-1" />
+                        Alerta de Escorregamento
+                    </div>
+                )}
                 <div className="flex flex-col sm:flex-row sm:justify-between sm:items-center gap-3">
                     <div className="flex items-center">
                         <div 

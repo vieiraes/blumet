@@ -8,6 +8,7 @@ import FilterPanel from '@/components/filters/FilterPanel';
 import AlertList from '@/components/alerts/AlertList';
 import ApiErrorMessage from '@/components/ApiErrorMessage';
 import { AlertCircle } from 'lucide-react';
+import AlertStats from '@/components/alerts/AlertStats';
 
 // Tipos de alerta disponíveis
 const alertTypes: AlertType[] = [
@@ -117,6 +118,23 @@ export default function Home() {
     }
   };
 
+  // Adicione o manipulador para filtrar por tipo
+  const handleTypeClick = (alertType: string) => {
+    const newFilters = { ...filters };
+    
+    // Se o tipo já estiver nos filtros, não adicione novamente
+    if (!newFilters.alertTypes.includes(alertType)) {
+      newFilters.alertTypes = [alertType]; // Usando apenas este tipo como filtro
+      setFilters(newFilters);
+      
+      // Rolar para a seção de alertas filtrados
+      const alertsSection = document.getElementById('filtered-alerts');
+      if (alertsSection) {
+        alertsSection.scrollIntoView({ behavior: 'smooth' });
+      }
+    }
+  };
+
   // Tela de carregamento
   if (loading) {
     return (
@@ -163,15 +181,29 @@ export default function Home() {
       <Header lastUpdate={data.datahoraAtualizacao} />
       
       <div className="container mx-auto px-4 pt-6 pb-12">
+        {/* Panorama Geral vem primeiro */}
+        <AlertStats
+          alerts={data.dados}
+          onRegionClick={(region) => {
+            const newFilters = { ...filters, regions: [...filters.regions, region] };
+            setFilters(newFilters);
+          }}
+          onLevelClick={(level) => {
+            const newFilters = { ...filters, conditionLevels: [...filters.conditionLevels, level] };
+            setFilters(newFilters);
+          }}
+          onTypeClick={handleTypeClick}
+        />
+        
+        {/* Depois vem o filtro */}
         <FilterPanel
           onFilterChange={setFilters}
-          allRegions={allRegions.sort()}
           allNeighborhoods={allNeighborhoods.sort()}
-          alertTypes={alertTypes}
           userLocation={userNeighborhood}
           onSetUserLocation={handleSetUserLocation}
         />
         
+        {/* Por fim a lista de alertas */}
         <AlertList
           data={data}
           filters={filters} 

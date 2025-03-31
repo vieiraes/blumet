@@ -5,7 +5,6 @@ import { Filters } from '@/types/filters';
 import AlertCard from './AlertCard';
 import ViewToggle from './ViewToggle';
 import EmptyState from './EmptyState';
-import AlertStats from './AlertStats';
 import { Maximize2, Minimize2, Search, ArrowDown, Filter } from 'lucide-react';
 
 interface AlertListProps {
@@ -17,7 +16,6 @@ interface AlertListProps {
 
 export default function AlertList({ data, filters, onFilterChange, userNeighborhood }: AlertListProps) {
     const [view, setView] = useState<'list' | 'grid'>('grid');
-    const [showStats, setShowStats] = useState(true);
     const [searchTerm, setSearchTerm] = useState('');
     const [autoFocus, setAutoFocus] = useState(false);
 
@@ -93,25 +91,6 @@ export default function AlertList({ data, filters, onFilterChange, userNeighborh
         });
     }, [filteredData, userNeighborhood]);
 
-    // Manipuladores para os cliques nos stats
-    const handleRegionClick = (region: string) => {
-        const newFilters = { ...filters };
-        
-        if (!filters.regions.includes(region)) {
-            newFilters.regions = [...filters.regions, region];
-            onFilterChange(newFilters);
-        }
-    };
-    
-    const handleLevelClick = (level: number) => {
-        const newFilters = { ...filters };
-        
-        if (!filters.conditionLevels.includes(level)) {
-            newFilters.conditionLevels = [...filters.conditionLevels, level];
-            onFilterChange(newFilters);
-        }
-    };
-
     // Foco automático no campo de busca em mobile
     useEffect(() => {
         if (autoFocus) {
@@ -129,24 +108,37 @@ export default function AlertList({ data, filters, onFilterChange, userNeighborh
 
     return (
         <div>
-            <div className="mb-6">
-                {showStats && (
-                    <AlertStats 
-                        alerts={data.dados} 
-                        onRegionClick={handleRegionClick}
-                        onLevelClick={handleLevelClick}
-                    />
-                )}
-            </div>
-            
-            <div className="bg-white rounded-lg shadow-md border border-gray-200 mb-6 p-4">
+            <div id="filtered-alerts" className="bg-white rounded-lg shadow-md border border-gray-200 mb-6 p-4">
                 <div className="flex flex-col sm:flex-row justify-between items-start sm:items-center mb-4">
                     <div className="flex items-center mb-3 sm:mb-0">
                         <Filter className="h-5 w-5 text-gray-500 mr-2" />
                         <h2 className="font-semibold text-lg text-gray-800">
-                            {filteredData.length === data.dados.length 
-                                ? `Todos os alertas (${filteredData.length})` 
-                                : `Alertas filtrados (${filteredData.length} de ${data.dados.length})`}
+                            {filters.alertTypes.length > 0 && (
+                                <>
+                                    {filters.alertTypes.includes('cch') && (
+                                        <span className="bg-blue-100 text-blue-800 px-2 py-1 rounded mr-2 text-sm">
+                                            Alertas de Chuvas
+                                        </span>
+                                    )}
+                                    {filters.alertTypes.includes('pes') && (
+                                        <span className="bg-amber-100 text-amber-800 px-2 py-1 rounded mr-2 text-sm">
+                                            Alertas de Escorregamentos
+                                        </span>
+                                    )}
+                                    {filters.alertTypes.includes('ven') && (
+                                        <span className="bg-emerald-100 text-emerald-800 px-2 py-1 rounded mr-2 text-sm">
+                                            Alertas de Vendavais
+                                        </span>
+                                    )}
+                                </>
+                            )}
+                            {userNeighborhood ? (
+                                <>Alertas para <span className="text-blue-700">{userNeighborhood}</span></>
+                            ) : filteredData.length === data.dados.length ? (
+                                `Todos os alertas (${filteredData.length})` 
+                            ) : (
+                                `Alertas filtrados (${filteredData.length} de ${data.dados.length})`
+                            )}
                         </h2>
                     </div>
                     
@@ -165,14 +157,6 @@ export default function AlertList({ data, filters, onFilterChange, userNeighborh
                                 onClick={() => setAutoFocus(true)}
                             />
                         </div>
-                        
-                        <button
-                            onClick={() => setShowStats(!showStats)}
-                            className="p-1.5 rounded-md border border-gray-300 text-gray-600 hover:bg-gray-50"
-                            aria-label={showStats ? "Ocultar estatísticas" : "Mostrar estatísticas"}
-                        >
-                            {showStats ? <Minimize2 className="h-4 w-4" /> : <Maximize2 className="h-4 w-4" />}
-                        </button>
                         
                         <ViewToggle currentView={view} onChange={setView} />
                     </div>

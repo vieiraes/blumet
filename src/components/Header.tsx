@@ -15,7 +15,7 @@ export default function Header({ lastUpdate }: HeaderProps) {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
 
-  // Formatar data de última atualização
+  // Formatar data de última atualização - formato 24h para evitar confusão AM/PM
   const formattedDate = lastUpdate
     ? format(new Date(lastUpdate), "dd 'de' MMMM 'às' HH:mm", { locale: ptBR })
     : null;
@@ -48,8 +48,8 @@ export default function Header({ lastUpdate }: HeaderProps) {
               <CloudRain className="h-10 w-10 text-blue-600" />
             </div>
             <div className="flex flex-col">
-              <h1 className="text-xl md:text-2xl font-bold text-gray-900 leading-none">AlertaBlu</h1>
-              <p className="text-xs text-gray-500 leading-none">Monitoramento de Enchentes</p>
+              <h1 className="text-xl md:text-2xl font-bold text-gray-900 leading-none">BLUmet</h1>
+              <p className="text-xs text-gray-500 leading-none">Monitoramento de Chuvas</p>
             </div>
           </Link>
 
@@ -75,7 +75,7 @@ export default function Header({ lastUpdate }: HeaderProps) {
             </Link>
             
             <Link 
-              href="https://github.com/username/alertablu" 
+              href="https://github.com/vieiraes/blumet" 
               target="_blank"
               className="text-gray-600 hover:text-blue-600 flex items-center gap-1 text-sm font-medium"
             >
@@ -124,7 +124,7 @@ export default function Header({ lastUpdate }: HeaderProps) {
             </Link>
             
             <Link 
-              href="https://github.com/username/alertablu" 
+              href="https://github.com/vieiraes/blumet" 
               target="_blank"
               className="text-gray-600 hover:text-blue-600 flex flex-col items-center gap-1"
               onClick={() => setIsMenuOpen(false)}
