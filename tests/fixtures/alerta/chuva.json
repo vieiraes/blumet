@@ -1,0 +1,3924 @@
+[
+  {
+    "regiao": "Itajaí-Açú",
+    "dados": {
+      "Variance": {
+        "m05": 0,
+        "m15": 0,
+        "mes": 79.2,
+        "m30": 0,
+        "h72": 2,
+        "h03": 0,
+        "h24": 0,
+        "h12": 0,
+        "h06": 0,
+        "h04": 0,
+        "h96": 23.2,
+        "h02": 0,
+        "h168": 30.4,
+        "h01": 0
+      },
+      "vrnce": 0,
+      "niv": 0.67
+    },
+    "estacao_id": 1088,
+    "tipo": "estado_sc",
+    "estacao": "Agrolândia",
+    "tipo_estacao": "met",
+    "horaLeitura": "18/10/2026 - 22:55"
+  },
+  {
+    "regiao": "Itajaí-Açú",
+    "dados": {
+      "Variance": {
+        "m05": 0,
+        "m15": 0,
+        "mes": 83.2,
+        "m30": 0,
+        "h72": 7,
+        "h03": 0,
+        "h24": 0,
+        "h12": 0,
+        "h06": 0,
+        "h04": 0,
+        "h96": 13.6,
+        "h02": 0,
+        "h168": 24,
+        "h01": 0
+      },
+      "vrnce": 0,
+      "niv": 3.32
+    },
+    "estacao_id": 1064,
+    "tipo": "estado_sc",
+    "estacao": "Agronômica",
+    "tipo_estacao": "met",
+    "horaLeitura": "18/10/2026 - 22:55"
+  },
+  {
+    "regiao": "Itajaí-Açú",
+    "dados": {
+      "Variance": {
+        "m05": 0,
+        "m15": 0,
+        "mes": 64.8,
+        "m30": 0,
+        "h72": 4.2,
+        "h03": 0,
+        "h24": 0,
+        "h12": 0,
+        "h06": 0,
+        "h04": 0,
+        "h96": 8.2,
+        "h02": 0,
+        "h168": 22.4,
+        "h01": 0
+      },
+      "vrnce": 0
+    },
+    "estacao_id": 1079,
+    "tipo": "estado_sc",
+    "estacao": "Alfredo Wagner",
+    "tipo_estacao": "met",
+    "horaLeitura": "18/10/2026 - 22:55"
+  },
+  {
+    "regiao": "Itajaí-Açú",
+    "dados": {
+      "Variance": {
+        "m05": 0,
+        "m15": 0,
+        "mes": 163.11,
+        "m30": 0,
+        "h72": 0.28,
+        "h03": 0.22,
+        "h24": 0.22,
+        "h12": 0.22,
+        "h06": 0.22,
+        "h04": 0.22,
+        "h96": 0.35,
+        "h02": 0,
+        "h168": 65.67,
+        "h01": 0
+      },
+      "vrnce": 0,
+      "niv": 11.19
+    },
+    "estacao_id": 1080,
+    "tipo": "estado_sc",
+    "estacao": "Apiúna",
+    "tipo_estacao": "met",
+    "horaLeitura": "31/08/2025 - 15:50"
+  },
+  {
+    "regiao": "Itajaí-Açú",
+    "dados": {
+      "Variance": {
+        "m05": 0,
+        "m15": 0,
+        "mes": 74.89,
+        "m30": 0,
+        "h72": 1.4,
+        "h03": 0,
+        "h24": 0,
+        "h12": 0,
+        "h06": 0,
+        "h04": 0,
+        "h96": 1.6,
+        "h02": 0,
+        "h168": 11.4,
+        "h01": 0
+      },
+      "vrnce": 0,
+      "niv": 6.63
+    },
+    "estacao_id": 1066,
+    "tipo": "estado_sc",
+    "estacao": "Ascurra (Desativado)",
+    "tipo_estacao": "met",
+    "horaLeitura": "18/10/2026 - 22:55"
+  },
+  {
+    "regiao": "Itajaí-Açú",
+    "dados": {
+      "Variance": {
+        "m05": 0,
+        "m15": 0,
+        "mes": 183.04,
+        "m30": 0,
+        "h72": 11.55,
+        "h03": 0,
+        "h24": 0,
+        "h12": 0,
+        "h06": 0,
+        "h04": 0,
+        "h96": 85.85,
+        "h02": 0,
+        "h168": 98.43,
+        "h01": 0
+      },
+      "vrnce": 0
+    },
+    "estacao_id": 1071,
+    "tipo": "estado_sc",
+    "estacao": "Aurora",
+    "tipo_estacao": "met",
+    "horaLeitura": "18/10/2026 - 22:55"
+  },
+  {
+    "regiao": "Itajaí-Açú",
+    "dados": {
+      "Variance": {
+        "m05": null,
+        "m15": null,
+        "mes": 8.4,
+        "m30": null,
+        "h72": 0.2,
+        "h03": 0.2,
+        "h24": 0.2,
+        "h12": 0.2,
+        "h06": 0.2,
+        "h04": 0.2,
+        "h96": 0.2,
+        "h02": 0.2,
+        "h168": 8.4,
+        "h01": 0
+      }
+    },
+    "estacao_id": 1283,
+    "tipo": "cemaden2",
+    "estacao": "BENEDITO NOVO:Centro",
+    "tipo_estacao": "plv",
+    "localizacao": [
+      178.99491399504745,
+      -89.99948960358775
+    ],
+    "horaLeitura": "08/05/2026 - 17:10"
+  },
+  {
+    "regiao": "Norte",
+    "dados": {
+      "Variance": {
+        "m05": 0,
+        "m15": null,
+        "mes": 71.7401676546,
+        "m30": null,
+        "h72": 2.5688779331,
+        "h03": 0,
+        "h24": 0,
+        "h12": 0,
+        "h06": 0,
+        "h04": 0,
+        "h96": 4.3469179331,
+        "h02": 0,
+        "h168": 15.1785579331,
+        "h01": 0
+      }
+    },
+    "estacao_id": 1284,
+    "tipo": "cemaden2",
+    "estacao": "BLUMENAU:Badenfurt",
+    "tipo_estacao": "plv",
+    "localizacao": [
+      178.99491399504745,
+      -89.99948960358775
+    ],
+    "horaLeitura": "18/10/2026 - 22:20"
+  },
+  {
+    "regiao": "Sul",
+    "dados": {
+      "umS3": 39.46209,
+      "umS2": 51.36661,
+      "umS5": 40.74148,
+      "umS4": 46.14149
+    },
+    "estacao_id": 1277,
+    "tipo": "cemaden2",
+    "estacao": "BLUMENAU:Centenário",
+    "tipo_estacao": "gtc",
+    "localizacao": [
+      178.99491399504745,
+      -89.99948960358775
+    ],
+    "horaLeitura": "16/04/2025 - 02:00"
+  },
+  {
+    "regiao": "Central",
+    "dados": {
+      "Variance": {
+        "m05": null,
+        "m15": null,
+        "mes": 30.6,
+        "m30": null,
+        "h72": 6.4,
+        "h03": 0,
+        "h24": 0,
+        "h12": 0,
+        "h06": 0,
+        "h04": 0,
+        "h96": 8.6,
+        "h02": 0,
+        "h168": null,
+        "h01": 0
+      }
+    },
+    "estacao_id": 1258,
+    "tipo": "cemaden2",
+    "estacao": "BLUMENAU:Centenário2",
+    "tipo_estacao": "plv",
+    "localizacao": [
+      178.99491399504745,
+      -89.99948960358775
+    ],
+    "horaLeitura": "16/04/2025 - 02:10"
+  },
+  {
+    "regiao": "Oeste",
+    "dados": {
+      "umS3": 46.36328,
+      "umS2": 45.37004,
+      "umS1": 49.09124,
+      "umS6": 42.32586,
+      "umS5": 46.16724,
+      "umS4": 42.71296
+    },
+    "estacao_id": 1278,
+    "tipo": "cemaden2",
+    "estacao": "BLUMENAU:Coripós Baixo",
+    "tipo_estacao": "gtc",
+    "localizacao": [
+      178.99491399504745,
+      -89.99948960358775
+    ],
+    "horaLeitura": "16/04/2025 - 02:00"
+  },
+  {
+    "regiao": "Central",
+    "dados": {
+      "Variance": {
+        "m05": null,
+        "m15": null,
+        "mes": 23.2,
+        "m30": null,
+        "h72": 5,
+        "h03": 0,
+        "h24": 0,
+        "h12": 0,
+        "h06": 0,
+        "h04": 0,
+        "h96": 5.8,
+        "h02": 0,
+        "h168": null,
+        "h01": 0
+      }
+    },
+    "estacao_id": 1255,
+    "tipo": "cemaden2",
+    "estacao": "BLUMENAU:Coripós Baixo2",
+    "tipo_estacao": "plv",
+    "localizacao": [
+      178.99491399504745,
+      -89.99948960358775
+    ],
+    "horaLeitura": "16/04/2025 - 02:10"
+  },
+  {
+    "regiao": "Sul",
+    "dados": {
+      "umS3": 0,
+      "umS2": 0,
+      "umS6": 0,
+      "umS5": 0,
+      "umS4": 0
+    },
+    "estacao_id": 1275,
+    "tipo": "cemaden2",
+    "estacao": "BLUMENAU:Da Glória",
+    "tipo_estacao": "gtc",
+    "localizacao": [
+      178.99491399504745,
+      -89.99948960358775
+    ],
+    "horaLeitura": "18/10/2026 - 11:10"
+  },
+  {
+    "regiao": "Sul",
+    "dados": {
+      "Variance": {
+        "m05": 0,
+        "m15": null,
+        "mes": 0.2,
+        "m30": null,
+        "h72": 152.6,
+        "h03": 41.2,
+        "h24": 96.8,
+        "h12": null,
+        "h06": null,
+        "h04": null,
+        "h96": null,
+        "h02": null,
+        "h168": 171,
+        "h01": 18.4
+      }
+    },
+    "estacao_id": 1244,
+    "tipo": "cemaden2",
+    "estacao": "BLUMENAU:Da Glória2",
+    "tipo_estacao": "plv",
+    "localizacao": [
+      178.99491399504745,
+      -89.99948960358775
+    ],
+    "horaLeitura": "28/08/2026 - 09:20"
+  },
+  {
+    "regiao": "Oeste",
+    "dados": {
+      "Variance": {
+        "m05": 0,
+        "m15": null,
+        "mes": 102.834,
+        "m30": null,
+        "h72": 6.79268,
+        "h03": 0,
+        "h24": 0,
+        "h12": 0,
+        "h06": 0,
+        "h04": 0,
+        "h96": 7.97804,
+        "h02": 0,
+        "h168": 20.9268,
+        "h01": 0
+      }
+    },
+    "estacao_id": 1266,
+    "tipo": "cemaden2",
+    "estacao": "BLUMENAU:Escola Agricola",
+    "tipo_estacao": "plv",
+    "localizacao": [
+      178.99491399504745,
+      -89.99948960358775
+    ],
+    "horaLeitura": "18/10/2026 - 22:40"
+  },
+  {
+    "regiao": "Leste",
+    "dados": {
+      "Variance": {
+        "m05": 0,
+        "m15": null,
+        "mes": 28.0889,
+        "m30": null,
+        "h72": 8.49752,
+        "h03": 0,
+        "h24": 0,
+        "h12": 0,
+        "h06": 0,
+        "h04": 0,
+        "h96": null,
+        "h02": 0,
+        "h168": null,
+        "h01": 0
+      }
+    },
+    "estacao_id": 1280,
+    "tipo": "cemaden2",
+    "estacao": "BLUMENAU:Fortaleza Alta",
+    "tipo_estacao": "plv",
+    "localizacao": [
+      178.99491399504745,
+      -89.99948960358775
+    ],
+    "horaLeitura": "18/10/2026 - 22:20"
+  },
+  {
+    "regiao": "Sul",
+    "dados": {
+      "Variance": {
+        "m05": 0,
+        "m15": null,
+        "mes": 0.2,
+        "m30": null,
+        "h72": 152.6,
+        "h03": 41.2,
+        "h24": 96.8,
+        "h12": null,
+        "h06": null,
+        "h04": null,
+        "h96": null,
+        "h02": null,
+        "h168": 171,
+        "h01": 18.4
+      }
+    },
+    "estacao_id": 1265,
+    "tipo": "cemaden2",
+    "estacao": "BLUMENAU:Garcia",
+    "tipo_estacao": "plv",
+    "localizacao": [
+      178.99491399504745,
+      -89.99948960358775
+    ],
+    "horaLeitura": "07/09/2026 - 02:10"
+  },
+  {
+    "regiao": "Leste",
+    "dados": {
+      "umS3": 0,
+      "umS2": 0,
+      "umS6": 0,
+      "umS5": 0,
+      "umS4": 0
+    },
+    "estacao_id": 1243,
+    "tipo": "cemaden2",
+    "estacao": "BLUMENAU:Henrique Reif",
+    "tipo_estacao": "gtc",
+    "localizacao": [
+      178.99491399504745,
+      -89.99948960358775
+    ],
+    "horaLeitura": "18/10/2026 - 23:00"
+  },
+  {
+    "regiao": "Central",
+    "dados": {
+      "Variance": {
+        "m05": 0,
+        "m15": null,
+        "mes": 109.4,
+        "m30": null,
+        "h72": 9.4,
+        "h03": 0,
+        "h24": 0,
+        "h12": 0,
+        "h06": 0,
+        "h04": 0,
+        "h96": 13.2,
+        "h02": 0,
+        "h168": 26.8,
+        "h01": 0
+      }
+    },
+    "estacao_id": 1249,
+    "tipo": "cemaden2",
+    "estacao": "BLUMENAU:Henrique Reif2",
+    "tipo_estacao": "plv",
+    "localizacao": [
+      178.99491399504745,
+      -89.99948960358775
+    ],
+    "horaLeitura": "18/10/2026 - 23:10"
+  },
+  {
+    "regiao": "Leste",
+    "dados": {
+      "Variance": {
+        "m05": 0,
+        "m15": null,
+        "mes": 1.8,
+        "m30": null,
+        "h72": 0.8,
+        "h03": 0,
+        "h24": 0,
+        "h12": 0,
+        "h06": 0,
+        "h04": 0,
+        "h96": 1,
+        "h02": 0,
+        "h168": 1.4,
+        "h01": 0
+      }
+    },
+    "estacao_id": 1276,
+    "tipo": "cemaden2",
+    "estacao": "BLUMENAU:Itoupava Norte",
+    "tipo_estacao": "plv",
+    "localizacao": [
+      178.99491399504745,
+      -89.99948960358775
+    ],
+    "horaLeitura": "18/10/2026 - 22:40"
+  },
+  {
+    "regiao": "Oeste",
+    "dados": {
+      "umS3": 50.24988,
+      "umS2": 43.18514,
+      "umS6": 43.19601,
+      "umS5": 46.46731,
+      "umS4": 47.55965
+    },
+    "estacao_id": 1285,
+    "tipo": "cemaden2",
+    "estacao": "BLUMENAU:Morro da Edite",
+    "tipo_estacao": "gtc",
+    "localizacao": [
+      178.99491399504745,
+      -89.99948960358775
+    ],
+    "horaLeitura": "16/04/2025 - 03:00"
+  },
+  {
+    "regiao": "Oeste",
+    "dados": {
+      "Variance": {
+        "m05": null,
+        "m15": null,
+        "mes": 29,
+        "m30": null,
+        "h72": 4.6,
+        "h03": 0,
+        "h24": 0.2,
+        "h12": 0,
+        "h06": 0,
+        "h04": 0,
+        "h96": 5,
+        "h02": 0,
+        "h168": null,
+        "h01": 0
+      }
+    },
+    "estacao_id": 1246,
+    "tipo": "cemaden2",
+    "estacao": "BLUMENAU:Morro da Edite2",
+    "tipo_estacao": "plv",
+    "localizacao": [
+      178.99491399504745,
+      -89.99948960358775
+    ],
+    "horaLeitura": "16/04/2025 - 03:10"
+  },
+  {
+    "regiao": "Oeste",
+    "dados": {
+      "umS3": 41.06832,
+      "umS2": 40.74207,
+      "umS1": 32.35028,
+      "umS6": 46.13924,
+      "umS5": 41.5357,
+      "umS4": 40.73992
+    },
+    "estacao_id": 1248,
+    "tipo": "cemaden2",
+    "estacao": "BLUMENAU:Morro da Figueira",
+    "tipo_estacao": "gtc",
+    "localizacao": [
+      178.99491399504745,
+      -89.99948960358775
+    ],
+    "horaLeitura": "18/10/2026 - 23:00"
+  },
+  {
+    "regiao": "Oeste",
+    "dados": {
+      "Variance": {
+        "m05": 0,
+        "m15": null,
+        "mes": 98,
+        "m30": null,
+        "h72": 4.4,
+        "h03": 0,
+        "h24": null,
+        "h12": 0,
+        "h06": 0,
+        "h04": 0,
+        "h96": 5.2,
+        "h02": 0,
+        "h168": 16.8,
+        "h01": 0
+      }
+    },
+    "estacao_id": 1268,
+    "tipo": "cemaden2",
+    "estacao": "BLUMENAU:Morro da Figueira2",
+    "tipo_estacao": "plv",
+    "localizacao": [
+      178.99491399504745,
+      -89.99948960358775
+    ],
+    "horaLeitura": "18/10/2026 - 23:10"
+  },
+  {
+    "estacao": "BLUMENAU:Morro do cachorro quente",
+    "dados": {},
+    "localizacao": [
+      178.99491399504745,
+      -89.99948960358775
+    ],
+    "estacao_id": 1254,
+    "tipo_estacao": "gtc"
+  },
+  {
+    "regiao": "Leste",
+    "dados": {
+      "Variance": {
+        "m05": 0,
+        "m15": null,
+        "mes": 110.2463426186,
+        "m30": null,
+        "h72": 10.1038167978,
+        "h03": 0,
+        "h24": 0,
+        "h12": 0,
+        "h06": 0,
+        "h04": 0,
+        "h96": 13.4415967978,
+        "h02": 0,
+        "h168": 28.9780767978,
+        "h01": 0
+      }
+    },
+    "estacao_id": 1241,
+    "tipo": "cemaden2",
+    "estacao": "BLUMENAU:Nova Esperança",
+    "tipo_estacao": "plv",
+    "localizacao": [
+      178.99491399504745,
+      -89.99948960358775
+    ],
+    "horaLeitura": "18/10/2026 - 23:10"
+  },
+  {
+    "regiao": "Sul",
+    "dados": {
+      "Variance": {
+        "m05": null,
+        "m15": null,
+        "mes": 0,
+        "m30": null,
+        "h72": 152.6,
+        "h03": 41.2,
+        "h24": 96.8,
+        "h12": null,
+        "h06": null,
+        "h04": null,
+        "h96": null,
+        "h02": null,
+        "h168": 171,
+        "h01": 18.4
+      }
+    },
+    "estacao_id": 1272,
+    "tipo": "cemaden2",
+    "estacao": "BLUMENAU:Progresso",
+    "tipo_estacao": "plv",
+    "localizacao": [
+      178.99491399504745,
+      -89.99948960358775
+    ],
+    "horaLeitura": "03/05/2026 - 15:20"
+  },
+  {
+    "regiao": "Sul",
+    "dados": {
+      "Variance": {
+        "m05": 0,
+        "m15": null,
+        "mes": 105.4101446736,
+        "m30": null,
+        "h72": 152.6,
+        "h03": 41.2,
+        "h24": 96.8,
+        "h12": 0,
+        "h06": 0,
+        "h04": 0,
+        "h96": 11.4450860221,
+        "h02": 0,
+        "h168": 171,
+        "h01": 18.4
+      }
+    },
+    "estacao_id": 1252,
+    "tipo": "cemaden2",
+    "estacao": "BLUMENAU:Progresso2",
+    "tipo_estacao": "plv",
+    "localizacao": [
+      178.99491399504745,
+      -89.99948960358775
+    ],
+    "horaLeitura": "18/10/2026 - 23:00"
+  },
+  {
+    "regiao": "Leste",
+    "dados": {
+      "umS3": 43.73396,
+      "umS2": 43.74547,
+      "umS1": 42.3827,
+      "umS6": 57.54723,
+      "umS5": 56.74485,
+      "umS4": 42.98508
+    },
+    "estacao_id": 1256,
+    "tipo": "cemaden2",
+    "estacao": "BLUMENAU:Thabrulay",
+    "tipo_estacao": "gtc",
+    "localizacao": [
+      178.99491399504745,
+      -89.99948960358775
+    ],
+    "horaLeitura": "12/07/2026 - 16:00"
+  },
+  {
+    "regiao": "Central",
+    "dados": {
+      "Variance": {
+        "m05": 0,
+        "m15": null,
+        "mes": 60.2,
+        "m30": null,
+        "h72": null,
+        "h03": 0,
+        "h24": null,
+        "h12": 0.2,
+        "h06": 0.2,
+        "h04": null,
+        "h96": null,
+        "h02": 0,
+        "h168": null,
+        "h01": 0
+      }
+    },
+    "estacao_id": 1273,
+    "tipo": "cemaden2",
+    "estacao": "BLUMENAU:Thabrulay2",
+    "tipo_estacao": "plv",
+    "localizacao": [
+      178.99491399504745,
+      -89.99948960358775
+    ],
+    "horaLeitura": "12/07/2026 - 16:10"
+  },
+  {
+    "regiao": "Oeste",
+    "dados": {
+      "Variance": {
+        "m05": null,
+        "m15": null,
+        "mes": 50.0704976681,
+        "m30": null,
+        "h72": 17.97308,
+        "h03": 0,
+        "h24": 0,
+        "h12": 0,
+        "h06": 0,
+        "h04": 0,
+        "h96": 17.97308,
+        "h02": 0,
+        "h168": 37.4964242,
+        "h01": 0
+      }
+    },
+    "estacao_id": 1245,
+    "tipo": "cemaden2",
+    "estacao": "BLUMENAU:Velha Grande",
+    "tipo_estacao": "plv",
+    "localizacao": [
+      178.99491399504745,
+      -89.99948960358775
+    ],
+    "horaLeitura": "24/05/2026 - 12:50"
+  },
+  {
+    "regiao": "Norte",
+    "dados": {
+      "Variance": {
+        "m05": 0,
+        "m15": null,
+        "mes": 150.4841302783,
+        "m30": null,
+        "h72": 12.2387260466,
+        "h03": 0,
+        "h24": 0,
+        "h12": 0,
+        "h06": 0,
+        "h04": 0,
+        "h96": 35.3463502397,
+        "h02": 0,
+        "h168": 51.2974702397,
+        "h01": 0
+      }
+    },
+    "estacao_id": 1257,
+    "tipo": "cemaden2",
+    "estacao": "BLUMENAU:Vila Itoupava",
+    "tipo_estacao": "plv",
+    "localizacao": [
+      178.99491399504745,
+      -89.99948960358775
+    ],
+    "horaLeitura": "18/10/2026 - 22:30"
+  },
+  {
+    "regiao": "Sul",
+    "dados": {
+      "umS3": 45.31719,
+      "umS2": 36.41876,
+      "umS1": 37.84138,
+      "umS6": 42.55941,
+      "umS5": 42.89142,
+      "umS4": 43.40748
+    },
+    "estacao_id": 1253,
+    "tipo": "cemaden2",
+    "estacao": "BLUMENAU:Zendron",
+    "tipo_estacao": "gtc",
+    "localizacao": [
+      178.99491399504745,
+      -89.99948960358775
+    ],
+    "horaLeitura": "07/09/2026 - 12:00"
+  },
+  {
+    "regiao": "Central",
+    "dados": {
+      "Variance": {
+        "m05": 0,
+        "m15": null,
+        "mes": 10.8,
+        "m30": null,
+        "h72": 10.6,
+        "h03": 0,
+        "h24": 0,
+        "h12": 0,
+        "h06": 0,
+        "h04": 0,
+        "h96": 10.6,
+        "h02": null,
+        "h168": null,
+        "h01": 0
+      }
+    },
+    "estacao_id": 1271,
+    "tipo": "cemaden2",
+    "estacao": "BLUMENAU:Zendron2",
+    "tipo_estacao": "plv",
+    "localizacao": [
+      178.99491399504745,
+      -89.99948960358775
+    ],
+    "horaLeitura": "07/09/2026 - 12:10"
+  },
+  {
+    "regiao": "Itajaí-Açú",
+    "dados": {
+      "Variance": {
+        "m05": 0,
+        "m15": null,
+        "mes": 76.513413044,
+        "m30": null,
+        "h72": null,
+        "h03": 0,
+        "h24": 0,
+        "h12": 0,
+        "h06": 0,
+        "h04": 0,
+        "h96": 30.587913044,
+        "h02": 0,
+        "h168": 38.503733044,
+        "h01": 0
+      }
+    },
+    "estacao_id": 1262,
+    "tipo": "cemaden2",
+    "estacao": "BOTUVERÁ:Centro",
+    "tipo_estacao": "plv",
+    "localizacao": [
+      178.99491399504745,
+      -89.99948960358775
+    ],
+    "horaLeitura": "18/10/2026 - 22:30"
+  },
+  {
+    "regiao": "Itajaí-Açú",
+    "dados": {
+      "Variance": {
+        "m05": 0,
+        "m15": null,
+        "mes": 120.0297447583,
+        "m30": null,
+        "h72": 39.8792402059,
+        "h03": 0,
+        "h24": 0,
+        "h12": 0,
+        "h06": 0,
+        "h04": 0,
+        "h96": 40.0792402059,
+        "h02": 0,
+        "h168": 47.6023802059,
+        "h01": 0
+      }
+    },
+    "estacao_id": 1264,
+    "tipo": "cemaden2",
+    "estacao": "BRUSQUE:Centro",
+    "tipo_estacao": "plv",
+    "localizacao": [
+      178.99491399504745,
+      -89.99948960358775
+    ],
+    "horaLeitura": "18/10/2026 - 23:10"
+  },
+  {
+    "regiao": "Itajaí-Açú",
+    "dados": {
+      "Variance": {
+        "m05": 0,
+        "m15": null,
+        "mes": 96.54852,
+        "m30": null,
+        "h72": 17.83896,
+        "h03": null,
+        "h24": 0,
+        "h12": 0,
+        "h06": null,
+        "h04": 0,
+        "h96": 17.83896,
+        "h02": null,
+        "h168": 25.7804,
+        "h01": null
+      }
+    },
+    "estacao_id": 1260,
+    "tipo": "cemaden2",
+    "estacao": "BRUSQUE:Limeira",
+    "tipo_estacao": "plv",
+    "localizacao": [
+      178.99491399504745,
+      -89.99948960358775
+    ],
+    "horaLeitura": "18/10/2026 - 22:40"
+  },
+  {
+    "regiao": "Itajaí-Açú",
+    "dados": {
+      "Variance": {
+        "m05": 0,
+        "m15": 0,
+        "mes": 72.6,
+        "m30": 0,
+        "h72": 15.6,
+        "h03": 0,
+        "h24": 0,
+        "h12": 0,
+        "h06": 0,
+        "h04": 0,
+        "h96": 17.2,
+        "h02": 0,
+        "h168": 25,
+        "h01": 0
+      },
+      "vrnce": 0,
+      "niv": 10.16
+    },
+    "estacao_id": 1103,
+    "tipo": "estado_sc",
+    "estacao": "Barragem Oeste Taió",
+    "tipo_estacao": "met",
+    "horaLeitura": "18/10/2026 - 22:55"
+  },
+  {
+    "regiao": "-",
+    "dados": {
+      "compA": 4,
+      "compF": 3,
+      "cap": 8.3,
+      "jus": 3.58,
+      "mont": 349.27,
+      "Variance": {
+        "m05": 8.3,
+        "m15": null,
+        "mes": 1458.6,
+        "m30": null,
+        "h72": 207.2,
+        "h03": null,
+        "h24": 115,
+        "h12": 56,
+        "h06": 26.2,
+        "h04": 17.1,
+        "h96": 212,
+        "h02": 8.3,
+        "h168": null,
+        "h01": null
+      }
+    },
+    "estacao_id": 862,
+    "tipo": "pref.-rio-do-sul",
+    "estacao": "Barragem Oeste Taió",
+    "tipo_estacao": "brm",
+    "horaLeitura": "18/10/2026 - 21:59"
+  },
+  {
+    "regiao": "-",
+    "dados": {
+      "compA": 5,
+      "compF": 0,
+      "cap": 0,
+      "jus": 1.48,
+      "mont": 374,
+      "Variance": {
+        "m05": 0,
+        "m15": null,
+        "mes": 4638.7,
+        "m30": null,
+        "h72": null,
+        "h03": null,
+        "h24": 0,
+        "h12": 0,
+        "h06": 0,
+        "h04": 0,
+        "h96": null,
+        "h02": 0,
+        "h168": null,
+        "h01": null
+      }
+    },
+    "estacao_id": 861,
+    "tipo": "pref.-rio-do-sul",
+    "estacao": "Barragem Sul Ituporanga",
+    "tipo_estacao": "brm",
+    "horaLeitura": "18/10/2026 - 21:59"
+  },
+  {
+    "regiao": "Itajaí-Açú",
+    "dados": {
+      "Variance": {
+        "m05": 0,
+        "m15": 0,
+        "mes": 67.4,
+        "m30": 0,
+        "h72": 1.4,
+        "h03": 0,
+        "h24": 0,
+        "h12": 0,
+        "h06": 0,
+        "h04": 0,
+        "h96": 9,
+        "h02": 0,
+        "h168": 14.8,
+        "h01": 0
+      },
+      "vrnce": 0
+    },
+    "estacao_id": 1101,
+    "tipo": "estado_sc",
+    "estacao": "Barragem Sul Ituporanga",
+    "tipo_estacao": "met",
+    "horaLeitura": "18/10/2026 - 23:00"
+  },
+  {
+    "regiao": "Itajaí-Açú",
+    "dados": {
+      "Variance": {
+        "m05": 0,
+        "m15": 0,
+        "mes": 174.87,
+        "m30": 0,
+        "h72": 17.91,
+        "h03": 0,
+        "h24": 0.02,
+        "h12": 0,
+        "h06": 0,
+        "h04": 0,
+        "h96": 26.56,
+        "h02": 0,
+        "h168": 52.64,
+        "h01": 0
+      },
+      "vrnce": 0,
+      "niv": 3.07856
+    },
+    "estacao_id": 1067,
+    "tipo": "estado_sc",
+    "estacao": "Benedito Novo",
+    "tipo_estacao": "met",
+    "horaLeitura": "18/10/2026 - 23:00"
+  },
+  {
+    "regiao": "-",
+    "dados": {
+      "Variance": {
+        "m05": null,
+        "m15": 0,
+        "mes": 0,
+        "m30": 0,
+        "h72": 0,
+        "h03": 0,
+        "h24": 0,
+        "h12": null,
+        "h06": null,
+        "h04": 0,
+        "h96": 0,
+        "h02": 0,
+        "h168": 0,
+        "h01": 0
+      }
+    },
+    "estacao_id": 221,
+    "tipo": "ana",
+    "estacao": "Blumenau",
+    "tipo_estacao": "flv",
+    "localizacao": [
+      -49.06527777529759,
+      -26.918055552632737
+    ],
+    "horaLeitura": "07/02/2024 - 14:45"
+  },
+  {
+    "regiao": "Itajaí-Açú",
+    "dados": {
+      "Variance": {
+        "m05": 0,
+        "m15": 0,
+        "mes": 153.6,
+        "m30": 0,
+        "h72": 9.62,
+        "h03": 0,
+        "h24": 0.36,
+        "h12": 0,
+        "h06": 0,
+        "h04": 0,
+        "h96": 11.82,
+        "h02": 0,
+        "h168": 29.72,
+        "h01": 0
+      },
+      "vrnce": 0
+    },
+    "estacao_id": 1089,
+    "tipo": "estado_sc",
+    "estacao": "Blumenau",
+    "tipo_estacao": "met",
+    "horaLeitura": "18/10/2026 - 23:00"
+  },
+  {
+    "regiao": "Itajaí-Açú",
+    "dados": {
+      "Variance": {
+        "m05": 0,
+        "m15": 0,
+        "mes": 87.22,
+        "m30": 0,
+        "h72": 6.12,
+        "h03": 0,
+        "h24": 0.01,
+        "h12": 0,
+        "h06": 0,
+        "h04": 0,
+        "h96": 15.49,
+        "h02": 0,
+        "h168": 36.19,
+        "h01": 0
+      },
+      "vrnce": 0
+    },
+    "estacao_id": 1065,
+    "tipo": "estado_sc",
+    "estacao": "Bom Retiro",
+    "tipo_estacao": "met",
+    "horaLeitura": "18/10/2026 - 23:00"
+  },
+  {
+    "regiao": "Itajaí-Açú",
+    "dados": {
+      "Variance": {
+        "m05": 0,
+        "m15": 0,
+        "mes": 97.6,
+        "m30": 0,
+        "h72": 28,
+        "h03": 0,
+        "h24": 0,
+        "h12": 0,
+        "h06": 0,
+        "h04": 0,
+        "h96": 28.6,
+        "h02": 0,
+        "h168": 36.8,
+        "h01": 0
+      },
+      "vrnce": 0,
+      "niv": 3.05
+    },
+    "estacao_id": 1081,
+    "tipo": "estado_sc",
+    "estacao": "Botuverá 1",
+    "tipo_estacao": "met",
+    "horaLeitura": "18/10/2026 - 23:00"
+  },
+  {
+    "regiao": "Itajaí-Açú",
+    "dados": {
+      "Variance": {
+        "m05": 0,
+        "m15": 0,
+        "mes": 155.82,
+        "m30": 0,
+        "h72": 46.62,
+        "h03": 0,
+        "h24": 0.08,
+        "h12": 0.05,
+        "h06": 0.03,
+        "h04": 0,
+        "h96": 48.32,
+        "h02": 0,
+        "h168": 60.75,
+        "h01": 0
+      },
+      "vrnce": 0
+    },
+    "estacao_id": 1090,
+    "tipo": "estado_sc",
+    "estacao": "Botuverá 2",
+    "tipo_estacao": "met",
+    "horaLeitura": "18/10/2026 - 23:00"
+  },
+  {
+    "regiao": "Itajaí-Açú",
+    "dados": {
+      "Variance": {
+        "m05": 0,
+        "m15": 0,
+        "mes": 109,
+        "m30": 0,
+        "h72": 39.4,
+        "h03": 0,
+        "h24": 0,
+        "h12": 0,
+        "h06": 0,
+        "h04": 0,
+        "h96": 39.4,
+        "h02": 0,
+        "h168": 45.6,
+        "h01": 0
+      },
+      "vrnce": 0,
+      "niv": 1.42
+    },
+    "estacao_id": 1082,
+    "tipo": "estado_sc",
+    "estacao": "Brusque",
+    "tipo_estacao": "met",
+    "localizacao": [
+      -48.91722499946429,
+      -27.10067699955593
+    ],
+    "horaLeitura": "18/10/2026 - 23:00"
+  },
+  {
+    "regiao": "Oeste",
+    "dados": {
+      "tBat": 12.6617431640625,
+      "cont": 13618,
+      "vrnce": 0,
+      "umiIn": 0,
+      "rst": 0,
+      "Variance": {
+        "m05": 0,
+        "m15": 0,
+        "mes": 102,
+        "m30": 0,
+        "h72": 6,
+        "h03": 0,
+        "h24": 0,
+        "h12": 0,
+        "h06": 0,
+        "h04": 0,
+        "h96": 8.4,
+        "h02": 0,
+        "h168": 22.2,
+        "h01": 0
+      },
+      "temIn": -40
+    },
+    "estacao_id": 85,
+    "tipo": "alertablu",
+    "estacao": "Coripós",
+    "tipo_estacao": "plv",
+    "localizacao": [
+      -49.10294392749687,
+      -26.904221913132158
+    ],
+    "horaLeitura": "18/10/2026 - 23:15"
+  },
+  {
+    "regiao": "-",
+    "dados": {
+      "Variance": {
+        "m05": 0,
+        "m15": 0,
+        "mes": 79.2,
+        "m30": 0,
+        "h72": 1.8,
+        "h03": 0,
+        "h24": 0,
+        "h12": 0,
+        "h06": 0,
+        "h04": 0,
+        "h96": 23.2,
+        "h02": 0,
+        "h168": 30.4,
+        "h01": 0
+      },
+      "vrnce": 0,
+      "niv": 0.67
+    },
+    "estacao_id": 1138,
+    "tipo": "estado_sc",
+    "estacao": "DCSC Agrolândia",
+    "tipo_estacao": "lnm",
+    "horaLeitura": "18/10/2026 - 23:00"
+  },
+  {
+    "regiao": "-",
+    "dados": {
+      "Variance": {
+        "m05": 0,
+        "m15": 0,
+        "mes": 83.2,
+        "m30": 0,
+        "h72": 6.6,
+        "h03": 0,
+        "h24": 0,
+        "h12": 0,
+        "h06": 0,
+        "h04": 0,
+        "h96": 13.6,
+        "h02": 0,
+        "h168": 24,
+        "h01": 0
+      },
+      "vrnce": 0,
+      "niv": 3.32
+    },
+    "estacao_id": 1121,
+    "tipo": "estado_sc",
+    "estacao": "DCSC Agronômica",
+    "tipo_estacao": "lnm",
+    "horaLeitura": "18/10/2026 - 23:00"
+  },
+  {
+    "regiao": "-",
+    "dados": {
+      "Variance": {
+        "m05": 0,
+        "m15": 0,
+        "mes": 64.8,
+        "m30": 0,
+        "h72": 3.8,
+        "h03": 0,
+        "h24": 0,
+        "h12": 0,
+        "h06": 0,
+        "h04": 0,
+        "h96": 8.2,
+        "h02": 0,
+        "h168": 22.4,
+        "h01": 0
+      },
+      "vrnce": 0
+    },
+    "estacao_id": 1129,
+    "tipo": "estado_sc",
+    "estacao": "DCSC Alfredo Wagner",
+    "tipo_estacao": "lnm",
+    "horaLeitura": "18/10/2026 - 23:00"
+  },
+  {
+    "regiao": "-",
+    "dados": {
+      "Variance": {
+        "m05": 0,
+        "m15": 0,
+        "mes": 163.11,
+        "m30": 0,
+        "h72": 0.28,
+        "h03": 0.22,
+        "h24": 0.22,
+        "h12": 0.22,
+        "h06": 0.22,
+        "h04": 0.22,
+        "h96": 0.35,
+        "h02": 0,
+        "h168": 65.67,
+        "h01": 0
+      },
+      "vrnce": 0,
+      "niv": 11.19
+    },
+    "estacao_id": 1130,
+    "tipo": "estado_sc",
+    "estacao": "DCSC Apiúna",
+    "tipo_estacao": "lnm",
+    "horaLeitura": "31/08/2025 - 15:50"
+  },
+  {
+    "regiao": "-",
+    "dados": {
+      "Variance": {
+        "m05": 0,
+        "m15": 0,
+        "mes": 74.89,
+        "m30": 0,
+        "h72": 1.4,
+        "h03": 0,
+        "h24": 0,
+        "h12": 0,
+        "h06": 0,
+        "h04": 0,
+        "h96": 1.6,
+        "h02": 0,
+        "h168": 11.4,
+        "h01": 0
+      },
+      "vrnce": 0,
+      "niv": 6.62
+    },
+    "estacao_id": 1122,
+    "tipo": "estado_sc",
+    "estacao": "DCSC Ascurra (Desativado)",
+    "tipo_estacao": "lnm",
+    "horaLeitura": "18/10/2026 - 23:00"
+  },
+  {
+    "regiao": "-",
+    "dados": {
+      "Variance": {
+        "m05": 0,
+        "m15": 0,
+        "mes": 67.4,
+        "m30": 0,
+        "h72": 1.4,
+        "h03": 0,
+        "h24": 0,
+        "h12": 0,
+        "h06": 0,
+        "h04": 0,
+        "h96": 9,
+        "h02": 0,
+        "h168": 14.8,
+        "h01": 0
+      },
+      "vrnce": 0
+    },
+    "estacao_id": 1146,
+    "tipo": "estado_sc",
+    "estacao": "DCSC Barragem Sul Ituporanga",
+    "tipo_estacao": "lnm",
+    "horaLeitura": "18/10/2026 - 23:00"
+  },
+  {
+    "regiao": "-",
+    "dados": {
+      "Variance": {
+        "m05": 0,
+        "m15": 0,
+        "mes": 174.87,
+        "m30": 0,
+        "h72": 17.91,
+        "h03": 0,
+        "h24": 0.02,
+        "h12": 0,
+        "h06": 0,
+        "h04": 0,
+        "h96": 26.56,
+        "h02": 0,
+        "h168": 52.64,
+        "h01": 0
+      },
+      "vrnce": 0,
+      "niv": 3.07856
+    },
+    "estacao_id": 1123,
+    "tipo": "estado_sc",
+    "estacao": "DCSC Benedito Novo",
+    "tipo_estacao": "lnm",
+    "horaLeitura": "18/10/2026 - 23:00"
+  },
+  {
+    "regiao": "-",
+    "dados": {
+      "Variance": {
+        "m05": 0,
+        "m15": 0,
+        "mes": 97.6,
+        "m30": 0,
+        "h72": 28,
+        "h03": 0,
+        "h24": 0,
+        "h12": 0,
+        "h06": 0,
+        "h04": 0,
+        "h96": 28.6,
+        "h02": 0,
+        "h168": 36.8,
+        "h01": 0
+      },
+      "vrnce": 0,
+      "niv": 3.05
+    },
+    "estacao_id": 1131,
+    "tipo": "estado_sc",
+    "estacao": "DCSC Botuverá 1",
+    "tipo_estacao": "lnm",
+    "horaLeitura": "18/10/2026 - 23:00"
+  },
+  {
+    "regiao": "-",
+    "dados": {
+      "Variance": {
+        "m05": 0,
+        "m15": 0,
+        "mes": 109,
+        "m30": 0,
+        "h72": 39.4,
+        "h03": 0,
+        "h24": 0,
+        "h12": 0,
+        "h06": 0,
+        "h04": 0,
+        "h96": 39.4,
+        "h02": 0,
+        "h168": 45.6,
+        "h01": 0
+      },
+      "vrnce": 0,
+      "niv": 1.42
+    },
+    "estacao_id": 1132,
+    "tipo": "estado_sc",
+    "estacao": "DCSC Brusque",
+    "tipo_estacao": "lnm",
+    "horaLeitura": "18/10/2026 - 23:00"
+  },
+  {
+    "regiao": "-",
+    "dados": {
+      "Variance": {
+        "m05": 0,
+        "m15": 0,
+        "mes": 132.6,
+        "m30": 0,
+        "h72": 3.2,
+        "h03": 0,
+        "h24": 0,
+        "h12": 0,
+        "h06": 0,
+        "h04": 0,
+        "h96": 24.8,
+        "h02": 0,
+        "h168": 45,
+        "h01": 0
+      },
+      "vrnce": 0,
+      "niv": 1.6
+    },
+    "estacao_id": 1139,
+    "tipo": "estado_sc",
+    "estacao": "DCSC Doutor Pedrinho",
+    "tipo_estacao": "lnm",
+    "horaLeitura": "18/10/2026 - 23:00"
+  },
+  {
+    "regiao": "-",
+    "dados": {
+      "Variance": {
+        "m05": 0,
+        "m15": 0,
+        "mes": 98.6,
+        "m30": 0,
+        "h72": 10.8,
+        "h03": 0,
+        "h24": 0,
+        "h12": 0,
+        "h06": 0,
+        "h04": 0,
+        "h96": 13.4,
+        "h02": 0,
+        "h168": 25.6,
+        "h01": 0
+      },
+      "vrnce": 0
+    },
+    "estacao_id": 1124,
+    "tipo": "estado_sc",
+    "estacao": "DCSC Gaspar",
+    "tipo_estacao": "lnm",
+    "horaLeitura": "18/10/2026 - 23:00"
+  },
+  {
+    "regiao": "-",
+    "dados": {
+      "Variance": {
+        "m05": 0,
+        "m15": 0,
+        "mes": 98.4,
+        "m30": 0,
+        "h72": 28.4,
+        "h03": 0,
+        "h24": 0.2,
+        "h12": 0.2,
+        "h06": 0,
+        "h04": 0,
+        "h96": 28.4,
+        "h02": 0,
+        "h168": 34.8,
+        "h01": 0
+      },
+      "vrnce": 0,
+      "niv": 0.6
+    },
+    "estacao_id": 1140,
+    "tipo": "estado_sc",
+    "estacao": "DCSC Guabiruba",
+    "tipo_estacao": "lnm",
+    "horaLeitura": "18/10/2026 - 23:00"
+  },
+  {
+    "regiao": "-",
+    "dados": {
+      "Variance": {
+        "m05": 0,
+        "m15": 0,
+        "mes": 92.2,
+        "m30": 0,
+        "h72": 13.8,
+        "h03": 0,
+        "h24": 0,
+        "h12": 0,
+        "h06": 0,
+        "h04": 0,
+        "h96": 13.8,
+        "h02": 0,
+        "h168": 22.8,
+        "h01": 0
+      },
+      "vrnce": 0,
+      "niv": 1.88
+    },
+    "estacao_id": 1133,
+    "tipo": "estado_sc",
+    "estacao": "DCSC Ibirama",
+    "tipo_estacao": "lnm",
+    "horaLeitura": "18/10/2026 - 23:00"
+  },
+  {
+    "regiao": "-",
+    "dados": {
+      "Variance": {
+        "m05": 0,
+        "m15": 0,
+        "mes": 162.75,
+        "m30": 0,
+        "h72": 11.23,
+        "h03": 0.06,
+        "h24": 1.1,
+        "h12": 0.99,
+        "h06": 0.09,
+        "h04": 0.07,
+        "h96": 21.02,
+        "h02": 0.05,
+        "h168": 42.28,
+        "h01": 0
+      },
+      "vrnce": 0,
+      "niv": 9.52
+    },
+    "estacao_id": 1141,
+    "tipo": "estado_sc",
+    "estacao": "DCSC Ilhota",
+    "tipo_estacao": "lnm",
+    "horaLeitura": "18/10/2026 - 23:00"
+  },
+  {
+    "regiao": "-",
+    "dados": {
+      "Variance": {
+        "m05": 0,
+        "m15": 0,
+        "mes": 3,
+        "m30": 0,
+        "h72": null,
+        "h03": null,
+        "h24": null,
+        "h12": null,
+        "h06": null,
+        "h04": null,
+        "h96": null,
+        "h02": null,
+        "h168": null,
+        "h01": 0
+      },
+      "vrnce": 0,
+      "niv": 54.58
+    },
+    "estacao_id": 1125,
+    "tipo": "estado_sc",
+    "estacao": "DCSC Indaial",
+    "tipo_estacao": "lnm",
+    "horaLeitura": "12/10/2026 - 11:50"
+  },
+  {
+    "regiao": "-",
+    "dados": {
+      "Variance": {
+        "m05": 0,
+        "m15": 0,
+        "mes": 68.4,
+        "m30": 0,
+        "h72": 2,
+        "h03": 0,
+        "h24": 0,
+        "h12": 0,
+        "h06": 0,
+        "h04": 0,
+        "h96": 9.4,
+        "h02": 0,
+        "h168": 16,
+        "h01": 0
+      },
+      "vrnce": 0,
+      "niv": 1.47
+    },
+    "estacao_id": 1147,
+    "tipo": "estado_sc",
+    "estacao": "DCSC Ituporanga",
+    "tipo_estacao": "lnm",
+    "horaLeitura": "18/10/2026 - 23:00"
+  },
+  {
+    "regiao": "-",
+    "dados": {
+      "Variance": {
+        "m05": 0,
+        "m15": 0,
+        "mes": 85.2,
+        "m30": 0,
+        "h72": 14.4,
+        "h03": 0,
+        "h24": 0,
+        "h12": 0,
+        "h06": 0,
+        "h04": 0,
+        "h96": 19.6,
+        "h02": 0,
+        "h168": 30.8,
+        "h01": 0
+      },
+      "vrnce": 0,
+      "niv": 1.92
+    },
+    "estacao_id": 1142,
+    "tipo": "estado_sc",
+    "estacao": "DCSC Laurentino",
+    "tipo_estacao": "lnm",
+    "horaLeitura": "18/10/2026 - 23:00"
+  },
+  {
+    "regiao": "-",
+    "dados": {
+      "Variance": {
+        "m05": 0,
+        "m15": 0,
+        "mes": 84.43,
+        "m30": 0,
+        "h72": 23.4,
+        "h03": 0,
+        "h24": 0,
+        "h12": 0,
+        "h06": 0,
+        "h04": 0,
+        "h96": 23.6,
+        "h02": 0,
+        "h168": 33.8,
+        "h01": 0
+      },
+      "vrnce": 0
+    },
+    "estacao_id": 1143,
+    "tipo": "estado_sc",
+    "estacao": "DCSC Lontras",
+    "tipo_estacao": "lnm",
+    "horaLeitura": "18/10/2026 - 23:00"
+  },
+  {
+    "regiao": "-",
+    "dados": {
+      "Variance": {
+        "m05": 0,
+        "m15": 0,
+        "mes": 159.4,
+        "m30": 0,
+        "h72": 13.8,
+        "h03": 0,
+        "h24": 0,
+        "h12": 0,
+        "h06": 0,
+        "h04": 0,
+        "h96": 37.2,
+        "h02": 0,
+        "h168": 56.6,
+        "h01": 0
+      },
+      "vrnce": 0,
+      "niv": 0.76
+    },
+    "estacao_id": 1126,
+    "tipo": "estado_sc",
+    "estacao": "DCSC Pomerode",
+    "tipo_estacao": "lnm",
+    "horaLeitura": "18/10/2026 - 23:00"
+  },
+  {
+    "regiao": "-",
+    "dados": {
+      "Variance": {
+        "m05": 0,
+        "m15": 0,
+        "mes": 77.4,
+        "m30": 0,
+        "h72": 4.6,
+        "h03": 0,
+        "h24": 0,
+        "h12": 0,
+        "h06": 0,
+        "h04": 0,
+        "h96": 21.2,
+        "h02": 0,
+        "h168": 32.6,
+        "h01": 0
+      },
+      "vrnce": 0,
+      "niv": 1.58
+    },
+    "estacao_id": 1144,
+    "tipo": "estado_sc",
+    "estacao": "DCSC Pouso Redondo",
+    "tipo_estacao": "lnm",
+    "horaLeitura": "18/10/2026 - 23:00"
+  },
+  {
+    "regiao": "-",
+    "dados": {
+      "Variance": {
+        "m05": 0,
+        "m15": 0,
+        "mes": 95.8,
+        "m30": 0,
+        "h72": 25,
+        "h03": 0,
+        "h24": 0,
+        "h12": 0,
+        "h06": 0,
+        "h04": 0,
+        "h96": 25.8,
+        "h02": 0,
+        "h168": 35.2,
+        "h01": 0
+      },
+      "vrnce": 0,
+      "niv": 1.72
+    },
+    "estacao_id": 1151,
+    "tipo": "estado_sc",
+    "estacao": "DCSC Presidente Getúlio",
+    "tipo_estacao": "lnm",
+    "horaLeitura": "18/10/2026 - 23:00"
+  },
+  {
+    "regiao": "-",
+    "dados": {
+      "Variance": {
+        "m05": 0.02,
+        "m15": 0.04,
+        "mes": 141.28,
+        "m30": 0.04,
+        "h72": 5.84,
+        "h03": 0.1,
+        "h24": 0.46,
+        "h12": 0.11,
+        "h06": 0.11,
+        "h04": 0.1,
+        "h96": null,
+        "h02": null,
+        "h168": 7.19,
+        "h01": 0.05
+      },
+      "vrnce": 0.02,
+      "niv": 5.63
+    },
+    "estacao_id": 1135,
+    "tipo": "estado_sc",
+    "estacao": "DCSC Rio do Oeste",
+    "tipo_estacao": "lnm",
+    "horaLeitura": "22/08/2026 - 09:00"
+  },
+  {
+    "regiao": "-",
+    "dados": {
+      "Variance": {
+        "m05": 0,
+        "m15": 0,
+        "mes": 120.25,
+        "m30": 0,
+        "h72": 32.88,
+        "h03": 0,
+        "h24": 0,
+        "h12": 0,
+        "h06": 0,
+        "h04": 0,
+        "h96": 33.66,
+        "h02": 0,
+        "h168": 50.84,
+        "h01": 0
+      },
+      "vrnce": 0,
+      "niv": 2.58
+    },
+    "estacao_id": 1128,
+    "tipo": "estado_sc",
+    "estacao": "DCSC Rio do Sul",
+    "tipo_estacao": "lnm",
+    "horaLeitura": "18/10/2026 - 23:00"
+  },
+  {
+    "regiao": "-",
+    "dados": {
+      "Variance": {
+        "m05": 0,
+        "m15": 0,
+        "mes": 132.6,
+        "m30": 0,
+        "h72": 8.8,
+        "h03": 0,
+        "h24": 0,
+        "h12": 0,
+        "h06": 0,
+        "h04": 0,
+        "h96": 21.6,
+        "h02": 0,
+        "h168": 42,
+        "h01": 0
+      },
+      "vrnce": 0,
+      "niv": 1.56
+    },
+    "estacao_id": 1127,
+    "tipo": "estado_sc",
+    "estacao": "DCSC Rio dos Cedros 1",
+    "tipo_estacao": "lnm",
+    "horaLeitura": "18/10/2026 - 23:00"
+  },
+  {
+    "regiao": "-",
+    "dados": {
+      "Variance": {
+        "m05": 0,
+        "m15": 0,
+        "mes": 134.14,
+        "m30": 0,
+        "h72": 23.59,
+        "h03": 0,
+        "h24": 0.03,
+        "h12": 0,
+        "h06": 0,
+        "h04": 0,
+        "h96": 26.33,
+        "h02": 0,
+        "h168": 42.61,
+        "h01": 0
+      },
+      "vrnce": 0,
+      "niv": 3.59
+    },
+    "estacao_id": 1149,
+    "tipo": "estado_sc",
+    "estacao": "DCSC Taió",
+    "tipo_estacao": "lnm",
+    "horaLeitura": "18/10/2026 - 23:00"
+  },
+  {
+    "regiao": "-",
+    "dados": {
+      "Variance": {
+        "m05": 0,
+        "m15": 0,
+        "mes": 131.49,
+        "m30": 0,
+        "h72": 8.65,
+        "h03": 0,
+        "h24": 0.03,
+        "h12": 0.03,
+        "h06": 0,
+        "h04": 0,
+        "h96": 13.54,
+        "h02": 0,
+        "h168": 34.4,
+        "h01": 0
+      },
+      "vrnce": 0,
+      "niv": 1.7
+    },
+    "estacao_id": 1136,
+    "tipo": "estado_sc",
+    "estacao": "DCSC Timbó 1",
+    "tipo_estacao": "lnm",
+    "horaLeitura": "18/10/2026 - 23:00"
+  },
+  {
+    "regiao": "-",
+    "dados": {
+      "Variance": {
+        "m05": 0,
+        "m15": 0,
+        "mes": 91.6,
+        "m30": 0,
+        "h72": 11.8,
+        "h03": 0,
+        "h24": 0,
+        "h12": 0,
+        "h06": 0,
+        "h04": 0,
+        "h96": 33.2,
+        "h02": 0,
+        "h168": 45.4,
+        "h01": 0
+      },
+      "vrnce": 0,
+      "niv": 2.44
+    },
+    "estacao_id": 1137,
+    "tipo": "estado_sc",
+    "estacao": "DCSC Vidal Ramos",
+    "tipo_estacao": "lnm",
+    "horaLeitura": "18/10/2026 - 23:05"
+  },
+  {
+    "regiao": "Itajaí-Açú",
+    "dados": {
+      "Variance": {
+        "m05": 0,
+        "m15": 0,
+        "mes": 125.37,
+        "m30": 0,
+        "h72": 22.51,
+        "h03": 0,
+        "h24": 0.11,
+        "h12": 0,
+        "h06": 0,
+        "h04": 0,
+        "h96": 23.94,
+        "h02": 0,
+        "h168": 39.31,
+        "h01": 0
+      },
+      "vrnce": 0
+    },
+    "estacao_id": 1100,
+    "tipo": "estado_sc",
+    "estacao": "Dona Emma",
+    "tipo_estacao": "met",
+    "horaLeitura": "18/10/2026 - 23:05"
+  },
+  {
+    "regiao": "Itajaí-Açú",
+    "dados": {
+      "Variance": {
+        "m05": 0,
+        "m15": 0,
+        "mes": 132.6,
+        "m30": 0,
+        "h72": 3.2,
+        "h03": 0,
+        "h24": 0,
+        "h12": 0,
+        "h06": 0,
+        "h04": 0,
+        "h96": 24.8,
+        "h02": 0,
+        "h168": 45,
+        "h01": 0
+      },
+      "vrnce": 0,
+      "niv": 1.6
+    },
+    "estacao_id": 1091,
+    "tipo": "estado_sc",
+    "estacao": "Doutor Pedrinho",
+    "tipo_estacao": "met",
+    "horaLeitura": "18/10/2026 - 23:05"
+  },
+  {
+    "regiao": "Central",
+    "dados": {
+      "niv": 2.68
+    },
+    "estacao_id": 1341,
+    "tipo": "celesc",
+    "estacao": "Estação CELESC 01",
+    "tipo_estacao": "lnm",
+    "horaLeitura": "18/09/2026 - 13:00"
+  },
+  {
+    "regiao": "Norte",
+    "dados": {
+      "cont": 161,
+      "vrnce": 0,
+      "umiIn": 58.6,
+      "rst": 250,
+      "Variance": {
+        "m05": 0,
+        "m15": 0,
+        "mes": 105.4,
+        "m30": 0,
+        "h72": 6.2,
+        "h03": 0,
+        "h24": 0,
+        "h12": 0,
+        "h06": 0,
+        "h04": 0,
+        "h96": 11.4,
+        "h02": 0,
+        "h168": 29.4,
+        "h01": 0
+      },
+      "temIn": 17.43
+    },
+    "estacao_id": 103,
+    "tipo": "alertablu",
+    "estacao": "Fidelis",
+    "tipo_estacao": "plv",
+    "localizacao": [
+      -49.061721919503576,
+      -26.830749903639315
+    ],
+    "horaLeitura": "18/10/2026 - 23:15"
+  },
+  {
+    "regiao": "Itajaí-Açú",
+    "dados": {
+      "Variance": {
+        "m05": 0,
+        "m15": null,
+        "mes": 89.3641741818,
+        "m30": null,
+        "h72": 5.5417115351,
+        "h03": 0,
+        "h24": 0,
+        "h12": 0,
+        "h06": 0,
+        "h04": 0,
+        "h96": 6.1343915351,
+        "h02": 0,
+        "h168": null,
+        "h01": 0
+      }
+    },
+    "estacao_id": 1286,
+    "tipo": "cemaden2",
+    "estacao": "GASPAR:Bateias",
+    "tipo_estacao": "plv",
+    "localizacao": [
+      178.99491399504745,
+      -89.99948960358775
+    ],
+    "horaLeitura": "18/10/2026 - 22:50"
+  },
+  {
+    "regiao": "Itajaí-Açú",
+    "dados": {
+      "Variance": {
+        "m05": 0,
+        "m15": null,
+        "mes": 0.4,
+        "m30": null,
+        "h72": null,
+        "h03": null,
+        "h24": 0.2,
+        "h12": null,
+        "h06": null,
+        "h04": null,
+        "h96": null,
+        "h02": null,
+        "h168": null,
+        "h01": null
+      }
+    },
+    "estacao_id": 1263,
+    "tipo": "cemaden2",
+    "estacao": "GASPAR:Belchior Baixo",
+    "tipo_estacao": "plv",
+    "localizacao": [
+      178.99491399504745,
+      -89.99948960358775
+    ],
+    "horaLeitura": "18/10/2026 - 07:40"
+  },
+  {
+    "regiao": "Itajaí-Açú",
+    "dados": {
+      "Variance": {
+        "m05": 0.58902,
+        "m15": null,
+        "mes": 2.1673191337,
+        "m30": null,
+        "h72": null,
+        "h03": null,
+        "h24": null,
+        "h12": null,
+        "h06": null,
+        "h04": null,
+        "h96": null,
+        "h02": null,
+        "h168": null,
+        "h01": null
+      }
+    },
+    "estacao_id": 1269,
+    "tipo": "cemaden2",
+    "estacao": "GASPAR:Centro",
+    "tipo_estacao": "plv",
+    "localizacao": [
+      178.99491399504745,
+      -89.99948960358775
+    ],
+    "horaLeitura": "15/10/2026 - 22:10"
+  },
+  {
+    "regiao": "Itajaí-Açú",
+    "dados": {
+      "Variance": {
+        "m05": 0,
+        "m15": null,
+        "mes": 114.6993989466,
+        "m30": null,
+        "h72": 12.8153402565,
+        "h03": 0,
+        "h24": 0,
+        "h12": 0,
+        "h06": 0,
+        "h04": 0,
+        "h96": 15.3677602565,
+        "h02": 0,
+        "h168": 29.3445002565,
+        "h01": 0
+      }
+    },
+    "estacao_id": 1261,
+    "tipo": "cemaden2",
+    "estacao": "GASPAR:Posto Grande",
+    "tipo_estacao": "plv",
+    "localizacao": [
+      178.99491399504745,
+      -89.99948960358775
+    ],
+    "horaLeitura": "18/10/2026 - 22:40"
+  },
+  {
+    "regiao": "Itajaí-Açú",
+    "dados": {
+      "Variance": {
+        "m05": 0,
+        "m15": null,
+        "mes": 90.4,
+        "m30": null,
+        "h72": 24,
+        "h03": 0,
+        "h24": 0,
+        "h12": 0,
+        "h06": 0,
+        "h04": 0,
+        "h96": 24.2,
+        "h02": 0,
+        "h168": 30.4,
+        "h01": 0
+      }
+    },
+    "estacao_id": 1267,
+    "tipo": "cemaden2",
+    "estacao": "GUABIRUBA:Centro",
+    "tipo_estacao": "plv",
+    "localizacao": [
+      178.99491399504745,
+      -89.99948960358775
+    ],
+    "horaLeitura": "18/10/2026 - 23:10"
+  },
+  {
+    "regiao": "Itajaí-Açú",
+    "dados": {
+      "Variance": {
+        "m05": 0,
+        "m15": null,
+        "mes": 75.4,
+        "m30": null,
+        "h72": null,
+        "h03": null,
+        "h24": null,
+        "h12": 0,
+        "h06": null,
+        "h04": 0,
+        "h96": 35.6,
+        "h02": 0,
+        "h168": 35.8,
+        "h01": 0
+      }
+    },
+    "estacao_id": 1281,
+    "tipo": "cemaden2",
+    "estacao": "GUABIRUBA:Lageado Baixo",
+    "tipo_estacao": "plv",
+    "localizacao": [
+      178.99491399504745,
+      -89.99948960358775
+    ],
+    "horaLeitura": "18/10/2026 - 22:50"
+  },
+  {
+    "regiao": "Itajaí-Açú",
+    "dados": {
+      "Variance": {
+        "m05": 0,
+        "m15": null,
+        "mes": 10.8,
+        "m30": null,
+        "h72": 0,
+        "h03": 0,
+        "h24": 0,
+        "h12": 0,
+        "h06": 0,
+        "h04": 0,
+        "h96": 0,
+        "h02": 0,
+        "h168": 0,
+        "h01": 0
+      }
+    },
+    "estacao_id": 1247,
+    "tipo": "cemaden2",
+    "estacao": "GUABIRUBA:São Pedro",
+    "tipo_estacao": "plv",
+    "localizacao": [
+      178.99491399504745,
+      -89.99948960358775
+    ],
+    "horaLeitura": "18/10/2026 - 22:20"
+  },
+  {
+    "regiao": "Itajaí-Açú",
+    "dados": {
+      "Variance": {
+        "m05": 0,
+        "m15": 0,
+        "mes": 98.6,
+        "m30": 0,
+        "h72": 10.8,
+        "h03": 0,
+        "h24": 0,
+        "h12": 0,
+        "h06": 0,
+        "h04": 0,
+        "h96": 13.4,
+        "h02": 0,
+        "h168": 25.6,
+        "h01": 0
+      },
+      "vrnce": 0
+    },
+    "estacao_id": 1068,
+    "tipo": "estado_sc",
+    "estacao": "Gaspar",
+    "tipo_estacao": "met",
+    "horaLeitura": "18/10/2026 - 23:05"
+  },
+  {
+    "regiao": "Sul",
+    "dados": {
+      "tBat": 12.60498046875,
+      "cont": 14425,
+      "vrnce": 0,
+      "umiIn": 68.8,
+      "rst": 0,
+      "Variance": {
+        "m05": 0,
+        "m15": 0,
+        "mes": 105.6,
+        "m30": 0,
+        "h72": 152.6,
+        "h03": 41.2,
+        "h24": 96.8,
+        "h12": 0,
+        "h06": 0,
+        "h04": 0,
+        "h96": 11.2,
+        "h02": 0,
+        "h168": 171,
+        "h01": 18.4
+      },
+      "temIn": 17.54
+    },
+    "estacao_id": 105,
+    "tipo": "alertablu",
+    "estacao": "Glória",
+    "tipo_estacao": "plv",
+    "localizacao": [
+      -49.056360942494855,
+      -26.96449993112973
+    ],
+    "horaLeitura": "18/10/2026 - 23:15"
+  },
+  {
+    "regiao": "Itajaí-Açú",
+    "dados": {
+      "Variance": {
+        "m05": 0,
+        "m15": 0,
+        "mes": 98.4,
+        "m30": 0,
+        "h72": 28.4,
+        "h03": 0,
+        "h24": 0.2,
+        "h12": 0.2,
+        "h06": 0,
+        "h04": 0,
+        "h96": 28.4,
+        "h02": 0,
+        "h168": 34.8,
+        "h01": 0
+      },
+      "vrnce": 0,
+      "niv": 0.6
+    },
+    "estacao_id": 1092,
+    "tipo": "estado_sc",
+    "estacao": "Guabiruba",
+    "tipo_estacao": "met",
+    "horaLeitura": "18/10/2026 - 23:05"
+  },
+  {
+    "regiao": "Itajaí-Açú",
+    "dados": {
+      "Variance": {
+        "m05": 0,
+        "m15": null,
+        "mes": 80.4,
+        "m30": null,
+        "h72": 2.4,
+        "h03": 0,
+        "h24": 0,
+        "h12": 0,
+        "h06": 0,
+        "h04": 0,
+        "h96": 4.6,
+        "h02": 0,
+        "h168": 16.2,
+        "h01": 0
+      }
+    },
+    "estacao_id": 1242,
+    "tipo": "cemaden2",
+    "estacao": "INDAIAL:Carijós",
+    "tipo_estacao": "plv",
+    "localizacao": [
+      178.99491399504745,
+      -89.99948960358775
+    ],
+    "horaLeitura": "18/10/2026 - 22:50"
+  },
+  {
+    "regiao": "Itajaí-Açú",
+    "dados": {
+      "Variance": {
+        "m05": 0,
+        "m15": null,
+        "mes": 0,
+        "m30": null,
+        "h72": 0,
+        "h03": 0,
+        "h24": 0,
+        "h12": 0,
+        "h06": 0,
+        "h04": 0,
+        "h96": null,
+        "h02": 0,
+        "h168": 0,
+        "h01": 0
+      }
+    },
+    "estacao_id": 1279,
+    "tipo": "cemaden2",
+    "estacao": "ITUPORANGA:Centro - Prefeitura",
+    "tipo_estacao": "plv",
+    "localizacao": [
+      178.99491399504745,
+      -89.99948960358775
+    ],
+    "horaLeitura": "18/10/2026 - 22:30"
+  },
+  {
+    "regiao": "Itajaí-Açú",
+    "dados": {
+      "Variance": {
+        "m05": 0,
+        "m15": null,
+        "mes": 26.0760200935,
+        "m30": null,
+        "h72": null,
+        "h03": 0,
+        "h24": 0,
+        "h12": 0,
+        "h06": 0,
+        "h04": 0,
+        "h96": 18.9622931073,
+        "h02": 0,
+        "h168": null,
+        "h01": 0
+      }
+    },
+    "estacao_id": 1270,
+    "tipo": "cemaden2",
+    "estacao": "ITUPORANGA:Gabiroba",
+    "tipo_estacao": "plv",
+    "localizacao": [
+      178.99491399504745,
+      -89.99948960358775
+    ],
+    "horaLeitura": "18/10/2026 - 19:40"
+  },
+  {
+    "regiao": "Itajaí-Açú",
+    "dados": {
+      "Variance": {
+        "m05": null,
+        "m15": null,
+        "mes": 0,
+        "m30": null,
+        "h72": null,
+        "h03": null,
+        "h24": null,
+        "h12": null,
+        "h06": null,
+        "h04": null,
+        "h96": null,
+        "h02": null,
+        "h168": null,
+        "h01": null
+      }
+    },
+    "estacao_id": 1274,
+    "tipo": "cemaden2",
+    "estacao": "ITUPORANGA:Gruta",
+    "tipo_estacao": "plv",
+    "localizacao": [
+      178.99491399504745,
+      -89.99948960358775
+    ],
+    "horaLeitura": "18/11/2025 - 10:10"
+  },
+  {
+    "regiao": "Itajaí-Açú",
+    "dados": {
+      "Variance": {
+        "m05": 0,
+        "m15": 0,
+        "mes": 92.2,
+        "m30": 0,
+        "h72": 13.8,
+        "h03": 0,
+        "h24": 0,
+        "h12": 0,
+        "h06": 0,
+        "h04": 0,
+        "h96": 13.8,
+        "h02": 0,
+        "h168": 22.8,
+        "h01": 0
+      },
+      "vrnce": 0,
+      "niv": 1.88
+    },
+    "estacao_id": 1083,
+    "tipo": "estado_sc",
+    "estacao": "Ibirama",
+    "tipo_estacao": "met",
+    "horaLeitura": "18/10/2026 - 23:05"
+  },
+  {
+    "regiao": "Itajaí-Açú",
+    "dados": {
+      "Variance": {
+        "m05": 0,
+        "m15": 0,
+        "mes": 162.75,
+        "m30": 0,
+        "h72": 11.19,
+        "h03": 0.06,
+        "h24": 1.1,
+        "h12": 0.99,
+        "h06": 0.09,
+        "h04": 0.07,
+        "h96": 21.02,
+        "h02": 0.02,
+        "h168": 42.28,
+        "h01": 0
+      },
+      "vrnce": 0,
+      "niv": 9.52
+    },
+    "estacao_id": 1093,
+    "tipo": "estado_sc",
+    "estacao": "Ilhota",
+    "tipo_estacao": "met",
+    "horaLeitura": "18/10/2026 - 23:05"
+  },
+  {
+    "regiao": "Itajaí-Açú",
+    "dados": {
+      "Variance": {
+        "m05": 0,
+        "m15": 0,
+        "mes": 3,
+        "m30": 0,
+        "h72": null,
+        "h03": null,
+        "h24": null,
+        "h12": null,
+        "h06": null,
+        "h04": null,
+        "h96": null,
+        "h02": null,
+        "h168": null,
+        "h01": 0
+      },
+      "vrnce": 0,
+      "niv": 54.58
+    },
+    "estacao_id": 1069,
+    "tipo": "estado_sc",
+    "estacao": "Indaial",
+    "tipo_estacao": "met",
+    "horaLeitura": "12/10/2026 - 11:50"
+  },
+  {
+    "regiao": "Itajaí-Açú",
+    "dados": {
+      "Variance": {
+        "m05": 0,
+        "m15": 0,
+        "mes": 109.91,
+        "m30": 0,
+        "h72": 2.03,
+        "h03": 0,
+        "h24": 0,
+        "h12": 0,
+        "h06": 0,
+        "h04": 0,
+        "h96": 11.08,
+        "h02": 0,
+        "h168": 27.2,
+        "h01": 0
+      },
+      "vrnce": 0
+    },
+    "estacao_id": 1072,
+    "tipo": "estado_sc",
+    "estacao": "Itaiópolis",
+    "tipo_estacao": "met",
+    "horaLeitura": "18/10/2026 - 23:05"
+  },
+  {
+    "regiao": "Norte",
+    "dados": {
+      "tBat": 12.7276611328125,
+      "cont": 12992,
+      "vrnce": 0,
+      "umiIn": 83.3,
+      "rst": 0,
+      "Variance": {
+        "m05": 0,
+        "m15": 0,
+        "mes": 115.2,
+        "m30": 0,
+        "h72": 9.6,
+        "h03": 0,
+        "h24": 0,
+        "h12": 0,
+        "h06": 0,
+        "h04": 0,
+        "h96": 14.8,
+        "h02": 0,
+        "h168": 32.4,
+        "h01": 0
+      },
+      "temIn": 19.33
+    },
+    "estacao_id": 90,
+    "tipo": "alertablu",
+    "estacao": "Itoupava Central",
+    "tipo_estacao": "plv",
+    "localizacao": [
+      -49.0958328955031,
+      -26.815805874738988
+    ],
+    "horaLeitura": "18/10/2026 - 23:15"
+  },
+  {
+    "regiao": "Norte",
+    "dados": {
+      "tBat": 12.6727294921875,
+      "cont": 3852,
+      "vrnce": 0,
+      "umiIn": 66,
+      "rst": 5,
+      "Variance": {
+        "m05": 0,
+        "m15": 0,
+        "mes": 110.4,
+        "m30": 0,
+        "h72": 5.8,
+        "h03": 0,
+        "h24": 0,
+        "h12": 0,
+        "h06": 0,
+        "h04": 0,
+        "h96": 10,
+        "h02": 0,
+        "h168": 27.8,
+        "h01": 0
+      },
+      "temIn": 19.32
+    },
+    "estacao_id": 86,
+    "tipo": "alertablu",
+    "estacao": "Itoupavazinha",
+    "tipo_estacao": "plv",
+    "localizacao": [
+      -49.1163609529996,
+      -26.854638943735235
+    ],
+    "horaLeitura": "18/10/2026 - 23:15"
+  },
+  {
+    "regiao": "Itajaí-Açú",
+    "dados": {
+      "Variance": {
+        "m05": 0,
+        "m15": 0,
+        "mes": 68.4,
+        "m30": 0,
+        "h72": 1.6,
+        "h03": 0,
+        "h24": 0,
+        "h12": 0,
+        "h06": 0,
+        "h04": 0,
+        "h96": 9.4,
+        "h02": 0,
+        "h168": 16,
+        "h01": 0
+      },
+      "vrnce": 0,
+      "niv": 1.48
+    },
+    "estacao_id": 1102,
+    "tipo": "estado_sc",
+    "estacao": "Ituporanga",
+    "tipo_estacao": "met",
+    "horaLeitura": "18/10/2026 - 23:05"
+  },
+  {
+    "regiao": "Sul",
+    "dados": {
+      "tBat": 12.568359375,
+      "cont": 3532,
+      "vrnce": 0,
+      "umiIn": 31.8,
+      "rst": 0,
+      "Variance": {
+        "m05": 0,
+        "m15": 0,
+        "mes": 99.6,
+        "m30": 0,
+        "h72": 152.6,
+        "h03": 41.2,
+        "h24": 96.8,
+        "h12": 0,
+        "h06": 0,
+        "h04": 0,
+        "h96": 7.4,
+        "h02": 0,
+        "h168": 171,
+        "h01": 18.4
+      },
+      "temIn": 17.42
+    },
+    "estacao_id": 102,
+    "tipo": "alertablu",
+    "estacao": "Jordão",
+    "tipo_estacao": "plv",
+    "localizacao": [
+      -49.06863891599098,
+      -27.014082899525558
+    ],
+    "horaLeitura": "18/10/2026 - 23:10"
+  },
+  {
+    "regiao": "-",
+    "dados": {
+      "compA": 1,
+      "compF": 1,
+      "cap": 6.5,
+      "jus": 0,
+      "mont": 268.75,
+      "Variance": {
+        "m05": 6.5,
+        "m15": null,
+        "mes": 462.2,
+        "m30": null,
+        "h72": 45.7,
+        "h03": null,
+        "h24": 13.2,
+        "h12": null,
+        "h06": null,
+        "h04": null,
+        "h96": 68.7,
+        "h02": null,
+        "h168": 156.4,
+        "h01": null
+      }
+    },
+    "estacao_id": 841,
+    "tipo": "pref.-rio-do-sul",
+    "estacao": "José Boiteux",
+    "tipo_estacao": "brm",
+    "horaLeitura": "18/10/2026 - 17:00"
+  },
+  {
+    "regiao": "Itajaí-Açú",
+    "dados": {
+      "Variance": {
+        "m05": 0,
+        "m15": 0,
+        "mes": 85.2,
+        "m30": 0,
+        "h72": 11.8,
+        "h03": 0,
+        "h24": 0,
+        "h12": 0,
+        "h06": 0,
+        "h04": 0,
+        "h96": 19.6,
+        "h02": 0,
+        "h168": 30.8,
+        "h01": 0
+      },
+      "vrnce": 0,
+      "niv": 1.93
+    },
+    "estacao_id": 1094,
+    "tipo": "estado_sc",
+    "estacao": "Laurentino",
+    "tipo_estacao": "met",
+    "horaLeitura": "18/10/2026 - 23:05"
+  },
+  {
+    "regiao": "Itajaí-Açú",
+    "dados": {
+      "Variance": {
+        "m05": 0,
+        "m15": 0,
+        "mes": 84.43,
+        "m30": 0,
+        "h72": 23.4,
+        "h03": 0,
+        "h24": 0,
+        "h12": 0,
+        "h06": 0,
+        "h04": 0,
+        "h96": 23.6,
+        "h02": 0,
+        "h168": 33.8,
+        "h01": 0
+      },
+      "vrnce": 0
+    },
+    "estacao_id": 1095,
+    "tipo": "estado_sc",
+    "estacao": "Lontras",
+    "tipo_estacao": "met",
+    "horaLeitura": "18/10/2026 - 23:05"
+  },
+  {
+    "regiao": "Leste",
+    "dados": {
+      "tBat": 12.568359375,
+      "cont": 1531,
+      "vrnce": 0,
+      "umiIn": 0,
+      "rst": 0,
+      "Variance": {
+        "m05": 0,
+        "m15": 0,
+        "mes": 115.4,
+        "m30": 0,
+        "h72": 8.6,
+        "h03": 0,
+        "h24": 0,
+        "h12": 0,
+        "h06": 0,
+        "h04": 0,
+        "h96": 13,
+        "h02": 0,
+        "h168": 30.2,
+        "h01": 0
+      },
+      "temIn": -40
+    },
+    "estacao_id": 82,
+    "tipo": "alertablu",
+    "estacao": "Nova Esperança",
+    "tipo_estacao": "plv",
+    "localizacao": [
+      -49.05077778850047,
+      -26.88416674633585
+    ],
+    "horaLeitura": "18/10/2026 - 23:15"
+  },
+  {
+    "regiao": "Sul",
+    "dados": {
+      "tBat": 12.61962890625,
+      "cont": 14387,
+      "vrnce": 0,
+      "umiIn": 72.2,
+      "rst": 0,
+      "Variance": {
+        "m05": 0,
+        "m15": 0,
+        "mes": 113.4,
+        "m30": 0,
+        "h72": 152.6,
+        "h03": 41.2,
+        "h24": 96.8,
+        "h12": 0,
+        "h06": 0,
+        "h04": 0,
+        "h96": 14.8,
+        "h02": 0,
+        "h168": 171,
+        "h01": 18.4
+      },
+      "temIn": 16.66
+    },
+    "estacao_id": 91,
+    "tipo": "alertablu",
+    "estacao": "Nova Rússia",
+    "tipo_estacao": "plv",
+    "localizacao": [
+      -49.093499812488936,
+      -27.02866677502348
+    ],
+    "horaLeitura": "18/10/2026 - 23:15"
+  },
+  {
+    "regiao": "Itajaí-Açú",
+    "dados": {
+      "Variance": {
+        "m05": 0,
+        "m15": null,
+        "mes": 161.5611177068,
+        "m30": null,
+        "h72": null,
+        "h03": null,
+        "h24": null,
+        "h12": null,
+        "h06": null,
+        "h04": null,
+        "h96": null,
+        "h02": null,
+        "h168": null,
+        "h01": null
+      }
+    },
+    "estacao_id": 1287,
+    "tipo": "cemaden2",
+    "estacao": "POMERODE:Centro",
+    "tipo_estacao": "plv",
+    "localizacao": [
+      178.99491399504745,
+      -89.99948960358775
+    ],
+    "horaLeitura": "21/09/2026 - 05:30"
+  },
+  {
+    "regiao": "Itajaí-Açú",
+    "dados": {
+      "Variance": {
+        "m05": 0,
+        "m15": null,
+        "mes": 63.526664779,
+        "m30": null,
+        "h72": 8.4576012176,
+        "h03": 0,
+        "h24": 0,
+        "h12": null,
+        "h06": 0,
+        "h04": 0,
+        "h96": 8.4576012176,
+        "h02": 0,
+        "h168": null,
+        "h01": 0
+      }
+    },
+    "estacao_id": 1250,
+    "tipo": "cemaden2",
+    "estacao": "POMERODE:Ribeirão Herdt",
+    "tipo_estacao": "plv",
+    "localizacao": [
+      178.99491399504745,
+      -89.99948960358775
+    ],
+    "horaLeitura": "18/10/2026 - 19:50"
+  },
+  {
+    "regiao": "Itajaí-Açú",
+    "dados": {
+      "Variance": {
+        "m05": 0,
+        "m15": null,
+        "mes": 1.2,
+        "m30": null,
+        "h72": 0,
+        "h03": 0,
+        "h24": 0,
+        "h12": 0,
+        "h06": 0,
+        "h04": 0,
+        "h96": 0,
+        "h02": 0,
+        "h168": 0.4,
+        "h01": 0
+      }
+    },
+    "estacao_id": 1259,
+    "tipo": "cemaden2",
+    "estacao": "POMERODE:Rio do Testo",
+    "tipo_estacao": "plv",
+    "localizacao": [
+      178.99491399504745,
+      -89.99948960358775
+    ],
+    "horaLeitura": "18/10/2026 - 23:10"
+  },
+  {
+    "regiao": "Itajaí-Açú",
+    "dados": {
+      "Variance": {
+        "m05": null,
+        "m15": null,
+        "mes": 0,
+        "m30": null,
+        "h72": null,
+        "h03": 0,
+        "h24": null,
+        "h12": 0,
+        "h06": 0,
+        "h04": 0,
+        "h96": null,
+        "h02": 0,
+        "h168": null,
+        "h01": 0
+      }
+    },
+    "estacao_id": 1251,
+    "tipo": "cemaden2",
+    "estacao": "POMERODE:Rua Frederic Blanck",
+    "tipo_estacao": "plv",
+    "localizacao": [
+      178.99491399504745,
+      -89.99948960358775
+    ],
+    "horaLeitura": "05/10/2025 - 02:20"
+  },
+  {
+    "regiao": "Itajaí-Açú",
+    "dados": {
+      "Variance": {
+        "m05": 0,
+        "m15": null,
+        "mes": 141.5474262522,
+        "m30": null,
+        "h72": 10.6603939261,
+        "h03": 0,
+        "h24": 0,
+        "h12": 0,
+        "h06": 0,
+        "h04": 0,
+        "h96": 19.5003176961,
+        "h02": 0,
+        "h168": 39.9416376961,
+        "h01": 0
+      }
+    },
+    "estacao_id": 1282,
+    "tipo": "cemaden2",
+    "estacao": "POMERODE:Testo Central Alto",
+    "tipo_estacao": "plv",
+    "localizacao": [
+      178.99491399504745,
+      -89.99948960358775
+    ],
+    "horaLeitura": "18/10/2026 - 22:20"
+  },
+  {
+    "regiao": "Oeste",
+    "dados": {
+      "tBat": 12.5848388671875,
+      "umiAr": 79.7839340209961,
+      "cont": 3012,
+      "temAr": 16.0308837890625,
+      "umiIn": 58.3,
+      "rst": 2,
+      "Variance": {
+        "m05": 0,
+        "m15": 0,
+        "mes": 102.6,
+        "m30": 0,
+        "h72": 11.4,
+        "h03": 0,
+        "h24": null,
+        "h12": 0,
+        "h06": 0,
+        "h04": 0,
+        "h96": 13.6,
+        "h02": 0,
+        "h168": 26.6,
+        "h01": null
+      },
+      "temIn": 18.64
+    },
+    "estacao_id": 81,
+    "tipo": "alertablu",
+    "estacao": "Parque Ramiro Ruediger",
+    "tipo_estacao": "met",
+    "localizacao": [
+      -49.08610415869705,
+      -26.912597867832318
+    ],
+    "horaLeitura": "18/10/2026 - 23:20"
+  },
+  {
+    "regiao": "Oeste",
+    "dados": {
+      "tBat": 12.586669921875,
+      "cont": 3563,
+      "vrnce": 0,
+      "umiIn": 59.6,
+      "rst": 4,
+      "Variance": {
+        "m05": 0,
+        "m15": 0,
+        "mes": 97.4,
+        "m30": 0,
+        "h72": 6,
+        "h03": 0,
+        "h24": 0,
+        "h12": 0,
+        "h06": 0,
+        "h04": 0,
+        "h96": 7.6,
+        "h02": 0,
+        "h168": 19.8,
+        "h01": 0
+      },
+      "temIn": 20.99
+    },
+    "estacao_id": 89,
+    "tipo": "alertablu",
+    "estacao": "Passo Manso",
+    "tipo_estacao": "plv",
+    "localizacao": [
+      -49.150305909493994,
+      -26.915499891529333
+    ],
+    "horaLeitura": "18/10/2026 - 23:15"
+  },
+  {
+    "regiao": "Itajaí-Açú",
+    "dados": {
+      "Variance": {
+        "m05": 0,
+        "m15": 0,
+        "mes": 159.4,
+        "m30": 0,
+        "h72": 13.8,
+        "h03": 0,
+        "h24": 0,
+        "h12": 0,
+        "h06": 0,
+        "h04": 0,
+        "h96": 37.2,
+        "h02": 0,
+        "h168": 56.6,
+        "h01": 0
+      },
+      "vrnce": 0,
+      "niv": 0.76
+    },
+    "estacao_id": 1070,
+    "tipo": "estado_sc",
+    "estacao": "Pomerode",
+    "tipo_estacao": "met",
+    "horaLeitura": "18/10/2026 - 23:05"
+  },
+  {
+    "regiao": "Central",
+    "dados": {
+      "tBat": 12.6,
+      "niv": 2.16,
+      "Variance": {
+        "m05": 0,
+        "m15": 0,
+        "mes": 94.4,
+        "m30": 0,
+        "h72": 9,
+        "h03": 0,
+        "h24": 0,
+        "h12": 0,
+        "h06": 0,
+        "h04": 0,
+        "h96": 11,
+        "h02": 0,
+        "h168": 23.2,
+        "h01": 0
+      }
+    },
+    "estacao_id": 661,
+    "tipo": "alertablu",
+    "estacao": "Ponte Adolfo Konder",
+    "tipo_estacao": "plv",
+    "localizacao": [
+      -49.06533130579757,
+      -26.91818239303276
+    ],
+    "horaLeitura": "18/10/2026 - 23:20"
+  },
+  {
+    "regiao": "Central",
+    "dados": {
+      "tBat": 12.6,
+      "niv": 2.16,
+      "Variance": {
+        "m05": 0,
+        "m15": 0,
+        "mes": 94.4,
+        "m30": 0,
+        "h72": 9,
+        "h03": 0,
+        "h24": 0,
+        "h12": 0,
+        "h06": 0,
+        "h04": 0,
+        "h96": 11,
+        "h02": 0,
+        "h168": 23.2,
+        "h01": 0
+      }
+    },
+    "estacao_id": 721,
+    "tipo": "alertablu",
+    "estacao": "Ponte Adolfo Konder",
+    "tipo_estacao": "lnm",
+    "localizacao": [
+      -49.065266944797585,
+      -26.918134455532755
+    ],
+    "horaLeitura": "18/10/2026 - 23:20"
+  },
+  {
+    "regiao": "Itajaí-Açú",
+    "dados": {
+      "Variance": {
+        "m05": 0,
+        "m15": 0,
+        "mes": 77.4,
+        "m30": 0,
+        "h72": 4.4,
+        "h03": 0,
+        "h24": 0,
+        "h12": 0,
+        "h06": 0,
+        "h04": 0,
+        "h96": 21.2,
+        "h02": 0,
+        "h168": 32.6,
+        "h01": 0
+      },
+      "vrnce": 0,
+      "niv": 1.58
+    },
+    "estacao_id": 1096,
+    "tipo": "estado_sc",
+    "estacao": "Pouso Redondo",
+    "tipo_estacao": "met",
+    "horaLeitura": "18/10/2026 - 23:05"
+  },
+  {
+    "regiao": "-",
+    "dados": {
+      "Variance": {
+        "m05": 0,
+        "m15": 0,
+        "mes": 95.8,
+        "m30": 0,
+        "h72": 25,
+        "h03": 0,
+        "h24": 0,
+        "h12": 0,
+        "h06": 0,
+        "h04": 0,
+        "h96": 25.8,
+        "h02": 0,
+        "h168": 35.2,
+        "h01": 0
+      },
+      "vrnce": 0,
+      "niv": 1.72
+    },
+    "estacao_id": 1106,
+    "tipo": "estado_sc",
+    "estacao": "Presidente Getúlio",
+    "tipo_estacao": "met",
+    "horaLeitura": "18/10/2026 - 23:05"
+  },
+  {
+    "regiao": "Itajaí-Açú",
+    "dados": {
+      "Variance": {
+        "m05": 0,
+        "m15": 0,
+        "mes": 120.81,
+        "m30": 0,
+        "h72": 2.8,
+        "h03": 0,
+        "h24": 0.01,
+        "h12": 0.01,
+        "h06": 0.01,
+        "h04": 0,
+        "h96": 10.89,
+        "h02": 0,
+        "h168": 24.6,
+        "h01": 0
+      },
+      "vrnce": 0
+    },
+    "estacao_id": 1073,
+    "tipo": "estado_sc",
+    "estacao": "Rio do Campo",
+    "tipo_estacao": "met",
+    "horaLeitura": "18/10/2026 - 23:05"
+  },
+  {
+    "regiao": "Itajaí-Açú",
+    "dados": {
+      "Variance": {
+        "m05": 0.02,
+        "m15": 0.04,
+        "mes": 140.52,
+        "m30": 0.04,
+        "h72": 5.8,
+        "h03": 0.1,
+        "h24": 0.45,
+        "h12": 0.11,
+        "h06": 0.11,
+        "h04": 0.1,
+        "h96": null,
+        "h02": null,
+        "h168": 7.14,
+        "h01": 0.05
+      },
+      "vrnce": 0.02,
+      "niv": 5.63
+    },
+    "estacao_id": 1085,
+    "tipo": "estado_sc",
+    "estacao": "Rio do Oeste",
+    "tipo_estacao": "met",
+    "horaLeitura": "22/08/2026 - 09:00"
+  },
+  {
+    "regiao": "Itajaí-Açú",
+    "dados": {
+      "Variance": {
+        "m05": 0,
+        "m15": 0,
+        "mes": 120.25,
+        "m30": 0,
+        "h72": 32.88,
+        "h03": 0,
+        "h24": 0,
+        "h12": 0,
+        "h06": 0,
+        "h04": 0,
+        "h96": 33.66,
+        "h02": 0,
+        "h168": 50.84,
+        "h01": 0
+      },
+      "vrnce": 0,
+      "niv": 2.58
+    },
+    "estacao_id": 1076,
+    "tipo": "estado_sc",
+    "estacao": "Rio do Sul",
+    "tipo_estacao": "met",
+    "horaLeitura": "18/10/2026 - 23:05"
+  },
+  {
+    "regiao": "Itajaí-Açú",
+    "dados": {
+      "Variance": {
+        "m05": 0,
+        "m15": 0,
+        "mes": 132.6,
+        "m30": 0,
+        "h72": 8.8,
+        "h03": 0,
+        "h24": 0,
+        "h12": 0,
+        "h06": 0,
+        "h04": 0,
+        "h96": 21.6,
+        "h02": 0,
+        "h168": 42,
+        "h01": 0
+      },
+      "vrnce": 0,
+      "niv": 1.56
+    },
+    "estacao_id": 1074,
+    "tipo": "estado_sc",
+    "estacao": "Rio dos Cedros 1",
+    "tipo_estacao": "met",
+    "horaLeitura": "18/10/2026 - 23:05"
+  },
+  {
+    "regiao": "Itajaí-Açú",
+    "dados": {
+      "Variance": {
+        "m05": 0,
+        "m15": 0,
+        "mes": 228.95,
+        "m30": 0,
+        "h72": 5.32,
+        "h03": 0,
+        "h24": 0,
+        "h12": 0,
+        "h06": 0,
+        "h04": 0,
+        "h96": 19.77,
+        "h02": 0,
+        "h168": 57.51,
+        "h01": 0
+      },
+      "vrnce": 0
+    },
+    "estacao_id": 1075,
+    "tipo": "estado_sc",
+    "estacao": "Rio dos Cedros 2",
+    "tipo_estacao": "met",
+    "horaLeitura": "18/10/2026 - 23:05"
+  },
+  {
+    "regiao": "Oeste",
+    "dados": {
+      "preAt": 1001.6,
+      "umiAr": 85.4,
+      "temAr": 14.4
+    },
+    "estacao_id": 1301,
+    "tipo": "estado_sc",
+    "estacao": "SDC-SC Blumenau - Água Verde",
+    "tipo_estacao": "plv",
+    "horaLeitura": "18/10/2026 - 23:14"
+  },
+  {
+    "regiao": "Itajaí-Açú",
+    "dados": {
+      "Variance": {
+        "m05": 0,
+        "m15": 0,
+        "mes": 134.14,
+        "m30": 0,
+        "h72": 23.46,
+        "h03": 0,
+        "h24": 0.03,
+        "h12": 0,
+        "h06": 0,
+        "h04": 0,
+        "h96": 26.33,
+        "h02": 0,
+        "h168": 42.61,
+        "h01": 0
+      },
+      "vrnce": 0,
+      "niv": 3.59
+    },
+    "estacao_id": 1104,
+    "tipo": "estado_sc",
+    "estacao": "Taió",
+    "tipo_estacao": "met",
+    "horaLeitura": "18/10/2026 - 23:05"
+  },
+  {
+    "regiao": "Norte",
+    "dados": {
+      "tBat": 12.56103515625,
+      "cont": 6126,
+      "vrnce": 0,
+      "umiIn": 32.2,
+      "rst": 0,
+      "Variance": {
+        "m05": 0,
+        "m15": 0,
+        "mes": 159.4,
+        "m30": 0,
+        "h72": 24.2,
+        "h03": 0,
+        "h24": 0,
+        "h12": 0,
+        "h06": 0,
+        "h04": 0,
+        "h96": 34.8,
+        "h02": 0,
+        "h168": 56,
+        "h01": 0
+      },
+      "temIn": 17.63
+    },
+    "estacao_id": 92,
+    "tipo": "alertablu",
+    "estacao": "Tatutiba",
+    "tipo_estacao": "plv",
+    "localizacao": [
+      -49.111610926005824,
+      -26.76455591134203
+    ],
+    "horaLeitura": "18/10/2026 - 23:15"
+  },
+  {
+    "regiao": "Itajaí-Açú",
+    "dados": {
+      "Variance": {
+        "m05": 0,
+        "m15": 0,
+        "mes": 131.49,
+        "m30": 0,
+        "h72": 8.65,
+        "h03": 0,
+        "h24": 0.03,
+        "h12": 0.03,
+        "h06": 0,
+        "h04": 0,
+        "h96": 13.54,
+        "h02": 0,
+        "h168": 34.4,
+        "h01": 0
+      },
+      "vrnce": 0,
+      "niv": 1.69
+    },
+    "estacao_id": 1086,
+    "tipo": "estado_sc",
+    "estacao": "Timbó 1",
+    "tipo_estacao": "met",
+    "horaLeitura": "18/10/2026 - 23:05"
+  },
+  {
+    "regiao": "Itajaí-Açú",
+    "dados": {
+      "Variance": {
+        "m05": 0,
+        "m15": 0,
+        "mes": 162.03,
+        "m30": 0,
+        "h72": 10.32,
+        "h03": 0,
+        "h24": 0,
+        "h12": 0,
+        "h06": 0,
+        "h04": 0,
+        "h96": 16.6,
+        "h02": 0,
+        "h168": 41.76,
+        "h01": 0
+      },
+      "vrnce": 0
+    },
+    "estacao_id": 1097,
+    "tipo": "estado_sc",
+    "estacao": "Timbó 2",
+    "tipo_estacao": "met",
+    "horaLeitura": "18/10/2026 - 23:05"
+  },
+  {
+    "regiao": "Itajaí-Açú",
+    "dados": {
+      "Variance": {
+        "m05": 0,
+        "m15": 0,
+        "mes": 145.96,
+        "m30": 0,
+        "h72": 10.13,
+        "h03": 0,
+        "h24": 1.79,
+        "h12": 1.51,
+        "h06": 0.07,
+        "h04": 0,
+        "h96": 56.79,
+        "h02": 0,
+        "h168": 70.75,
+        "h01": 0
+      },
+      "vrnce": 0
+    },
+    "estacao_id": 1077,
+    "tipo": "estado_sc",
+    "estacao": "Trombudo Central 1",
+    "tipo_estacao": "met",
+    "horaLeitura": "18/10/2026 - 23:05"
+  },
+  {
+    "regiao": "Itajaí-Açú",
+    "dados": {
+      "Variance": {
+        "m05": 0,
+        "m15": 0,
+        "mes": 91.6,
+        "m30": 0,
+        "h72": 0.2,
+        "h03": 0,
+        "h24": 0,
+        "h12": 0,
+        "h06": 0,
+        "h04": 0,
+        "h96": 25.2,
+        "h02": 0,
+        "h168": 36,
+        "h01": 0
+      },
+      "vrnce": 0,
+      "niv": 0.24
+    },
+    "estacao_id": 1098,
+    "tipo": "estado_sc",
+    "estacao": "Trombudo Central 2",
+    "tipo_estacao": "met",
+    "horaLeitura": "18/10/2026 - 23:05"
+  },
+  {
+    "regiao": "Oeste",
+    "dados": {
+      "tBat": 12.7349853515625,
+      "cont": 4028,
+      "vrnce": 0,
+      "cCga": 1.872802734375,
+      "umiIn": 68.9,
+      "rst": 113,
+      "Variance": {
+        "m05": 0,
+        "m15": 0,
+        "mes": 107.4,
+        "m30": 0,
+        "h72": 7.2,
+        "h03": 0,
+        "h24": 0,
+        "h12": 0,
+        "h06": 0,
+        "h04": 0,
+        "h96": 8,
+        "h02": 0,
+        "h168": 19.6,
+        "h01": 0
+      },
+      "temIn": 17.7
+    },
+    "estacao_id": 83,
+    "tipo": "alertablu",
+    "estacao": "Velha Grande",
+    "tipo_estacao": "plv",
+    "localizacao": [
+      -49.13299983199237,
+      -26.95141679852746
+    ],
+    "horaLeitura": "18/10/2026 - 23:15"
+  },
+  {
+    "regiao": "Itajaí-Açú",
+    "dados": {
+      "Variance": {
+        "m05": 0,
+        "m15": 0,
+        "mes": 91.6,
+        "m30": 0,
+        "h72": 11.8,
+        "h03": 0,
+        "h24": 0,
+        "h12": 0,
+        "h06": 0,
+        "h04": 0,
+        "h96": 33.2,
+        "h02": 0,
+        "h168": 45.4,
+        "h01": 0
+      },
+      "vrnce": 0,
+      "niv": 2.44
+    },
+    "estacao_id": 1087,
+    "tipo": "estado_sc",
+    "estacao": "Vidal Ramos",
+    "tipo_estacao": "met",
+    "horaLeitura": "18/10/2026 - 23:05"
+  },
+  {
+    "regiao": "Norte",
+    "dados": {
+      "tBat": 12.930908203125,
+      "cont": 5883,
+      "vrnce": 0,
+      "umiIn": 56.7,
+      "rst": 0,
+      "Variance": {
+        "m05": 0,
+        "m15": 0,
+        "mes": 165,
+        "m30": 0,
+        "h72": 13.6,
+        "h03": 0,
+        "h24": 0,
+        "h12": 0,
+        "h06": 0,
+        "h04": 0,
+        "h96": 41.2,
+        "h02": 0,
+        "h168": 59.4,
+        "h01": 0
+      },
+      "temIn": 18.98
+    },
+    "estacao_id": 104,
+    "tipo": "alertablu",
+    "estacao": "Vila Itoupava",
+    "tipo_estacao": "plv",
+    "localizacao": [
+      -49.06730589701048,
+      -26.723999876546834
+    ],
+    "horaLeitura": "18/10/2026 - 23:15"
+  },
+  {
+    "regiao": "Itajaí-Açú",
+    "dados": {
+      "Variance": {
+        "m05": 0,
+        "m15": 0,
+        "mes": 128.49,
+        "m30": 0,
+        "h72": 16.42,
+        "h03": 0,
+        "h24": 0.02,
+        "h12": 0.01,
+        "h06": 0,
+        "h04": 0,
+        "h96": 18.2,
+        "h02": 0,
+        "h168": 34.46,
+        "h01": 0
+      },
+      "vrnce": 0
+    },
+    "estacao_id": 1099,
+    "tipo": "estado_sc",
+    "estacao": "Vitor Meireles",
+    "tipo_estacao": "met",
+    "horaLeitura": "18/10/2026 - 23:05"
+  },
+  {
+    "regiao": "Leste",
+    "dados": {
+      "tBat": 12.762451171875,
+      "cont": 139,
+      "vrnce": 0,
+      "umiIn": 70.4,
+      "rst": 3,
+      "Variance": {
+        "m05": 0,
+        "m15": 0,
+        "mes": 100.2,
+        "m30": 0,
+        "h72": 7.6,
+        "h03": 0,
+        "h24": 0,
+        "h12": 0,
+        "h06": 0,
+        "h04": 0,
+        "h96": 11,
+        "h02": 0,
+        "h168": 25.4,
+        "h01": 0
+      },
+      "temIn": 18.11
+    },
+    "estacao_id": 87,
+    "tipo": "alertablu",
+    "estacao": "Vorstadt",
+    "tipo_estacao": "plv",
+    "localizacao": [
+      -49.04099993199971,
+      -26.901916918534994
+    ],
+    "horaLeitura": "18/10/2026 - 23:15"
+  },
+  {
+    "regiao": "Itajaí-Açú",
+    "dados": {
+      "Variance": {
+        "m05": 0,
+        "m15": 0,
+        "mes": 135.04,
+        "m30": 0,
+        "h72": 19,
+        "h03": 0,
+        "h24": 0.02,
+        "h12": 0.02,
+        "h06": 0.02,
+        "h04": 0,
+        "h96": 20.96,
+        "h02": 0,
+        "h168": 35.88,
+        "h01": 0
+      },
+      "vrnce": 0
+    },
+    "estacao_id": 1078,
+    "tipo": "estado_sc",
+    "estacao": "Witmarsum",
+    "tipo_estacao": "met",
+    "horaLeitura": "18/10/2026 - 23:05"
+  },
+  {
+    "regiao": "Oeste",
+    "dados": {
+      "preAt": 1001.6,
+      "umiAr": 85.4,
+      "temAr": 14.4
+    },
+    "estacao_id": 1321,
+    "tipo": "estado_sc",
+    "estacao": "Água Verde SDC-SC",
+    "tipo_estacao": "met",
+    "horaLeitura": "18/10/2026 - 23:14"
+  }
+]

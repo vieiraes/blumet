@@ -1,0 +1,74 @@
+@import 'tailwindcss';
+
+/* Tema escuro pela classe .dark no <html> (sistema ou escolha da pessoa; ver lib/preferencias.ts) */
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  --font-sans: system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+  --color-fundo: #f6f8fb;
+  --color-superficie: #ffffff;
+  --color-superficie-2: #eef2f7;
+  --color-linha: #e2e8f0;
+  --color-texto: #0f172a;
+  --color-texto-2: #475569;
+  --color-texto-3: #5b6779;
+  --color-marca: #0369a1;
+  --color-marca-forte: #075985;
+  --color-marca-suave: #e0f2fe;
+}
+
+@layer base {
+  .dark {
+    --color-fundo: #0b1220;
+    --color-superficie: #111a2e;
+    --color-superficie-2: #18233b;
+    --color-linha: #22314f;
+    --color-texto: #e8eef8;
+    --color-texto-2: #a9b6cc;
+    --color-texto-3: #8394b0;
+    --color-marca: #38bdf8;
+    --color-marca-forte: #7dd3fc;
+    --color-marca-suave: #0c2a40;
+  }
+
+  html {
+    background: var(--color-fundo);
+    color: var(--color-texto);
+    -webkit-text-size-adjust: 100%;
+    -webkit-tap-highlight-color: transparent;
+    color-scheme: light;
+  }
+  html.dark {
+    color-scheme: dark;
+  }
+  body {
+    min-height: 100dvh;
+    font-family: var(--font-sans);
+    background: var(--color-fundo);
+  }
+  :focus-visible {
+    outline: 2px solid var(--color-marca);
+    outline-offset: 2px;
+  }
+}
+
+@utility pb-seguro {
+  padding-bottom: calc(env(safe-area-inset-bottom) + 5.5rem);
+}
+@utility pt-seguro {
+  padding-top: env(safe-area-inset-top);
+}
+@utility base-segura {
+  padding-bottom: env(safe-area-inset-bottom);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}

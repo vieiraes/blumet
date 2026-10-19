@@ -1,50 +1,33 @@
 {
   "hosting": {
-    "public": "out",
-    "ignore": [
-      "firebase.json",
-      "**/.*",
-      "**/node_modules/**"
-    ],
+    "public": "dist",
+    "ignore": ["firebase.json", "**/.*", "**/node_modules/**"],
+    "cleanUrls": true,
     "rewrites": [
-      {
-        "source": "/api/situacao-atual",
-        "function": "situacaoAtual",
-        "region": "southamerica-east1"
-      },
-      {
-        "source": "/api/proxy",
-        "function": "situacaoAtual",
-        "region": "southamerica-east1"
-      },
-      {
-        "source": "/api/**",
-        "function": "apiProxy",
-        "region": "southamerica-east1"
-      }
+      { "source": "/api/dados", "function": { "functionId": "dados", "region": "southamerica-east1" } },
+      { "source": "**", "destination": "/index.html" }
     ],
     "headers": [
+      { "source": "/assets/**", "headers": [{ "key": "Cache-Control", "value": "public, max-age=31536000, immutable" }] },
+      { "source": "**/*.@(png|svg|ico)", "headers": [{ "key": "Cache-Control", "value": "public, max-age=604800" }] },
+      { "source": "/@(index.html|sw.js|manifest.webmanifest)", "headers": [{ "key": "Cache-Control", "value": "no-cache" }] },
       {
-        "source": "/_next/**",
+        "source": "**",
         "headers": [
-          {
-            "key": "Cache-Control",
-            "value": "public, max-age=31536000, immutable"
-          }
-        ]
-      },
-      {
-        "source": "**/*.@(jpg|jpeg|gif|png|svg|webp|js|css|eot|otf|ttf|ttc|woff|woff2|font.css)",
-        "headers": [
-          {
-            "key": "Cache-Control",
-            "value": "public, max-age=31536000, immutable"
-          }
+          { "key": "X-Content-Type-Options", "value": "nosniff" },
+          { "key": "Referrer-Policy", "value": "strict-origin-when-cross-origin" },
+          { "key": "Permissions-Policy", "value": "camera=(), microphone=(), geolocation=()" }
         ]
       }
     ]
   },
-  "functions": {
-    "source": "functions"
-  }
+  "functions": [
+    {
+      "source": "functions",
+      "codebase": "default",
+      "runtime": "nodejs22",
+      "ignore": ["node_modules", "src", "scripts", "*.test.ts", "tsconfig.json", ".gitignore"],
+      "predeploy": ["npm --prefix \"$RESOURCE_DIR\" run build"]
+    }
+  ]
 }

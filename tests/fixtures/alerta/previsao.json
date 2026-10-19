@@ -1,0 +1,126 @@
+[
+  {
+    "velocidade_vento": {
+      "velocidade": "Fraco",
+      "id": 1
+    },
+    "data_Criacao": "2026-10-18T05:21:29.683Z",
+    "ceu": {
+      "ceu": "Claro a Parcialmente Nublado",
+      "id": 2
+    },
+    "temperatura": {
+      "temperatura": "Declínio",
+      "id": 2
+    },
+    "icone": {
+      "arquivo": "parcial_nublado.png",
+      "id": 7,
+      "nome": "Parcialmente Nublado"
+    },
+    "periodo": "Madrugada",
+    "data_Previsao": "2026-10-19T12:00:00Z",
+    "id": 112752,
+    "precipitacao": {
+      "id": 1,
+      "precipitacao": "Sem Chuva"
+    },
+    "direcao_vento": {
+      "direcao": "SW/W",
+      "id": 12
+    }
+  },
+  {
+    "velocidade_vento": {
+      "velocidade": "Fraco a Moderado",
+      "id": 2
+    },
+    "data_Criacao": "2026-10-18T05:21:29.682Z",
+    "ceu": {
+      "ceu": "Claro",
+      "id": 1
+    },
+    "temperatura": {
+      "temperatura": "Declínio",
+      "id": 2
+    },
+    "icone": {
+      "arquivo": "claro.png",
+      "id": 1,
+      "nome": "Céu Claro"
+    },
+    "periodo": "Noite",
+    "data_Previsao": "2026-10-18T12:00:00Z",
+    "id": 112751,
+    "precipitacao": {
+      "id": 1,
+      "precipitacao": "Sem Chuva"
+    },
+    "direcao_vento": {
+      "direcao": "E/SE",
+      "id": 6
+    }
+  },
+  {
+    "velocidade_vento": {
+      "velocidade": "Fraco a Moderado",
+      "id": 2
+    },
+    "data_Criacao": "2026-10-18T05:21:29.635Z",
+    "ceu": {
+      "ceu": "Parcialmente Nublado a Claro",
+      "id": 5
+    },
+    "temperatura": {
+      "temperatura": "Elevação",
+      "id": 3
+    },
+    "icone": {
+      "arquivo": "parcial_nublado.png",
+      "id": 7,
+      "nome": "Parcialmente Nublado"
+    },
+    "periodo": "Tarde",
+    "data_Previsao": "2026-10-18T12:00:00Z",
+    "id": 112750,
+    "precipitacao": {
+      "id": 1,
+      "precipitacao": "Sem Chuva"
+    },
+    "direcao_vento": {
+      "direcao": "SW/W",
+      "id": 12
+    }
+  },
+  {
+    "velocidade_vento": {
+      "velocidade": "Fraco a Moderado",
+      "id": 2
+    },
+    "data_Criacao": "2026-10-18T05:21:29.608Z",
+    "ceu": {
+      "ceu": "Claro a Parcialmente Nublado",
+      "id": 2
+    },
+    "temperatura": {
+      "temperatura": "Elevação",
+      "id": 3
+    },
+    "icone": {
+      "arquivo": "claro.png",
+      "id": 1,
+      "nome": "Céu Claro"
+    },
+    "periodo": "Manhã",
+    "data_Previsao": "2026-10-18T12:00:00Z",
+    "id": 112749,
+    "precipitacao": {
+      "id": 1,
+      "precipitacao": "Sem Chuva"
+    },
+    "direcao_vento": {
+      "direcao": "SW/W",
+      "id": 12
+    }
+  }
+]

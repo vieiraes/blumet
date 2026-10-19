@@ -1,0 +1,707 @@
+[
+  {
+    "estado": "Aberto",
+    "telefone": "4733788284",
+    "bairro": "Jardim Blumenau",
+    "designacao": "C1 – Colégio Policial Militar Feliciano Nunes Pires ",
+    "localizacao": [
+      -49.06570500074633,
+      -26.92698598371514
+    ],
+    "logradouro": " Floriano Peixoto, 651",
+    "id": 183
+  },
+  {
+    "estado": "Aberto",
+    "telefone": "4733220699",
+    "bairro": "Centro",
+    "designacao": "C2 – Catedral  São Paulo Apóstolo",
+    "localizacao": [
+      -49.06676527004247,
+      -26.920142572019977
+    ],
+    "logradouro": " Padre Jacobs, 0",
+    "id": 184
+  },
+  {
+    "estado": "Aberto",
+    "telefone": "4733260232",
+    "bairro": "Centro",
+    "designacao": "C3 – Colégio Sagrada Família",
+    "localizacao": [
+      -49.06488264936347,
+      -26.92269132883803
+    ],
+    "logradouro": " Sete de Setembro, 915",
+    "id": 185
+  },
+  {
+    "estado": "Fechado",
+    "telefone": "4733210200",
+    "bairro": "Itoupava Seca",
+    "designacao": "C4 – FURB – Ginásio de Esportes",
+    "localizacao": [
+      -49.080224108085986,
+      -26.905945954001563
+    ],
+    "logradouro": " Antônio da Veiga, 140",
+    "id": 186
+  },
+  {
+    "estado": "Fechado",
+    "telefone": "4733788496",
+    "bairro": "Vila Nova",
+    "designacao": "C6 – EEB Victor Hering",
+    "localizacao": [
+      -49.08965804001904,
+      -26.90748915995237
+    ],
+    "logradouro": " Antônio C. de Figueiredo, 399",
+    "id": 188
+  },
+  {
+    "estado": "Fechado",
+    "telefone": "4733816290",
+    "bairro": "Itoupava Seca",
+    "designacao": "C7 – Ginásio EBM Machado de Assis",
+    "localizacao": [
+      -49.087111819794195,
+      -26.89375968831363
+    ],
+    "logradouro": " Oscar Ewald, 0",
+    "id": 189
+  },
+  {
+    "estado": "Fechado",
+    "telefone": "4733340505",
+    "bairro": "Salto do Norte",
+    "designacao": "N1 – Sociedade Esportiva Recreativa e Cultural Salto do Norte",
+    "localizacao": [
+      -49.105882781817925,
+      -26.87320382283965
+    ],
+    "logradouro": " Engenheiro Udo Deeke, 0",
+    "id": 190
+  },
+  {
+    "estado": "Fechado",
+    "telefone": "4733816688",
+    "bairro": "Itoupavazinha",
+    "designacao": "N2 – EBM Felipe Schmidt",
+    "localizacao": [
+      -49.115647918055444,
+      -26.855154348929364
+    ],
+    "logradouro": " Frederico Jensen, 0",
+    "id": 191
+  },
+  {
+    "estado": "Fechado",
+    "telefone": "4733788682",
+    "bairro": "Fidélis",
+    "designacao": "N3 – EEB Jonas Rosário Coelho Neves",
+    "localizacao": [
+      -49.071843928372644,
+      -26.849793006323722
+    ],
+    "logradouro": " Denis Diderot, 0",
+    "id": 192
+  },
+  {
+    "estado": "Fechado",
+    "telefone": "47333817404",
+    "bairro": "Itoupava Central",
+    "designacao": "N4 – EBM Anita Garibaldi",
+    "localizacao": [
+      -49.08884914274467,
+      -26.82332813170869
+    ],
+    "logradouro": " Dr. Pedro Zimmermann, 0",
+    "id": 193
+  },
+  {
+    "estado": "Fechado",
+    "telefone": "4733816505",
+    "bairro": "Itoupava Central",
+    "designacao": "N5 – EBM Wilhelm Theodor Schurmann ",
+    "localizacao": [
+      -49.0835050044301,
+      -26.834679596232622
+    ],
+    "logradouro": " Pérola do Vale, 377",
+    "id": 194
+  },
+  {
+    "estado": "Fechado",
+    "telefone": "4733238657",
+    "bairro": "Itoupava Central",
+    "designacao": "N6 – EBM Patrícia Helena Finardi Pegorim",
+    "localizacao": [
+      -49.05033714677254,
+      -26.85239330085204
+    ],
+    "logradouro": " Luiz Krutzsch, 474",
+    "id": 195
+  },
+  {
+    "estado": "Fechado",
+    "telefone": "4733384085",
+    "bairro": "Fidélis",
+    "designacao": "N7 – EBM Professor Rodolfo Hollenweger",
+    "localizacao": [
+      -49.061063526540906,
+      -26.8300892116325
+    ],
+    "logradouro": " Profº Hermann Lange, 0",
+    "id": 196
+  },
+  {
+    "estado": "Fechado",
+    "telefone": "4733785036",
+    "bairro": "Itoupava Central",
+    "designacao": "N8 – EBM Visconde de Taunay",
+    "localizacao": [
+      -49.108395762235844,
+      -26.833468382854104
+    ],
+    "logradouro": " Franz Volles, 0",
+    "id": 197
+  },
+  {
+    "estado": "Fechado",
+    "telefone": "4733238901",
+    "bairro": "Itoupava Central",
+    "designacao": "N9 – EBM Professor Friedrich Karl Kemmelmeier",
+    "localizacao": [
+      -49.106017486369694,
+      -26.796278113779
+    ],
+    "logradouro": " Ricardo Georg, 0",
+    "id": 198
+  },
+  {
+    "estado": "Fechado",
+    "telefone": "4733371015",
+    "bairro": "Itoupava Central",
+    "designacao": "N10 – Paróquia Luterana Itoupava Central",
+    "localizacao": [
+      -49.08625598048372,
+      -26.785654396563643
+    ],
+    "logradouro": " Dr. Pedro Zimmermann, 0",
+    "id": 199
+  },
+  {
+    "estado": "Fechado",
+    "telefone": "4733782289",
+    "bairro": "Vila Itoupava",
+    "designacao": "N11 – EEB Cel Pedro Christiano Feddersen",
+    "localizacao": [
+      -49.06680913753304,
+      -26.723146303663714
+    ],
+    "logradouro": " Henrique Conrad, 145",
+    "id": 200
+  },
+  {
+    "estado": "Fechado",
+    "telefone": "4732223299",
+    "bairro": "Vila Itoupava",
+    "designacao": "N12 – EM Erich Klabunde",
+    "localizacao": [
+      -49.07555567341061,
+      -26.71769708794697
+    ],
+    "logradouro": " Braço do Sul, 2838",
+    "id": 201
+  },
+  {
+    "estado": "Fechado",
+    "telefone": "4733342466",
+    "bairro": "Salto do Norte",
+    "designacao": "N13 – EBM Leoberto Leal",
+    "localizacao": [
+      -49.12046015852244,
+      -26.866025537109614
+    ],
+    "logradouro": " Johann Sachse, 0",
+    "id": 202
+  },
+  {
+    "estado": "Fechado",
+    "telefone": "4733340822",
+    "bairro": "Badenfurt",
+    "designacao": "N14 – EBM Paulina Wagner",
+    "localizacao": [
+      -49.13670728049856,
+      -26.877852602994285
+    ],
+    "logradouro": " Anna Felisbino, 125",
+    "id": 203
+  },
+  {
+    "estado": "Fechado",
+    "telefone": "4733782347",
+    "bairro": "Testo Salto",
+    "designacao": "N15 – EBM Joaquim Fronza",
+    "localizacao": [
+      -49.13792206070217,
+      -26.858979462422532
+    ],
+    "logradouro": " Philipp Bauler, 0",
+    "id": 204
+  },
+  {
+    "estado": "Fechado",
+    "telefone": "4733346470",
+    "bairro": "Testo Salto",
+    "designacao": "N16 – EBM Quintino Bocaiúva",
+    "localizacao": [
+      -49.15405018972151,
+      -26.85645722512781
+    ],
+    "logradouro": " Werner Duwe, 0",
+    "id": 205
+  },
+  {
+    "estado": "Fechado",
+    "telefone": "4733220135",
+    "bairro": "Ribeirão Fresco",
+    "designacao": "S1 – Grupo Escoteiro Leões de Blumenau",
+    "localizacao": [
+      -49.04016766144669,
+      -26.92726528173422
+    ],
+    "logradouro": " Pastor Oswaldo Hesse, 0",
+    "id": 206
+  },
+  {
+    "estado": "Fechado",
+    "telefone": "4733220397",
+    "bairro": "Garcia",
+    "designacao": "S3 – Paróquia Luterana Centro",
+    "localizacao": [
+      -49.05581776562135,
+      -26.925167002264757
+    ],
+    "logradouro": " Amazonas, 119",
+    "id": 207
+  },
+  {
+    "estado": "Fechado",
+    "telefone": "4733817258",
+    "bairro": "Garcia",
+    "designacao": "S5 – EBM Tiradentes e Profª Júlia Strzalkowska",
+    "localizacao": [
+      -49.063098612394825,
+      -26.93777978320369
+    ],
+    "logradouro": " Carl Heinz Buechler, 171",
+    "id": 208
+  },
+  {
+    "estado": "Fechado",
+    "telefone": "4733788686",
+    "bairro": "Garcia",
+    "designacao": "S6 – EEB Santos Dumont",
+    "localizacao": [
+      -49.07053241038004,
+      -26.943035922865402
+    ],
+    "logradouro": " Amazonas, 0",
+    "id": 209
+  },
+  {
+    "estado": "Fechado",
+    "telefone": "4733788378",
+    "bairro": "Valparaíso",
+    "designacao": "S7 – EEB Izolete Elisa Gouveia Muller",
+    "localizacao": [
+      -49.072738986527625,
+      -26.95604456850105
+    ],
+    "logradouro": " Adriano Schaeffer, 77",
+    "id": 210
+  },
+  {
+    "estado": "Fechado",
+    "telefone": "4733262328",
+    "bairro": "Garcia",
+    "designacao": "S8 – Capela Santa Luzia",
+    "localizacao": [
+      -49.053587921808834,
+      -26.937748692854537
+    ],
+    "logradouro": " Araranguá, 0",
+    "id": 211
+  },
+  {
+    "estado": "Fechado",
+    "telefone": "4733351825",
+    "bairro": "Garcia",
+    "designacao": "S9 – Centro Municipal de Ampliação do Tempo e Espaço Pedagógico da Criança e do Adolescente (Cematepca)",
+    "localizacao": [
+      -49.05456328475475,
+      -26.932025040492555
+    ],
+    "logradouro": " Araranguá, 648",
+    "id": 212
+  },
+  {
+    "estado": "Fechado",
+    "telefone": "4733240565",
+    "bairro": "Garcia",
+    "designacao": "S10 – Paróquia Santo Antônio",
+    "localizacao": [
+      -49.07053670090672,
+      -26.950913265972925
+    ],
+    "logradouro": " Amazonas, 0",
+    "id": 213
+  },
+  {
+    "estado": "Fechado",
+    "telefone": "4733788229",
+    "bairro": "Glória",
+    "designacao": "S13 – EEB Governador Celso Ramos",
+    "localizacao": [
+      -49.06063146253877,
+      -26.96374324896574
+    ],
+    "logradouro": " Da Glória, 888",
+    "id": 215
+  },
+  {
+    "estado": "Fechado",
+    "telefone": "4733788680",
+    "bairro": "Progresso",
+    "designacao": "S14 – EEB Padre José Maurício",
+    "localizacao": [
+      -49.074511658620104,
+      -26.97083910363128
+    ],
+    "logradouro": " Progresso, 0",
+    "id": 216
+  },
+  {
+    "estado": "Fechado",
+    "telefone": "4733261449",
+    "bairro": "Progresso",
+    "designacao": "S15 – EBM Henrique Alfarth",
+    "localizacao": [
+      -49.09119430750381,
+      -26.97086258973899
+    ],
+    "logradouro": " Ruy Barbosa, 1616",
+    "id": 217
+  },
+  {
+    "estado": "Fechado",
+    "telefone": "4733788372",
+    "bairro": "Progresso",
+    "designacao": "S17 – EEB Professor Nilo Borghesi",
+    "localizacao": [
+      -49.06769254213965,
+      -26.999876768464222
+    ],
+    "logradouro": " Jordão, 357",
+    "id": 218
+  },
+  {
+    "estado": "Fechado",
+    "telefone": "4733365628",
+    "bairro": "Progresso",
+    "designacao": "S18 – EBM Pedro II",
+    "localizacao": [
+      -49.0836399438334,
+      -26.986684878008933
+    ],
+    "logradouro": " Helmuth Goll, 579",
+    "id": 219
+  },
+  {
+    "estado": "Fechado",
+    "telefone": "4733788379",
+    "bairro": "Progresso",
+    "designacao": "S19 – EEF José Vieira Corte",
+    "localizacao": [
+      -49.099641006627714,
+      -26.994111673332444
+    ],
+    "logradouro": " Udo Schadrack, 41",
+    "id": 220
+  },
+  {
+    "estado": "Fechado",
+    "telefone": "4733405635",
+    "bairro": "Vorstardt",
+    "designacao": "E1 – Clube Blumenauense de Caça e Tiro",
+    "localizacao": [
+      -49.04068496916553,
+      -26.90797177526182
+    ],
+    "logradouro": " Itajaí, 0",
+    "id": 221
+  },
+  {
+    "estado": "Fechado",
+    "telefone": "4733816594",
+    "bairro": "Vorstardt",
+    "designacao": "E2 – EBM Vidal Ramos",
+    "localizacao": [
+      -49.04176798134689,
+      -26.902227948173667
+    ],
+    "logradouro": " Antônio Treis, 140",
+    "id": 222
+  },
+  {
+    "estado": "Fechado",
+    "telefone": "4733401264",
+    "bairro": "Ponta Aguda",
+    "designacao": "E3 – EBM Almirante Tamandaré",
+    "localizacao": [
+      -49.048671018926555,
+      -26.902482193963536
+    ],
+    "logradouro": " Santa Fé, 66",
+    "id": 223
+  },
+  {
+    "estado": "Fechado",
+    "telefone": "4733788381",
+    "bairro": "Ponta Aguda",
+    "designacao": "E4 – EEB Júlia Lopes de Almeida",
+    "localizacao": [
+      -49.06462529221043,
+      -26.91434884227258
+    ],
+    "logradouro": " Venezuela, 127",
+    "id": 224
+  },
+  {
+    "estado": "Fechado",
+    "telefone": "4733239400",
+    "bairro": "Nova Esperança",
+    "designacao": "E5 – EBM Gustavo Richard",
+    "localizacao": [
+      -49.056101101577376,
+      -26.891168448779883
+    ],
+    "logradouro": " Henrique Reif, 477",
+    "id": 225
+  },
+  {
+    "estado": "Fechado",
+    "telefone": "4733233236",
+    "bairro": "Itoupava Norte",
+    "designacao": "E6 – Capela São João Batista",
+    "localizacao": [
+      -49.073121516249316,
+      -26.891024606578082
+    ],
+    "logradouro": " São João, 0",
+    "id": 226
+  },
+  {
+    "estado": "Fechado",
+    "telefone": "4733236064",
+    "bairro": "Itoupava Norte",
+    "designacao": "E7 – Clube de Caça e Tiro Tell (Antigo)",
+    "localizacao": [
+      -49.07808231320038,
+      -26.89261474875648
+    ],
+    "logradouro": " 2 de Setembro, 0",
+    "id": 227
+  },
+  {
+    "estado": "Fechado",
+    "telefone": "4733232296",
+    "bairro": "Itoupava Norte",
+    "designacao": "E8 – Danceteria  Rivage",
+    "localizacao": [
+      -49.07670743945709,
+      -26.879499286584274
+    ],
+    "logradouro": " 25 de Julho, 907",
+    "id": 228
+  },
+  {
+    "estado": "Fechado",
+    "telefone": "4733380000",
+    "bairro": "Itoupava Norte",
+    "designacao": "E9 – Igreja Evangélica Livre de Blumenau - IELBLU",
+    "localizacao": [
+      -35.7805904336013,
+      -83.504483812036
+    ],
+    "logradouro": " Cidade do Salvador, 89",
+    "id": 229
+  },
+  {
+    "estado": "Fechado",
+    "telefone": "4733390775",
+    "bairro": "Fortaleza",
+    "designacao": "E10 – Paróquia São Francisco de Assis",
+    "localizacao": [
+      -49.06665593365007,
+      -26.876566289555367
+    ],
+    "logradouro": " Francisco Vahldieck, 0",
+    "id": 230
+  },
+  {
+    "estado": "Fechado",
+    "telefone": "4733788389",
+    "bairro": "Nova Esperança",
+    "designacao": "E11 – EEB Hermann Hamann",
+    "localizacao": [
+      -49.05026825686912,
+      -26.88428146425243
+    ],
+    "logradouro": " August Reinhold, 0",
+    "id": 231
+  },
+  {
+    "estado": "Fechado",
+    "telefone": "4733816340",
+    "bairro": "Tribess",
+    "designacao": "E12 – EBM Francisco Lanser",
+    "localizacao": [
+      -49.04960806964652,
+      -26.872333795148673
+    ],
+    "logradouro": " Alfredo Lanser, 133",
+    "id": 232
+  },
+  {
+    "estado": "Fechado",
+    "telefone": "4733294379",
+    "bairro": "Velha",
+    "designacao": "W1 – Paróquia Luterana da Velha",
+    "localizacao": [
+      -49.09035779535331,
+      -26.919147574448576
+    ],
+    "logradouro": "Alidor Zutter, 59",
+    "id": 233
+  },
+  {
+    "estado": "Fechado",
+    "telefone": "4733286605",
+    "bairro": "Velha",
+    "designacao": "W2 – EBM Helena Winckler",
+    "localizacao": [
+      -49.1050352514368,
+      -26.931903657926252
+    ],
+    "logradouro": " João Bisewski, 100",
+    "id": 234
+  },
+  {
+    "estado": "Fechado",
+    "telefone": "4733788390",
+    "bairro": "Velha Central",
+    "designacao": "W3 – EEB Hercílio Deeke",
+    "localizacao": [
+      -49.13371840347965,
+      -26.933694572837265
+    ],
+    "logradouro": " José Reuter, 581",
+    "id": 235
+  },
+  {
+    "estado": "Fechado",
+    "telefone": "4733816545",
+    "bairro": "Velha Grande",
+    "designacao": "W4 – EBM Conselheiro Mafra",
+    "localizacao": [
+      -49.13270186044025,
+      -26.95032534961969
+    ],
+    "logradouro": " Franz Muller, 0",
+    "id": 236
+  },
+  {
+    "estado": "Fechado",
+    "telefone": "4733788703",
+    "bairro": "Velha Central",
+    "designacao": "W5 – EEB João Durval Muller",
+    "localizacao": [
+      -49.15027003265953,
+      -26.936736032562727
+    ],
+    "logradouro": " Karl Kaun, 60",
+    "id": 237
+  },
+  {
+    "estado": "Fechado",
+    "telefone": "4733817444",
+    "bairro": "Escola Agrícola",
+    "designacao": "W6 – EBM General Lúcio Esteves",
+    "localizacao": [
+      -49.098738689388334,
+      -26.89248151599142
+    ],
+    "logradouro": " Benjamin Constant, 630",
+    "id": 238
+  },
+  {
+    "estado": "Fechado",
+    "telefone": "4733381722",
+    "bairro": "Escola Agrícola",
+    "designacao": "W7 – EBM Professora Norma Dignart Huber",
+    "localizacao": [
+      -49.103218915603875,
+      -26.9037021268332
+    ],
+    "logradouro": " Aquidabã, 77",
+    "id": 239
+  },
+  {
+    "estado": "Fechado",
+    "telefone": "4733271433",
+    "bairro": "Do Salto",
+    "designacao": "W8 – EBM Hella Altemburg",
+    "localizacao": [
+      -49.104470800172116,
+      -26.887000762519108
+    ],
+    "logradouro": " Plátano, 233",
+    "id": 240
+  },
+  {
+    "estado": "Fechado",
+    "telefone": "4733251424",
+    "bairro": "Água Verde",
+    "designacao": "W9 – EBM Alberto Stein",
+    "localizacao": [
+      -49.11273288677013,
+      -26.912956051177552
+    ],
+    "logradouro": " General Osório, 0",
+    "id": 241
+  },
+  {
+    "estado": "Fechado",
+    "telefone": "4733309335",
+    "bairro": "Passo Manso",
+    "designacao": "W10 – EBM Annemarie Techentin",
+    "localizacao": [
+      -49.150466345800844,
+      -26.911078734611692
+    ],
+    "logradouro": " Johann G. H. Hadlich, 999",
+    "id": 242
+  },
+  {
+    "estado": "Fechado",
+    "telefone": "4836644788",
+    "bairro": "Vila Itoupava",
+    "designacao": "N17 - EEB Erwin Radtke",
+    "localizacao": null,
+    "logradouro": "Rua: Erwin Manske, 13375",
+    "id": 261
+  }
+]

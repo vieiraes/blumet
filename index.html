@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <title>BLUmet · chuva, rio e alertas de Blumenau</title>
+    <meta name="description" content="Situação de chuva, nível do rio Itajaí-Açu, alertas por região e abrigos de Blumenau, com os dados oficiais da Defesa Civil." />
+    <meta name="theme-color" content="#f6f8fb" media="(prefers-color-scheme: light)" />
+    <meta name="theme-color" content="#0b1220" media="(prefers-color-scheme: dark)" />
+    <meta name="google-site-verification" content="uszu0oNe5kKCBR-dx1L0QB737bByJF_7fTmC0Yyu8bc" />
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+    <link rel="apple-touch-icon" href="/apple-touch-icon-180x180.png" />
+    <meta property="og:title" content="BLUmet · chuva, rio e alertas de Blumenau" />
+    <meta property="og:description" content="Nível do rio, chuva por região, alertas e abrigos com os dados oficiais da Defesa Civil de Blumenau." />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://blumet.web.app/" />
+    <script>
+      // Tema antes do primeiro desenho (sem piscar): preferência salva ou a do sistema
+      try {
+        var t = localStorage.getItem('blumet:tema');
+        if (t === 'escuro' || (t !== 'claro' && matchMedia('(prefers-color-scheme: dark)').matches)) document.documentElement.classList.add('dark');
+      } catch (e) {}
+    </script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>

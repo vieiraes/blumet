@@ -1,0 +1,44 @@
+name: CI
+
+on:
+  push:
+    branches: [main, develop, staging, modernizacao]
+  pull_request:
+
+jobs:
+  verificar:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+          cache-dependency-path: |
+            package-lock.json
+            functions/package-lock.json
+      - run: npm ci
+      - run: npm ci --prefix functions
+      - name: Lint
+        run: npm run lint
+      - name: Tipos (app e function)
+        run: npm run typecheck
+      - name: Testes do app
+        run: npm test
+      - name: Testes da function (fixtures reais e cenário de alerta)
+        run: npm --prefix functions test
+      - name: Build da function
+        run: npm --prefix functions run build
+      - name: Build do app
+        run: npm run build
+      - name: Navegador do Playwright
+        run: npx playwright install --with-deps chromium
+      - name: Testes de ponta a ponta (celular)
+        run: npm run test:e2e
+      - uses: actions/upload-artifact@v4
+        if: failure()
+        with:
+          name: playwright-report
+          path: playwright-report/
+          retention-days: 7

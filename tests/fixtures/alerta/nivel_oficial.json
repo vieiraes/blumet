@@ -1,0 +1,143 @@
+{
+  "condicoes": [
+    {
+      "cor_fundo": 6614628,
+      "nivel": 0,
+      "tipo": "nvl",
+      "condicao": "Normalidade",
+      "cor_fonte": 0,
+      "id": 1
+    },
+    {
+      "cor_fundo": 16448000,
+      "nivel": 3,
+      "tipo": "nvl",
+      "condicao": "Observação",
+      "cor_fonte": 0,
+      "id": 21
+    },
+    {
+      "cor_fundo": 16750114,
+      "nivel": 4,
+      "tipo": "nvl",
+      "condicao": "Atenção",
+      "cor_fonte": 0,
+      "id": 22
+    },
+    {
+      "cor_fundo": 10027008,
+      "nivel": 6,
+      "tipo": "nvl",
+      "condicao": "Alerta",
+      "cor_fonte": 16777215,
+      "id": 25
+    },
+    {
+      "cor_fundo": 10040319,
+      "nivel": 8,
+      "tipo": "nvl",
+      "condicao": "Alerta Máximo",
+      "cor_fonte": 16777215,
+      "id": 122
+    }
+  ],
+  "fonte": "AlertaBLU",
+  "niveis": [
+    {
+      "nivel": 2.3,
+      "horaLeitura": "2026-10-18T03:00:00Z"
+    },
+    {
+      "nivel": 2.55,
+      "horaLeitura": "2026-10-18T04:00:00Z"
+    },
+    {
+      "nivel": 2.8,
+      "horaLeitura": "2026-10-18T05:00:00Z"
+    },
+    {
+      "nivel": 3.05,
+      "horaLeitura": "2026-10-18T06:00:00Z"
+    },
+    {
+      "nivel": 3.29,
+      "horaLeitura": "2026-10-18T07:00:00Z"
+    },
+    {
+      "nivel": 3.52,
+      "horaLeitura": "2026-10-18T08:00:00Z"
+    },
+    {
+      "nivel": 3.75,
+      "horaLeitura": "2026-10-18T09:00:00Z"
+    },
+    {
+      "nivel": 3.97,
+      "horaLeitura": "2026-10-18T10:00:00Z"
+    },
+    {
+      "nivel": 4.19,
+      "horaLeitura": "2026-10-18T11:00:00Z"
+    },
+    {
+      "nivel": 4.4,
+      "horaLeitura": "2026-10-18T12:00:00Z"
+    },
+    {
+      "nivel": 4.61,
+      "horaLeitura": "2026-10-18T13:00:00Z"
+    },
+    {
+      "nivel": 4.81,
+      "horaLeitura": "2026-10-18T14:00:00Z"
+    },
+    {
+      "nivel": 5,
+      "horaLeitura": "2026-10-18T15:00:00Z"
+    },
+    {
+      "nivel": 5.19,
+      "horaLeitura": "2026-10-18T16:00:00Z"
+    },
+    {
+      "nivel": 5.37,
+      "horaLeitura": "2026-10-18T17:00:00Z"
+    },
+    {
+      "nivel": 5.54,
+      "horaLeitura": "2026-10-18T18:00:00Z"
+    },
+    {
+      "nivel": 5.71,
+      "horaLeitura": "2026-10-18T19:00:00Z"
+    },
+    {
+      "nivel": 5.86,
+      "horaLeitura": "2026-10-18T20:00:00Z"
+    },
+    {
+      "nivel": 6,
+      "horaLeitura": "2026-10-18T21:00:00Z"
+    },
+    {
+      "nivel": 6.14,
+      "horaLeitura": "2026-10-18T22:00:00Z"
+    },
+    {
+      "nivel": 6.26,
+      "horaLeitura": "2026-10-18T23:00:00Z"
+    },
+    {
+      "nivel": 6.36,
+      "horaLeitura": "2026-10-19T00:00:00Z"
+    },
+    {
+      "nivel": 6.45,
+      "horaLeitura": "2026-10-19T01:00:00Z"
+    },
+    {
+      "nivel": 6.5,
+      "horaLeitura": "2026-10-19T02:00:00Z"
+    }
+  ]
+}

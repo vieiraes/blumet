@@ -1,88 +1,88 @@
-# BLUmet - Sistema de Monitoramento de Chuvas de Blumenau
+# BLUmet
 
-![BLUmet Logo](https://blumet.web.app/logo192.png)
+Chuva, rio e alertas de Blumenau no celular, com os dados oficiais da Defesa Civil.
 
-BLUmet é um sistema de monitoramento e alerta de chuvas para o município de Blumenau-SC, fornecendo informações em tempo real sobre condições climáticas e níveis de alerta em todas as regiões da cidade.
+**No ar:** https://blumet.web.app (instalável como app: no celular, "Adicionar à tela inicial").
 
-## 🌧️ Visão Geral
+## O que mostra
 
-O BLUmet foi desenvolvido como um Progressive Web App (PWA) para permitir acesso fácil via navegadores mobile e desktop, além de instalação como aplicativo nativo. O sistema consume dados oficiais da Defesa Civil de Blumenau e os apresenta de forma intuitiva e segmentada por regiões.
+| Aba | Conteúdo |
+|---|---|
+| **Início** | Aviso oficial em vigor; abrigos abertos; **meu bairro** (nível de cada tipo de alerta na região e chuva de 1 h / 24 h); rio agora com tendência; previsão; as 5 regiões com o pior nível de cada uma |
+| **Rio** | Nível oficial do Itajaí-Açu em Blumenau, variação em 1 h e 3 h, gráfico de 24 h com as faixas (Observação 3 m, Atenção 4 m, Alerta 6 m, Alerta Máximo 8 m), o que fazer em cada faixa e as leituras por hora |
+| **Chuva** | Maior acumulado por região (1 h, 24 h, 72 h, 7 dias) e cada estação; separado, a chuva rio acima, na bacia do Itajaí-Açu |
+| **Abrigos** | Os 59 abrigos, abertos primeiro, com busca por bairro, **Ligar** e **Como chegar** |
+| **Mais** | Telefones de emergência, preferências (meu bairro, tema claro/escuro), situação de cada fonte, notícias da Defesa Civil |
 
-## 🚀 Acesso
+Os dados se atualizam a cada 2 minutos com o app aberto. O último resultado fica no aparelho: sem internet, o app abre com ele e avisa de quando é.
 
-O sistema está disponível em:
-- **URL de Produção:** [https://blumet.web.app](https://blumet.web.app)
-- **Plataformas:** Navegadores web em dispositivos móveis e desktop
-- **Instalação:** O site pode ser instalado como um aplicativo PWA nos dispositivos compatíveis
+O BLUmet não é um canal oficial. Em emergência, ligue **199** (Defesa Civil).
 
-## ✨ Funcionalidades
+## Fontes
 
-- **Painel de Monitoramento Geral:** Visão geral da situação em toda a cidade
-- **Filtro por Bairros:** Personalize a visualização para focar em áreas específicas
-- **Filtro por Níveis de Alerta:** Filtrar alertas por nível de severidade
-- **Localização do Usuário:** Destaque automático para o bairro do usuário
-- **Notificações:** Acompanhe mudanças de status em tempo real
-- **Modo Offline:** Acesso aos últimos dados mesmo sem conexão à internet
+Arquivos públicos do portal da Defesa Civil de Blumenau (`https://defesacivil.blumenau.sc.gov.br/static/data/`):
 
-## 🔧 Arquitetura Técnica
+| Arquivo | Uso |
+|---|---|
+| `situacao_atual.json` | Situação por região e tipo de alerta (condições meteorológicas, risco de deslizamento…) |
+| `nivel_oficial.json` | Nível do rio, 24 leituras horárias, e as faixas de alerta |
+| `previsao.json` | Previsão por período |
+| `chuva.json` | Acumulados das estações (AlertaBlu, Cemaden, Defesa Civil de SC e outras) |
+| `abrigos.json` | Abrigos, situação, endereço, telefone e localização |
+| `aviso.json` | Aviso oficial em vigor (`null` quando não há) |
+| `noticias.json` | Notícias da Defesa Civil |
+| `temperaturas.json` | Temperatura por hora |
 
-O projeto utiliza uma arquitetura moderna baseada em:
+O servidor da prefeitura não envia o certificado intermediário da cadeia TLS. A function confia nesse intermediário público (Sectigo DV R36, em `functions/src/certificados.ts`) em vez de desligar a verificação.
 
-- **Frontend:** Next.js (React) com exportação estática, hospedado no Firebase Hosting
-- **Backend:** Firebase Cloud Functions servindo como proxy para os dados oficiais
-- **PWA:** Implementação completa com cache e funcionamento offline
-- **CI/CD:** Integração e deploy automático via GitHub Actions
+## Arquitetura
 
-## 🧠 Como Usar
+- **App** (raiz): Vite, React 19, TypeScript, Tailwind 4, TanStack Query (com o último dado salvo no aparelho), react-router e PWA (`vite-plugin-pwa`). Mobile first: barra de abas embaixo no celular, lateral em tela larga.
+- **Function** (`functions/`): Firebase Function `dados` (Node 22, `southamerica-east1`) em `GET /api/dados`. Busca as 8 fontes em paralelo, normaliza tudo num JSON só (`functions/src/tipos.ts`) e guarda por 60 s. Uma fonte fora do ar não derruba as outras (`fontes.<nome>.ok = false`). O CDN do Hosting segura a resposta por 2 min.
+- **Hosting**: Firebase, projeto `blumet`. `/api/dados` vai para a function; o resto é o app (SPA).
 
-1. **Tela Inicial:**
-   - Visualize o status geral de alertas em toda a cidade
-   - Veja todos os alertas ativos e como estão distribuídos por região
-
-2. **Filtros:**
-   - Clique em "Filtrar por Bairros" para selecionar bairros específicos
-   - Use "Filtrar por Níveis" para focar em alertas de determinada severidade
-
-3. **Configurações do Usuário:**
-   - Defina seu bairro para receber informações personalizadas
-   - Ative notificações para ser alertado sobre mudanças importantes
-
-4. **Detalhes de Alertas:**
-   - Clique em qualquer alerta para ver detalhes completos
-   - Veja quais áreas são afetadas e recomendações oficiais
-
-## ⚙️ Desenvolvimento
-
-Para desenvolvedores que desejam contribuir ou executar o projeto localmente:
-
-```bash
-# Clonar o repositório
-git clone https://github.com/seunome/blumet-web.git
-
-# Instalar dependências
-cd blumet-web
-npm install
-
-# Executar em modo de desenvolvimento
-npm run dev
-
-# Build para produção
-npm run build:static
-
-# Deploy (requer configuração do Firebase)
-npm run deploy
+```
+functions/src/fontes.ts       busca com TLS verificado
+functions/src/normalizar.ts   funções puras: bruto → formato do app
+functions/src/agregador.ts    junta tudo (montarDados) e guarda 60 s (obterDados)
+functions/src/index.ts        a Firebase Function
+src/lib/                      dados (Query), níveis e cores, regiões, formato, preferências
+src/componentes/, src/paginas/
+tests/fixtures/normal|alerta  respostas reais gravadas e o cenário de alerta
 ```
 
-## 👨‍💼 Créditos
+## Desenvolvimento
 
-**Criado por:** Bruno de Oliveira Vieira  
-**Cargo:** Product Owner  
-**Email:** [bvieira@mail.com](mailto:bvieira@mail.com)  
-**LinkedIn:** [linkedin.com/in/bvieira](https://linkedin.com/in/bvieira)
+Requer Node 22.18 ou mais novo.
 
-**Desenvolvido com tecnologia:** Firebase, Next.js, Tailwind CSS
+```bash
+npm install && npm install --prefix functions
+npm run dev          # localhost:5373, com os dados reais (o Vite roda o mesmo código da function)
+npm run dev:mock     # com as respostas gravadas (tests/fixtures/normal)
+npm run dev:alerta   # cenário de alerta: rio a 6,5 m, região Sul em Alerta, abrigos abertos, aviso
+```
 
-## 📄 Licença
+Atualizar as respostas gravadas: `npm --prefix functions run gravar-fixtures` e, depois, `npm --prefix functions run cenario-alerta`.
 
-Este projeto é privado e proprietário. Todos os direitos reservados.  
-© 2025 - Bruno Vieira
+## Testes
+
+```bash
+npm run lint && npm run typecheck
+npm test                       # app (Vitest)
+npm --prefix functions test    # normalização com as fontes reais e o cenário de alerta
+npm run build && npm run test:e2e   # Playwright em iPhone 13 e Pixel 7, inclusive offline
+```
+
+O CI (`.github/workflows/ci.yml`) roda tudo isso a cada push e pull request.
+
+## Publicar
+
+```bash
+npm run deploy    # build do app e da function, depois firebase deploy --only functions:dados,hosting
+```
+
+Ícones do app: `npm run icones` (gera a partir de `public/logo.svg`).
+
+---
+
+Criado por Bruno de Oliveira Vieira.
