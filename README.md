@@ -87,4 +87,4 @@ npm run deploy    # build do app e da function, depois firebase deploy --only fu
 
 ---
 
-Criado por Bruno de Oliveira Vieira.
+Criado por Bruno da Silva Vieira.

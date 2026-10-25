@@ -143,7 +143,7 @@ export function MaisPagina() {
           <Cartao className="text-sm text-texto-2">
             <p>O BLUmet reúne num lugar só, pensado para o celular, os dados públicos da Defesa Civil de Blumenau: situação por região, nível do rio Itajaí-Açu, chuva por estação, previsão, abrigos e avisos.</p>
             <p className="mt-2">
-              Criado por Bruno de Oliveira Vieira.{' '}
+              Criado por Bruno da Silva Vieira.{' '}
               <a className="font-medium text-marca underline" href="https://github.com/vieiraes/blumet" target="_blank" rel="noopener noreferrer">
                 Código no GitHub
               </a>
