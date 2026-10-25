@@ -2,23 +2,8 @@ import { expect, test } from '@playwright/test';
 
 const NORMAL = 'http://localhost:5374';
 
-test('aviso de cookies: só informa, "Entendi" fecha e lembra, o rodapé reabre', async ({ page }) => {
-  await page.goto(NORMAL);
-  const aviso = page.getByTestId('aviso-cookies');
-  await expect(aviso).toContainText('Só o essencial, sem rastreamento');
-  await expect(aviso.getByRole('button', { name: /aceitar/i })).toHaveCount(0);
-  await aviso.getByRole('button', { name: 'Entendi' }).click();
-  await expect(aviso).toBeHidden();
-  await page.reload();
-  await expect(page.getByTestId('cartao-rio')).toBeVisible();
-  await expect(aviso).toBeHidden();
-  await page.getByTestId('rodape').getByRole('button', { name: 'Preferências de cookies' }).click();
-  await expect(aviso).toBeVisible();
-});
-
 test('rodapé: colunas, linha legal e sem rolagem lateral no celular', async ({ page }) => {
   await page.goto(NORMAL);
-  await page.getByTestId('aviso-cookies').getByRole('button', { name: 'Entendi' }).click();
   const rodape = page.getByTestId('rodape');
   await rodape.scrollIntoViewIfNeeded();
   await expect(rodape.getByRole('link', { name: 'contato@appleads.com.br' })).toHaveAttribute('href', 'mailto:contato@appleads.com.br');
@@ -37,7 +22,6 @@ test('rodapé: colunas, linha legal e sem rolagem lateral no celular', async ({ 
 
 test('páginas legais abrem pelo rodapé, com controlador e contato', async ({ page }) => {
   await page.goto(NORMAL);
-  await page.getByTestId('aviso-cookies').getByRole('button', { name: 'Entendi' }).click();
   const rodape = page.getByTestId('rodape');
   await rodape.getByRole('link', { name: 'Política de Privacidade' }).click();
   await expect(page).toHaveURL(/\/privacidade$/);
@@ -51,8 +35,6 @@ test('páginas legais abrem pelo rodapé, com controlador e contato', async ({ p
   await expect(page.getByRole('heading', { level: 1, name: 'Política de Cookies' })).toBeVisible();
   await expect(page.getByRole('table', { name: 'Itens guardados no aparelho' })).toContainText('blumet:bairro');
   expect(await page.evaluate(() => document.documentElement.scrollWidth <= window.innerWidth)).toBe(true);
-  await page.getByRole('button', { name: 'Ver o aviso de cookies' }).click();
-  await expect(page.getByTestId('aviso-cookies')).toBeVisible();
 });
 
 test('acesso direto a /cookies abre a página (sem cair na tela inicial)', async ({ page }) => {

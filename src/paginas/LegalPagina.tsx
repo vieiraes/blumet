@@ -3,7 +3,6 @@
 // opcional (analytics, vídeo, mapa embutido)? Atualize aqui e troque VERSAO_LEGAL em lib/legal.ts.
 import type { ReactNode } from 'react';
 import { Link } from 'react-router';
-import { abrirAvisoCookies, CHAVE_AVISO_COOKIES } from '../lib/cookies.ts';
 import { EMPRESA, VERSAO_LEGAL_EXTENSO } from '../lib/legal.ts';
 
 export type TipoLegal = 'privacidade' | 'termos' | 'cookies';
@@ -59,7 +58,6 @@ function Privacidade() {
       <ul>
         <li>O bairro que você escolhe em "Meu bairro" e o tema (claro, escuro ou automático).</li>
         <li>O último conjunto de dados públicos recebido e os arquivos do app, para ele abrir rápido e funcionar sem internet.</li>
-        <li>A informação de que você já viu o aviso de cookies.</li>
       </ul>
       <p>
         Esses itens não são enviados para nós nem para ninguém: o app pede os dados da Defesa Civil sempre do mesmo jeito, sem dizer qual bairro você escolheu. Detalhes na <Link to="/cookies">Política de Cookies</Link>.
@@ -202,7 +200,6 @@ function Cookies() {
     ['Meu bairro (blumet:bairro)', 'Mostrar a situação do seu bairro na tela inicial', 'Até você trocar ou apagar'],
     ['Tema (blumet:tema)', 'Lembrar se você prefere claro, escuro ou automático', 'Até você trocar ou apagar'],
     ['Último dado (blumet:cache)', 'Abrir o app na hora e sem internet com os últimos dados públicos', 'Até 7 dias sem atualizar'],
-    [`Aviso de cookies (${CHAVE_AVISO_COOKIES})`, 'Não mostrar este aviso de novo', 'Até você apagar os dados do site'],
     ['Arquivos do app (cache do service worker)', 'Funcionar offline: telas do app, último dado e imagens das notícias', 'Até a próxima versão do app ou 30 dias, no caso das imagens'],
   ];
   return (
@@ -227,7 +224,7 @@ function Cookies() {
         ))}
       </div>
       <p>
-        Todos são essenciais ou guardam uma escolha que você mesmo fez, e nenhum sai do seu aparelho. Por isso não dependem de consentimento, mas você deve saber que existem.
+        Todos são essenciais ou guardam uma escolha que você mesmo fez, e nenhum sai do seu aparelho. Por isso não dependem de consentimento e o app não mostra aviso de cookies, mas você deve saber que existem.
       </p>
 
       <h2>O que não usamos</h2>
@@ -246,12 +243,7 @@ function Cookies() {
 
       <h2>Como apagar</h2>
       <p>
-        Nas configurações do navegador, apague os dados do site {EMPRESA.site}, ou desinstale o app. O bairro e o tema voltam ao padrão e o aviso de cookies aparece de novo.
-      </p>
-      <p>
-        <button type="button" className="legal-botao" onClick={abrirAvisoCookies}>
-          Ver o aviso de cookies
-        </button>
+        Nas configurações do navegador, apague os dados do site {EMPRESA.site}, ou desinstale o app. O bairro e o tema voltam ao padrão.
       </p>
     </>
   );

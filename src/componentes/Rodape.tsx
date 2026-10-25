@@ -1,6 +1,5 @@
 // Rodapé do app (fim de todas as telas): marca, seções, emergência, privacidade e a linha legal.
 import { Link } from 'react-router';
-import { abrirAvisoCookies } from '../lib/cookies.ts';
 import { EMPRESA } from '../lib/legal.ts';
 import { IconeEmail } from './Icones.tsx';
 import { Logo } from './Logo.tsx';
@@ -81,11 +80,6 @@ export function Rodape() {
             <Link to="/cookies" className={estiloLink}>
               Política de Cookies
             </Link>
-          </li>
-          <li>
-            <button type="button" onClick={abrirAvisoCookies} className={estiloLink}>
-              Preferências de cookies
-            </button>
           </li>
         </Coluna>
       </div>

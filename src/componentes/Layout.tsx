@@ -1,11 +1,10 @@
-// Moldura do app: cabeçalho com o estado dos dados, conteúdo, rodapé, aviso de cookies e a barra de abas (embaixo no
+// Moldura do app: cabeçalho com o estado dos dados, conteúdo, rodapé e a barra de abas (embaixo no
 // celular, lateral em tela larga).
-import { useEffect, type ReactNode } from 'react';
-import { NavLink, useLocation } from 'react-router';
+import type { ReactNode } from 'react';
+import { NavLink } from 'react-router';
 import { IconeAbrigo, IconeGota, IconeInicio, IconeMais, IconeRio } from './Icones.tsx';
 import { SeloAtualizacao } from './SeloAtualizacao.tsx';
 import { AtualizacaoApp } from './AtualizacaoApp.tsx';
-import { AvisoCookies } from './AvisoCookies.tsx';
 import { Logo } from './Logo.tsx';
 import { Rodape } from './Rodape.tsx';
 
@@ -18,11 +17,6 @@ const ABAS: { para: string; rotulo: string; nome?: string; Icone: typeof IconeIn
 ];
 
 export function Layout({ children }: { children: ReactNode }) {
-  // Trocou de tela (abas ou links do rodapé): começa do topo
-  const { pathname } = useLocation();
-  useEffect(() => {
-    window.scrollTo(0, 0);
-  }, [pathname]);
   return (
     <div className="mx-auto min-h-dvh max-w-6xl lg:grid lg:grid-cols-[220px_1fr] lg:gap-8 lg:px-6">
       <a href="#conteudo" className="sr-only focus:not-sr-only focus:fixed focus:left-3 focus:top-3 focus:z-50 focus:rounded-lg focus:bg-superficie focus:px-3 focus:py-2">
@@ -65,8 +59,6 @@ export function Layout({ children }: { children: ReactNode }) {
           <Rodape />
         </div>
       </div>
-
-      <AvisoCookies />
 
       {/* Barra de abas (celular) */}
       <nav aria-label="Seções" className="base-segura fixed inset-x-0 bottom-0 z-30 border-t border-linha bg-superficie/95 backdrop-blur-md lg:hidden">

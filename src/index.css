@@ -61,10 +61,6 @@
 @utility base-segura {
   padding-bottom: env(safe-area-inset-bottom);
 }
-/* Aviso flutuante logo acima da barra de abas (celular) */
-@utility acima-das-abas {
-  bottom: calc(env(safe-area-inset-bottom) + 4.25rem);
-}
 
 /* Páginas legais (/privacidade, /termos, /cookies) */
 @layer components {
@@ -160,14 +156,6 @@
   }
   .legal-tabela-cabeca {
     display: none !important;
-  }
-  .legal-botao {
-    min-height: 2.75rem;
-    padding: 0 1rem;
-    border-radius: 0.75rem;
-    background: var(--color-superficie-2);
-    color: var(--color-texto);
-    font-weight: 600;
   }
   .legal-duvidas {
     margin-top: 2.5rem !important;

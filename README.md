@@ -18,7 +18,7 @@ Os dados se atualizam a cada 2 minutos com o app aberto. O último resultado fic
 
 O BLUmet não é um canal oficial. Em emergência, ligue **199** (Defesa Civil).
 
-No rodapé de todas as telas: Política de Privacidade (`/privacidade`), Termos de Uso (`/termos`), Política de Cookies (`/cookies`) e o aviso de cookies (só armazenamento essencial, sem rastreamento).
+No rodapé de todas as telas: Política de Privacidade (`/privacidade`), Termos de Uso (`/termos`) e Política de Cookies (`/cookies`).
 
 ## Fontes
 
