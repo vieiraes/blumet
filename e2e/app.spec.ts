@@ -32,7 +32,7 @@ test('as cinco abas abrem pela barra de baixo', async ({ page }) => {
   await page.getByRole('textbox', { name: 'Buscar por bairro ou nome' }).fill('velha');
   await expect(page.getByRole('link', { name: /Como chegar/ }).first()).toBeVisible();
   await barra.getByRole('link', { name: 'Mais' }).click();
-  await expect(page.getByRole('link', { name: /199/ })).toHaveAttribute('href', 'tel:199');
+  await expect(page.getByRole('main').getByRole('link', { name: /199/ })).toHaveAttribute('href', 'tel:199');
   await expect(page.getByText('Fontes dos dados')).toBeVisible();
 });
 

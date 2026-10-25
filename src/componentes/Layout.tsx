@@ -1,9 +1,13 @@
-// Moldura do app: cabeçalho com o estado dos dados, conteúdo e a barra de abas (embaixo no celular, lateral em tela larga).
-import type { ReactNode } from 'react';
-import { NavLink } from 'react-router';
+// Moldura do app: cabeçalho com o estado dos dados, conteúdo, rodapé, aviso de cookies e a barra de abas (embaixo no
+// celular, lateral em tela larga).
+import { useEffect, type ReactNode } from 'react';
+import { NavLink, useLocation } from 'react-router';
 import { IconeAbrigo, IconeGota, IconeInicio, IconeMais, IconeRio } from './Icones.tsx';
 import { SeloAtualizacao } from './SeloAtualizacao.tsx';
 import { AtualizacaoApp } from './AtualizacaoApp.tsx';
+import { AvisoCookies } from './AvisoCookies.tsx';
+import { Logo } from './Logo.tsx';
+import { Rodape } from './Rodape.tsx';
 
 const ABAS: { para: string; rotulo: string; nome?: string; Icone: typeof IconeInicio }[] = [
   { para: '/', rotulo: 'Início', Icone: IconeInicio },
@@ -13,16 +17,12 @@ const ABAS: { para: string; rotulo: string; nome?: string; Icone: typeof IconeIn
   { para: '/mais', rotulo: 'Mais', nome: 'Mais: telefones, notícias e preferências', Icone: IconeMais },
 ];
 
-export const Logo = () => (
-  <span className="flex items-center gap-2">
-    <img src="/favicon.svg" alt="" width={28} height={28} className="h-7 w-7" />
-    <span className="text-lg font-bold tracking-tight">
-      BLU<span className="text-marca">met</span>
-    </span>
-  </span>
-);
-
 export function Layout({ children }: { children: ReactNode }) {
+  // Trocou de tela (abas ou links do rodapé): começa do topo
+  const { pathname } = useLocation();
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [pathname]);
   return (
     <div className="mx-auto min-h-dvh max-w-6xl lg:grid lg:grid-cols-[220px_1fr] lg:gap-8 lg:px-6">
       <a href="#conteudo" className="sr-only focus:not-sr-only focus:fixed focus:left-3 focus:top-3 focus:z-50 focus:rounded-lg focus:bg-superficie focus:px-3 focus:py-2">
@@ -58,10 +58,15 @@ export function Layout({ children }: { children: ReactNode }) {
           </div>
         </header>
         <AtualizacaoApp />
-        <main id="conteudo" className="pb-seguro px-4 pt-3 lg:px-0 lg:pb-10">
+        <main id="conteudo" className="px-4 pt-3 lg:px-0">
           {children}
         </main>
+        <div className="pb-seguro px-4 lg:px-0 lg:pb-4">
+          <Rodape />
+        </div>
       </div>
+
+      <AvisoCookies />
 
       {/* Barra de abas (celular) */}
       <nav aria-label="Seções" className="base-segura fixed inset-x-0 bottom-0 z-30 border-t border-linha bg-superficie/95 backdrop-blur-md lg:hidden">

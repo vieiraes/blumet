@@ -159,3 +159,9 @@ export const IconeLua = (p: P) => (
     <path d="M20 14.5A8 8 0 0 1 9.5 4a8 8 0 1 0 10.5 10.5Z" />
   </Base>
 );
+export const IconeEmail = (p: P) => (
+  <Base {...p}>
+    <rect x="3" y="5" width="18" height="14" rx="2" />
+    <path d="m3.5 6.5 8.5 6.5 8.5-6.5" />
+  </Base>
+);

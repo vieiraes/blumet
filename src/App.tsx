@@ -9,6 +9,7 @@ const RioPagina = lazy(() => import('./paginas/RioPagina.tsx').then((m) => ({ de
 const ChuvaPagina = lazy(() => import('./paginas/ChuvaPagina.tsx').then((m) => ({ default: m.ChuvaPagina })));
 const AbrigosPagina = lazy(() => import('./paginas/AbrigosPagina.tsx').then((m) => ({ default: m.AbrigosPagina })));
 const MaisPagina = lazy(() => import('./paginas/MaisPagina.tsx').then((m) => ({ default: m.MaisPagina })));
+const LegalPagina = lazy(() => import('./paginas/LegalPagina.tsx').then((m) => ({ default: m.LegalPagina })));
 
 export function App() {
   return (
@@ -20,6 +21,9 @@ export function App() {
           <Route path="/chuva" element={<ChuvaPagina />} />
           <Route path="/abrigos" element={<AbrigosPagina />} />
           <Route path="/mais" element={<MaisPagina />} />
+          <Route path="/privacidade" element={<LegalPagina tipo="privacidade" />} />
+          <Route path="/termos" element={<LegalPagina tipo="termos" />} />
+          <Route path="/cookies" element={<LegalPagina tipo="cookies" />} />
           <Route path="/sobre" element={<Navigate to="/mais" replace />} />
           <Route path="*" element={<Navigate to="/" replace />} />
         </Routes>

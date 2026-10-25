@@ -5,4 +5,7 @@
   <url><loc>https://blumet.web.app/chuva</loc><changefreq>hourly</changefreq><priority>0.8</priority></url>
   <url><loc>https://blumet.web.app/abrigos</loc><changefreq>daily</changefreq><priority>0.8</priority></url>
   <url><loc>https://blumet.web.app/mais</loc><changefreq>weekly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://blumet.web.app/privacidade</loc><changefreq>monthly</changefreq><priority>0.2</priority></url>
+  <url><loc>https://blumet.web.app/termos</loc><changefreq>monthly</changefreq><priority>0.2</priority></url>
+  <url><loc>https://blumet.web.app/cookies</loc><changefreq>monthly</changefreq><priority>0.2</priority></url>
 </urlset>
